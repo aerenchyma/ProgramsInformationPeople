@@ -29,7 +29,7 @@ strings, they are arranged in alphabetic order.
     L2.sort()
     print L2
     
-Note that the sort method does **not** return a sorted version of the list. In
+I'm gonna add a weird sentence at the beginning. This should not end up in the textbook. Note that the sort method does **not** return a sorted version of the list. In
 fact, it returns the value None. But the list itself has been modified. This
 kind of operation that works by having a *side effect* on the list can be quite
 confusing. 
