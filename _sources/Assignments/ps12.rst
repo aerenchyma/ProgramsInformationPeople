@@ -17,4 +17,36 @@ Activities through 4/10
 
 You have the following graded activities:
 
-**TBA**
+* **Before Monday's class:**
+       * Read :ref:`APIs with OAuth<apis_with_oauth_chap>`.
+       * Install ``requests_oauthlib`` with ``pip``.
+       * Download the ``oauth_with_twitter.py`` code from Canvas in **Files > Code** and look through it, try running it and understanding what it does.
+
+.. usageassignment:: prep_21
+    :chapters: APIsWithOAuth
+    :assignment_name: Prep a21
+    :deadline: 2016-04-04 21:30:00
+    :pct_required: 80
+    :points: 50
+
+* **Before Tuesday at midnight:**
+    * Read *The Success of Open Source*, Chapter 5
+    * Complete `Reading Response 12 <https://umich.instructure.com/courses/48961/assignments/57688>`_ on Canvas.
+
+* **Before Wednesday at midnight:**
+	* Complete your `Final Project Plan <https://umich.instructure.com/courses/48961/assignments/55805>`_ on Canvas.
+    
+* **Before Wednesday's class:**
+       * Read :ref:`Debugging nested data <debug_nested_chap>`
+       * Read :ref:`Test suites <testing_chap>`
+
+.. usageassignment:: prep_22
+    :chapters: Testing
+    :assignment_name: Prep a21
+    :deadline: 2016-04-06 21:30:00
+    :pct_required: 80
+    :points: 50
+
+* **Before Sunday 4/3 at 5 pm:**
+	* Complete `Problem Set 12 <https://umich.instructure.com/courses/48961/assignments/55806>`_ on Canvas. (Last problem set! This one can help you with the final project.)
+	* **Before 6 pm:** Complete `Demonstrate Understanding 12 <https://umich.instructure.com/courses/48961/assignments/57702>`_ on Canvas.
