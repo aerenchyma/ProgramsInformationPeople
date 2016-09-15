@@ -21,7 +21,6 @@
 .. highlight:: python
     :linenothreshold: 500
 
-
 Activities through 11/31
 ========================
 
