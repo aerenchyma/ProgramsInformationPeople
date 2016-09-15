@@ -16,6 +16,7 @@ Once we run requests.get, we get a response object. It's an instance of a class 
 Previously, we saw that a response object has an attribute (instance variable) *.text*, which contains the contents of the page, the stuff after all the HTTP headers. Response objects have some other useful attributes and methods that we can access. A few are used and explained below. Others will be introduced in later chapters.
 
 .. sourcecode:: python
+   :linenos:
 
    import requests
    
