@@ -575,7 +575,12 @@ Unix
    :maxdepth: 2
    :hidden:
 
-   
+   InClass/DictionaryAccum.rst
+   InClass/FunctionsExamples.rst
+   InClass/IndefiniteIteration.rst
+   InClass/OptionalKeywordParams.rst
+   InClass/TuplesAndNestedData.rst
+
 
 
 Indices and tables
