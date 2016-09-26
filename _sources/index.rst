@@ -578,6 +578,18 @@ Unix
    ExtraExercises/session5_7462.rst
 
 
+
+.. toctree:: 
+   :maxdepth: 2
+   :hidden:
+
+   InClass/DictionaryAccum.rst
+   InClass/FunctionsExamples.rst
+   InClass/IndefiniteIteration.rst
+   InClass/OptionalKeywordParams.rst
+   InClass/TuplesAndNestedData.rst
+
+
 Indices and tables
 ::::::::::::::::::
 
