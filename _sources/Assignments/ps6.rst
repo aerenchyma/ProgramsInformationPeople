@@ -39,7 +39,7 @@ Activities through 10/28
   * Read :ref:`Writing files<write_text_file_chap>` (also note :ref:`Writing CSV files<csv_chap>`)
   * Read :ref:`Using REST APIs<using_RESTAPIs_chap>`
   * Read :ref:`How to Fix Common Problems with Python Interpreter<gotchas_chap>`, which may also be helpful as we move forward. We may add to this (for your use and help; you will *not* be graded on reading additional material added later), too!
-  * Note that we have *not* assigned the last two chapters of the **UsingRESTAPIs** chapter. You'll read these (with some added material) next week, and discuss how to deal with even more complicated live data, and put all this information together to try out getting data with the Flickr API.
+  * Note that we have *not* assigned the last two sub-chapters of the **UsingRESTAPIs** chapter. You'll read these (with some added material) next week, and discuss how to deal with even more complicated live data, and put all this information together to try out getting data with the Flickr API.
 
 .. usageassignment::
   :subchapters: Exceptions/intro-exceptions, Exceptions/using-exceptions, StringFormatting/intro-PrintinginPython2.7, StringFormatting/Interpolation, StringFormatting/CSV, Files/WritingTextFiles, UsingRESTAPIs/requestsCookbook, UsingRESTAPIs/callingGet, UsingRESTAPIs/extract, UsingRESTAPIs/process
