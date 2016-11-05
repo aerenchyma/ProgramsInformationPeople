@@ -42,7 +42,7 @@ Activities through 11/4
   :points: 50
 
 
-** Wednesday, November 2 at 7 PM is the Second Chance Midterm. More info TBA in Canvas announcement.**
+**Wednesday, November 2 at 7 PM is the Second Chance Midterm. More info TBA in Canvas announcement.**
 
 
 * **Before Sunday 11/6 at 11:59 PM:**
