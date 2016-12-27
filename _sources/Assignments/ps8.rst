@@ -1,6 +1,6 @@
 :orphan:
 
-..  Copyright (C) Paul Resnick.  Permission is granted to copy, distribute
+..  Copyright (C) Paul Resnick, Jackie Cohen.  Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
@@ -8,49 +8,36 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-
-.. highlight:: python
-    :linenothreshold: 500
-
-
 Activities through 11/11
 ========================
 
-* **Before Monday's class 11/7:**
-    * Read :ref:`Python modules <modules_chap>`, and if you haven't already, make sure to read about the :ref:`pip module installer <pip_chap>`
-    * Read :ref:`Try/Except <exceptions_chap>` and :ref:`String Formatting<formatting_chap>`
-    * You may find it helpful to read this `External Tutorial on Reading CSV Files <https://thenewcircle.com/s/post/1572/python_for_beginners_reading_and_manipulating_csv_files>`_
-    * Read :ref:`Writing files<write_text_file_chap>` (also note :ref:`Writing CSV files<csv_chap>`)
-    * Read :ref:`Using REST APIs<using_RESTAPIs_chap>`
-    * We suggest you read :ref:`How to Fix Common Problems with Python Interpreter<gotchas_chap>`, which may also be helpful as we move forward. (Not graded, but very useful.)
-    * You may want to review :ref:`REST APIs<rest_apis_chap>` (not graded this week, just a suggestion)
+* **Before class Monday 11/7:**
+
+  * Read :ref:`Advanced Accumulation <list_comp_chap>` and try any activities in the listed sub-chapters
 
 .. usageassignment::
-  :subchapters: PythonModules/intro-ModulesandGettingHelp, PythonModules/Therandommodule, Installation/pip, Exceptions/intro-exceptions, Exceptions/using-exceptions, StringFormatting/intro-PrintinginPython2.7, StringFormatting/Interpolation, StringFormatting/CSV, Files/WritingTextFiles, UsingRESTAPIs/cachingResponses, UsingRESTAPIs/flickr
+  :subchapters: AdvancedAccumulation/intro, AdvancedAccumulation/map, AdvancedAccumulation/filter, AdvancedAccumulation/listcomp, AdvancedAccumulation/reduce, AdvancedAccumulation/zip
   :assignment_name: Prep 16
-  :deadline: 2016-11-07 20:40
+  :deadline: 2016-11-07 22:40
   :pct_required: 80
   :points: 50
 
-* Note that your reading responses will from now onbe due on **Sunday nights**, at the same time as your Problem Sets. Of course, you can always turn them in early!
-    
-* **Before Wednesday's class, 11/9:**
-    * We will post a file on Canvas in Files > Code Samples that shows code to access the Flickr API, which is commented thoroughly. You may want to download this, look at it, and try it out! (This goes back to the information from the :ref:`Using REST APIs chapter<using_RESTAPIs_chap>` you read for Monday.)
-    * Read the sections listed below from the :ref:`Classes<chap_constructor>` chapter, and try the exercises in those sections.
+* **Before class Wednesday 11/9:**
+
+  * Read :ref:`Testing <test_cases_chap>` and try any activities in the listed sub-chapters
+  * We strongly suggest you also try writing some of these Unit Test examples in your own code files!
 
 .. usageassignment::
-  :subchapters: Classes/intro-ClassesandObjectstheBasics, Classes/ObjectsRevisited, Classes/UserDefinedClasses, Classes/ImprovingourConstructor, Classes/AddingOtherMethodstoourClass,   Classes/ObjectsasArgumentsandParameters, Classes/ConvertinganObjecttoaString, Classes/InstancesasReturnValues, Classes/sorting_instances, Classes/ClassVariablesInstanceVariables, Classes/ThinkingAboutClasses, Classes/ClassesHoldingData, Classes/Tamagotchi
+  :subchapters: Testing/intro-TestCases, Testing/Testingfunctions, Testing/Testingclasses
   :assignment_name: Prep 17
-  :deadline: 2016-11-09 20:40
+  :deadline: 2016-11-09 22:40
   :pct_required: 80
   :points: 50
 
+* **Before Sunday 11/13 at 11:59 PM:**
 
-* **Before Sunday 11/13 at 11:59 PM:**
-
-  * Complete all of :ref:`Problem Set 8 <problem_set_8>` and the Demonstrate Your Understanding assignment for this week (linked below), and submit each on Canvas.
-  * Complete :ref:`Reading Response 9<reading_response_9>`.
-
+  * Complete and submit your :ref:`Problem Set 8 <problem_set_8>`, and save an answer to your Demonstrate Understanding for this week (linked below).
+  * Complete :ref:`Reading Response 9 <reading_response_9>`.
 
 This Week's Reading Responses
 -----------------------------
@@ -59,7 +46,7 @@ This Week's Reading Responses
 
 .. external:: rr_9
 
-  `Reading Response 9 <https://umich.instructure.com/courses/105657/assignments/131320>`_ on Canvas.
+  `Reading Response 9 <https://umich.instructure.com/courses/108426/assignments/139270>`_ on Canvas.
 
 
 .. _problem_set_8:
@@ -67,155 +54,193 @@ This Week's Reading Responses
 Problem Set
 -----------
 
-Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/courses/105657/assignments/131300>`_, where you can find the location of the file to download and edit, where you can submit your Python file for this assignment.
-
-You'll see very abbreviated instructions for each step, inside the file you download from Canvas. Here on this page, you'll see extended instructions for each step to complete the problem set.
-
-Note especially for this problem set, since you're getting real live data, we cannot test everything. You'll have to both look at our tests and examine your output to ensure that you have the correct results! (We will look at your results and output when we grade the problem set.)
-
-----
-
-The FAA (Federal Aviation Administration) has put out a REST API for accessing current information about US airports. You'll be using it in the following exercises.
+Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/courses/108426/assignments/139256>`_, where you can find the file you need to download and edit, and where you can submit your file for this assignment.
 
 .. note::
 
-    Almost all of the following exercises build on one another. You can use code you wrote in earlier exercises in later ones. If you keep this in mind, this problem set'll be even easier for you!
+	Note that each problem on this problem set has two parts: solving the problem, and writing Unit Tests for that problem that check that you have solved it per the instructions! 
+	
+	It may be easier to write the Unit Tests for each problem first, and then solve the problems themselves (this is known as test-driven development).
 
-    You should also note that this problem set goes very step-by-step. One little piece at a time, you'll build up to Problem 6, where you put everything together that you've done up to that point.
+	You should include, as the third argument to each of your tests, a brief, clear English description of what the test is checking for! e.g. "Testing whether the first element of the list student_tups is type tuple".
 
-    In problems 6 and 7, you define functions. Remember: you should only define each function once. Then, after defining them, invoke them!
+.. note::
 
+	Reminder: we do not debug code when grading, so we cannot grade code that does not run! Make sure your code runs before submitting it -- you should comment out any code that does not.
 
-.. external:: ps_8_start
-
-    1. Point your web browser to the following URL: ``http://services.faa.gov/airport/status/DTW?format=json``
-
-    The text that is shown in your browser is a JSON-formatted dictionary. It can easily be converted into a python dictionary and processed in a manner similar to what we have done with the Facebook feed previously. The exercise below guides you through the process of writing python code that uses this RESTful API to extract information about some airports. Pointing your browser to this link is not graded. But you should do it, because it'll provide you with understanding for the remainder of the problem set.
 
 .. external:: ps_8_01
+	
+	**PROBLEM 1**
 
-    **PROBLEM 1: Encoding query parameters in a URL**
+	We've provided a definition of a class Student, similar to one you may have seen in lecture. Do not change that code:
 
-    Manually create the dictionary you will need to pass to the params argument when you make a request. The key in the dictionary should be ``'format'``, and its value should be ``'json'``, since this is the only parameter required by the FAA REST API. You could discover this via reading their documentation, but in this case, we're just telling you so. 
+	.. sourcecode:: python
 
-    Save the dictionary you create in a variable called url_parameters. You should do this in 3 or fewer lines of code (it can also be done in 1 line!).
+		class Student():
+		    def __init__(this_Student, name, years_at_umich=1):
+		        this_Student.name = name
+		        this_Student.years_UM = years_at_umich
+		        this_Student.bonus_points = random.randrange(1000)
+
+		    def shout(this_Student, phrase_to_shout):
+		        print phrase_to_shout  # print is for ppl!
+
+		    def __str__(this_Student):
+		        return "My name is {}, and I've been at UMich for about {} years.".format(this_Student.name,this_Student.years_UM)
+
+		    def year_at_umich(this_Student):
+		        return this_Student.years_UM
+
+	You should define a subclass of ``Student``, ``Programming_Student``.
+
+	* The ``Programming_Student`` class should have an instance variable called ``number_programs_written`` whose value gets passed into the Programming_Student constructor after the ``years_at_umich``. The default value for the ``number_programs_written`` instance variable should be 0.
+
+	* The ``Programming_Student`` class should also have a method called ``write_programs``. The ``write_programs`` method accepts an optional parameter called ``progs``, which should be an integer representing the number of programs the Programming_Student will write. Its default value is ``1``. When the write_programs method is called on an instance of Programming_Student, the ``progs`` number should be added to the instance's ``number_programs_written``.
+
+	* The ``Programming_Student`` class should also have a method called ``productivity``. The productivity method should return the average number of programs that the Programming_Student has written per year (that is, divide its ``number_programs_written`` by its ``years_UM``  -- using float division, not integer divison, so you can get a decimal in your answer).
+
+	* When the ``shout`` method is called for the ``Programming_Student`` class, the phrase ``"Also, Python is pretty cool."`` should print after the phrase to shout. You should be calling the parent ``shout`` method to make this happen.
+
+	* The printed representation of an instance of ``Programming_Student`` should look something like ``"My name is Julie, I've been at UMich for about 100 years, and I have written 90 programs while here."``, where **Julie**, **100**, and **90** are in the place of the instance variable values for each instance you create. Override the Student ``__str__`` method for the Programming_Student class to make that happen.
+
+.. external:: ps_8_01_test
+
+	Write unit tests in your file below your ``Programming_Student`` class definition that ensure that your code does what the instructions say. You should write at least 3 unit tests. 
+
+	Hint: You'll need to create an instance of your Programming_Student class in order to test your code: see the **Testing Classes** section of the textbook!
+
+	(You can include each test in the same subclass of ``unittest.TestCase``, or you can create multiple subclasses of ``unittest.TestCase``. However, each unique ``assert`` statement should be in its own method. See the bottom of the files of your ``506_ps7.py`` and ``506_ps6.py``, as well as the textbook chapters, for examples!) 
+
+	Note that the ``unittest.main(verbosity=2)`` line of code provided at the end of your problem set file is what actually *runs* the tests you write.
 
 .. external:: ps_8_02
-    
-    **PROBLEM 2: Making a request and saving a response object**
 
-    Next, write the whole assignment statement to do the following:
-    - make a request to the base url for the FAA api
-    - concatenate the airport code string ``"DTW"`` to the base url, 
-    - and pass that as well as the ``url_parameters`` dictionary you already created to the ``requests.get`` method. 
+	**PROBLEM 2**
 
-    We've provided a bit of code in the file for you to use as you do this:
+	We've provided three lists for you in your code file, like so:
 
-    .. sourcecode:: python
+	.. sourcecode:: python
 
-        baseurl = 'http://services.faa.gov/airport/status/'
-        airport = 'DTW'
+		# Provided code
+		names = ["Albert", "Bisi", "Cai", "Dinesh", "Euijin"]
+		seniority = [1, 5, 2, 4, 1]
+		programs_written = [10, 500, 20, 131, 46]
 
-    Save the response that will be returned when the ``request.get`` method is called properly to a variable called ``airport_response``. (We're doing this small step by small step.) So, after this code is executed, ``airport_response`` should contain a *response object* from the FAA API.
+	The following problems, through Problem 7, build on one another, so make sure you understand what is happening step by step.
+
+	First, create a list of tuples, in which the first tuple in the list is the first value from each list: ``names``, ``seniority``, and ``programs_written``: ``("Albert", 1, 10)``, and the second tuple in the list is each of the second elements of these lists ``("Bisi", 5, 500)``, and so on. 
+
+	Save that list in a variable called ``student_tups``. Do not hard-code it -- so, don't just type it out! 
+
+	(**Hint to make this easier:** check out ``https://www.programsinformationpeople.org/runestone/static/506F16/AdvancedAccumulation/zip.html``)
+
+.. external:: ps_8_02_test
+
+	Write a unit test to check whether the list of tuples ``student_tups`` holds the correct value.
 
 .. external:: ps_8_03
 
-    **PROBLEM 3: Grabbing data off the web**
+	**PROBLEM 3**
 
-    Put the request you made above in a proper try/except clause. If it doesn't work, your code should print out ``That didn't work``. 
+	Use a list comprehension with the ``student_tups`` list that you just created in order to create a list of ``Programming_Student`` instances. Save the list of ``Programming_Student`` instances in a variable called ``programmers``.
 
-    If the request is successful, your code should use the ``.json()`` method on the response you get back to turn the data into one big Python dictionary. Save the Python dictionary in the variable ``airport_data``.
+.. external:: ps_8_03_test
 
-    If you're wondering what you got back, you can use the ``pretty`` function we provided for you in the code file like so: ``print pretty(airport_data)``. This will show you an easier-to-read version of the data you got. 
+	Write at least 3 unit tests that check whether the ``programmers`` list is correct. Does it have the elements it is supposed to have? 
 
-    Note that you can't do anything with the result of an invocation of the ``pretty`` function, it is just for you to look at data and read it easily. Print is for people, and so is ``pretty`` -- the result of that is mostly useless to your program.
+	Hints to help you decide: Is the first element of the list the correct type? Does it have the attributes it should have? Is the ``programmers`` list the correct length?
 
 .. external:: ps_8_04
 
-    **PROBLEM 4: Extracting relevant information from a dictionary**
+	**PROBLEM 4**
 
-    Now you have a JSON-formatted Python dictionary with a bunch of data from the FAA about the airport with code **DTW**.  
+	Use the Python ``map`` function on the ``programmers`` list you just created, in order to create a list of numbers representing the **productivity** of each student. 
 
-    Remember how you had to concatenate the "DTW" string to the base url for the API, and then add the parameters, to make a request to this API!
+	Save the new list in a variable called ``productivities``. (The first couple of values should be the equivalent of ``10.0/1`` and ``500.0/5``...) 
 
-    Now, going back to the skills you learned in the Nested Data chapter:
+	Be sure to make use of the ``productivity`` method that you defined for the ``Programming_Student`` class.
 
-    From the airport data dictionary, extract the airport code (e.g. ``DTW``), the ``reason`` field from within the ``status``, the current temperature, and the last time the data was updated.
+.. external:: ps_8_04_test
 
-    Save these pieces of info in variables called, respectively: ``airport_code``, ``status_reason``, ``current_temp``, ``recent_update``.
-
-    To see what you saved in these variables, you may want to run code like:
-
-    .. sourcecode:: python
-
-        print airport_code
-        print status_reason
-        print current_temp
-        print recent_update
-
+	Write a unit test to check whether the list of tuples ``productivities`` holds the correct value.
 
 .. external:: ps_8_05
 
-    **PROBLEM 5: Generalizing your code**
+	**PROBLEM 5**
 
-    At this point, you'll consider the code you've written so far in your file, and make it generalizable. Which means... FUNCTIONS.
+	Use a list comprehension on the list ``programmers`` that you created above, in order to create a list of tuples wherein each tuple has a student's name as the first element and the student's productivity value as the second element. 
 
-    Define a function called ``get_airport()`` that acPROBLcepts a three-letter airport code string as input, and returns a Python dictionary (like the one you saved in ``airport_data`` above) with data about that airport. 
+	Save the list of tuples in a variable called ``names_and_productivities``. The first tuple should be ``("Albert", 10.0)`` and the second should be ``("Bisi", 100.0)``, and so on.
 
-    This function should work no matter where it is called, with just the input of an airport code like "DTW" or "PDX"! It should *not* depend upon global variables. (So, if you input ``"DTW"`` into your ``get_airport`` function, you should get a different result returned than if you invoke the function with the input ``"LAX"``, and so on.
+.. external:: ps_8_05_test
 
-    You can assume that the requests module is available in your file, though (you do not have to import it again in your function definition of ``get_airport``).
+	Write a unit test that checks whether ``names_and_productivities`` holds the correct value.
 
 .. external:: ps_8_06
 
-    **PROBLEM 6: More code generalization**
+	**PROBLEM 6**
 
-    Now, write another function called ``extract_airport_data()`` that accepts an airport code string as input, like ``"LAX"``, and returns a tuple: of the airport code, status reason, current temp, and recent update. This function should call the ``get_airport()`` function.
+	Use the Python ``filter`` function to select the subset of ``programmers`` instances who have names with 5 or more characters. Save the resulting list in a variable called ``long_names``.
+
+.. external:: ps_8_06_test
+
+	Write a unit test that checks whether ``long_names`` holds the correct value. (Hint: It should hold a list of ``Programming_Student`` instances... but it should not include every element of the ``programmers`` list!)
 
 .. external:: ps_8_07
 
-    **PROBLEM 7: Create examples of using your newly defined functions**
+	**PROBLEM 7**
 
-    Now, iterate over the ``fav_airports`` list we've provided in your code file and print out the abbreviated info for each one, by calling ``extract_airport_data()``.
+	Use a list comprehension to generate a list of strings: **just the names**  of the ``Programming_Student`` instances where the lengths of their names are longer than the number of years they've been at UM (i.e., ``["Albert", "Cai", "Dinesh", "Eujin"]``). Assign the result list to a variable called ``names_with_not_too_much_seniority``.
 
-    After that code is executed, you should see 4 different tuples of airport data, each on a separate line. 
+.. external:: ps_8_07_test
+
+	Write a unit test that checks whether ``names_with_not_too_much_seniority`` holds the correct value.
+
+.. external:: ps_8_08_test
+
+	**PROBLEM 8**
+
+	We have provided a function definition for you, called ``good_cards``. 
+
+	It takes as input a list of integers. Each integer has a value between 1 and 10 (inclusive: each value could be 1, and it could be 10). You can think of the integers in the input list as representing cards with values 1-10.
+
+	The function simulates a blackjack game (a type of poker game): the function is supposed to return an integer which represents a *count* of how many values ('cards') from the input list ``L`` can be accepted before the sum of the accepted values becomes greater than 21. 
+
+	(In blackjack, if the sum of cards is over 21, the player is "busted" and loses that game. For those familiar with special Blackjack game rules, in this function, the integer value ``1`` should always count as just ``1``, not as ``11``. For those who do not know the game, you need only pay attention to the description of what this function ought to do to write good tests for it!) 
+
+	If the list of all the values in the input list ``L`` do not add up to 21, the ``good_cards`` function should return the total length of the input list ``L``. Otherwise, the function should return the number of values in input list ``L`` it took to reach a sum of 21. The code we've written for the function is as shown here, also provided in your problem set Python file:
+
+	.. sourcecode:: python
+
+		def good_cards(L):
+		    sum = 0
+		    c = 0
+		    to_return = []
+		    for card in L:
+		        sum += card
+		        c += 1
+		        if sum >= 21:
+		            break
+		    return c
+
+.. mchoice:: ps_8_08_mc
+   :answer_a: Return value tests
+   :answer_b: Side effect tests
+   :answer_c: Both
+   :feedback_a: Yes! This function returns a value, so you'll want to check whether it returns the correct output given a variety of different inputs.
+   :feedback_b: This function does not have an effect on anything outside its local scope, so you will not need to write any side-effect tests.
+   :feedback_c: In this case, there's no need for side-effect tests. Usually this answer is true when you write tests for a class definition, but somewhat rarely for a function outside a class definition.
+   :correct: a
+
+   **Ungraded, but helpful for Problem 8:** To write unit tests for this function ``good_cards``, should you create return-value tests, side-effect tests, or both? 
 
 .. external:: ps_8_08
 
-    **PROBLEM 8: Error handling and exceptions**
+    Finally, in your code file, write unit tests for the good_cards function. Make sure you consider edge cases. What if ``L`` does not have enough values in the list to get to 21, will the function work correctly? What if the sum of the values in ``L`` is exactly 21? What if it takes a lot of "cards" to get to 21? What if it takes very few values from the input list ``L`` to add up to 21? etc. 
 
-    We have provided an invocation of ``extract_airport_data`` with a bogus airport code in the code file, like so:
-
-    ``print extract_airport_data("XYZ")``
-
-    If you run it as is, it should throw an exception.
-
-    Wrap the call to ``extract_airport_data`` in a try/except block, so that you should see: ``Sorry, that didn't work.`` printed out when you run your code. 
-
-    (Note that the call to the function should be wrapped in a try/except -- the try/except block should not go inside your function! Go back to the Exceptions chapter to consider why we push you to do this.)
-
-.. external:: ps_8_09
-
-    **PROBLEM 9: Dealing with real live data**
-
-    We've provided a list of airport codes in the variable ``possible_airports``, in the problem set code file. But not all of them are valid airports! Write code that iterates over this list and prints out a tuple of the airport data for each one. *But*, if it's not a valid airport code, your code should print ``Failed for airport <whatever the code is that didn't work>``, e.g. ``Failed for airport JAC``. Use a try/except block to do this.
-
-.. external:: ps_8_10
-
-    **Using real live data to write a CSV file**
-
-    Finally, instead of printing out the results of code like you wrote above, you'll write the data to a CSV file. Iterate over the same list ``possible_airports`` again, but this time, write code to write to a CSV file called ``airport_temps.csv`` with 4 columns: ``airport_code``, ``status_reason``, ``current_temp``, ``recent_update``. Your resulting CSV file should have at least 5 lines: 4 lines for real airport data, and 1 line for the column headers.
-
-    In a case where you encounter an invalid airport code, you should *not* write to the CSV file. Instead, you should print to the console: ``Failed for airport <whatever the bad airport code is>``. Use a try/except block to do this.
-
-    **Make sure the CSV file you create is called airport_temps.csv. We will run tests on the CSV files post-submission, and we depend on the name of the file being correct.**
-
-    Open the document in Excel or Google Sheets to make sure that it is properly formatted. You should make sure you have not included any extra parentheses in each cell when you open it in a spreadsheet program -- when you view the document in Excel or Google Sheets, each individual element of the tuple returned by ``extract_airport_data`` should be separate, in each cell, with no extraneous data.
-
-    **You should not upload the CSV file your code creates -- when we run your code, it'll appear!**
-
+    (You may assume that all values in the function's input list ``L`` will be in the range of 1 - 10 and will be integers; you do not need to test for that. Here, you should not write tests that deal with bad input to the ``good_cards`` function, only tests that check whether the function will work properly, per the description above, for a variety of different inputs.)
 
 .. external:: ps8_dyu
 
-    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131291>`_ assignment on Canvas.
-
+    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139246>`_ assignment on Canvas.

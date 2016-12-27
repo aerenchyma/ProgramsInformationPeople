@@ -8,308 +8,444 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. highlight:: python
-    :linenothreshold: 500
 
 Activities through 10/7
 =======================
 
-You have the following graded activities:
-
 * **Before Monday's class, 10/3:**
 
-  * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and try the following exercises in that chapter (You may want to refresh yourself on :ref:`Dictionaries<dictionaries_chap>`)
+  * Read :ref:`Unix<unix_chapter>`, and try the exercises in that chapter on your computer
+  * Read `this tutorial on Unix pipes <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_ (you can ignore the ``who`` command in the tutorial) and `this tutorial on the Unix command grep <http://www.ee.surrey.ac.uk/Teaching/Unix/unix2.html>`_ (you can scroll down to it on that page).
+  * **If you use a Windows computer,** read and do the installation in the :ref:`instructions for installing git bash<install_git_bash>` section. 
+  * **Everyone** should read :ref:`Installing a text editor<text_editor_installation>` and the subsequent sections on installing and running python (there is a section for mac users and a section for Windows users). Try to do the exercises and installations. You will address any installation problems you have (hopefully none! Fingers crossed) in section this week.
 
-  * Read :ref:`Strategy for building programs <build_program_chap>`
-
-  * :ref:`Lecture 8 Waiver <lecture_8_waiver>`
+  * The installation chapter explains the software we will help you support in this course. We strongly recommend that you use this.
+    
+  * You are not being graded on *whether you have read* the installation chapter, but you are expected to have done so if you need to! We will proceed with the assumption after this week that you have a setup that is congruent with this course, so please make sure that is the case.
+    
+  * If you have already installed Python, check to **make sure you have Python 2.7 installed on your computer.** We will be using that version of Python in this course, and the files we provide you and expect you to use will not always be compatible with both. If you have installed Python 3, you can and should download Python 2.7.12 `here <https://www.python.org/downloads/>`_. (If you do not have access to a personal computer, you should already have contacted the instructional staff, but please do so ASAP!)
 
 .. usageassignment::
-    :subchapters: BuildingAProgram/TheStrategy, DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary, DictionaryAccumulation/AccumulatingResultsFromaDictionary, DictionaryAccumulation/AccumulatingaMaximumValue, DictionaryAccumulation/AccumulatingtheBestKey
-    :assignment_name: Prep 08
-    :deadline: 2016-10-03 19:40
-    :pct_required: 80
-    :points: 50
+  :subchapters: Unix/CommandPrompt, Unix/FoldersAndPaths, Unix/DirectoriesAndCopying, Unix/lessCommand
+  :assignment_name: Prep 08
+  :deadline: 2016-10-03 21:40
+  :pct_required: 80
+  :points: 50
 
-  
-* **By Tuesday 10/4 11:59 pm:**
+* **Before Tuesday 10/4 at 11:59 PM:**
 
-  * Read chapter 5 of The Most Human Human and answer `Reading Response 5 <https://umich.instructure.com/courses/105657/assignments/131316>`_ on Canvas.
+  * Complete :ref:`Reading Response 5<reading_response_5>`.
 
 * **Before Wednesday's class, 10/5:**
 
-  * Read :ref:`Defining Functions<functions_chap>`, and try the following exercises in that chapter
+  * Read :ref:`Optional and Keyword Parameters<optional_params_chap>`  and try the exercises in the sections listed below.
 
-  * :ref:`Lecture 9 Waiver<lecture_9_waiver>`
-  
 .. usageassignment::
-    :subchapters: Functions/FunctionDefinitions,Functions/FunctionInvocation,Functions/FunctionParameters,Functions/Returningavaluefromafunction,Functions/Afunctionthataccumulates,Functions/DecodingaFunction,Functions/MethodInvocations,Functions/Variablesandparametersarelocal,Functions/GlobalVariables,Functions/Functionscancallotherfunctions,Functions/FlowofExecutionSummary,Functions/Printvs.return,Functions/PassingMutableObjects,Functions/SideEffects
-    :assignment_name: Prep 09
-    :deadline: 2016-10-05 19:40
-    :pct_required: 80
-    :points: 50
+  :subchapters: OptionalAndKeywordParameters/OptionalParameters, OptionalAndKeywordParameters/KeywordParameters
+  :assignment_name: Prep 09
+  :deadline: 2016-10-05 21:40
+  :pct_required: 80
+  :points: 50
 
+* **Before Sunday 10/9 at 11:59 PM:**
 
-* **By Friday, 10/7 at 6:30 pm:**
-  
-  * Save answers to each of the exercises in :ref:`Problem Set 4 <problem_set_4>` and  submit your **Demonstrate Understanding** assignment to Canvas
+  * Complete all of :ref:`Problem Set 4<problem_set_4>`, including the :ref:`Problem Set 4 Unix Exercises<problem_set_4_unix>` and the Demonstrate Your Understanding assignment for this week.
 
-  * Note that you have a grace period for the PSet and DYU until Sunday 10/9 at 5:00 PM
+.. note::
 
-.. _reading_response_5:
+  This week's problem set involves some saving code in Activecode windows below, and some work on your own computer + submission of screenshots to Canvas. All of the instructions are below!
+
 
 This Week's Reading Responses
 -----------------------------
 
+.. _reading_response_5:
+
 .. external:: rr_5
 
-  `Reading Response 5 <https://umich.instructure.com/courses/105657/assignments/131316>`_ on Canvas.  
+  `Reading Response 5 <https://umich.instructure.com/courses/108426/assignments/139266>`_ on Canvas.
 
-
-.. _problem_set_4:
 
 Problem Set
 -----------
 
-.. datafile::  about_programming.txt
-   :hide:
+.. _problem_set_4_unix:
 
-   Computer programming (often shortened to programming) is a process that leads from an
-   original formulation of a computing problem to executable programs. It involves
-   activities such as analysis, understanding, and generically solving such problems
-   resulting in an algorithm, verification of requirements of the algorithm including its
-   correctness and its resource consumption, implementation (or coding) of the algorithm in
-   a target programming language, testing, debugging, and maintaining the source code,
-   implementation of the build system and management of derived artefacts such as machine
-   code of computer programs. The algorithm is often only represented in human-parseable
-   form and reasoned about using logic. Source code is written in one or more programming
-   languages (such as C++, C#, Java, Python, Smalltalk, JavaScript, etc.). The purpose of
-   programming is to find a sequence of instructions that will automate performing a
-   specific task or solve a given problem. The process of programming thus often requires
-   expertise in many different subjects, including knowledge of the application domain,
-   specialized algorithms and formal logic.
-   Within software engineering, programming (the implementation) is regarded as one phase in a software development process. There is an on-going debate on the extent to which
-   the writing of programs is an art form, a craft, or an engineering discipline. In
-   general, good programming is considered to be the measured application of all three,
-   with the goal of producing an efficient and evolvable software solution (the criteria
-   for "efficient" and "evolvable" vary considerably). The discipline differs from many
-   other technical professions in that programmers, in general, do not need to be licensed
-   or pass any standardized (or governmentally regulated) certification tests in order to
-   call themselves "programmers" or even "software engineers." Because the discipline
-   covers many areas, which may or may not include critical applications, it is debatable
-   whether licensing is required for the profession as a whole. In most cases, the
-   discipline is self-governed by the entities which require the programming, and sometimes
-   very strict environments are defined (e.g. United States Air Force use of AdaCore and
-   security clearance). However, representing oneself as a "professional software engineer"
-   without a license from an accredited institution is illegal in many parts of the world.
+For each step of the Unix part of this problem set, please take a screenshot that shows us the command(s) you typed and the results. Save the screenshots as ``step1.jpg`` (or ``.png``), ``step2.jpg``, etc. Upload them all to `the Problem Set 4 Unix Exercises <https://umich.instructure.com/courses/108426/assignments/139254>`_ assignment on Canvas.
 
-**Instructions:** Write the code you want to save in the provided boxes, and click **save** for each one. The last code you have saved for each one by the deadline is what will be graded.
+Following the Unix exercises, there are a few Activecode windows and directions for Python exercises which comprise the second part of this problem set.
 
-**Note:** Remember, passing tests for a problem (``Pass``) does not ensure that the problem is 100% correct -- we can only test some things, to provide feedback as you go. Passing tests is necessary, but not always sufficient (enough to guarantee 100%).
+----------
 
-.. activecode:: ps_4_01
-       :language: python
+.. external:: problem_set_4_unix_1
 
-       **1.** Old McDonald had a farm. He records the animals on his farm in a dictionary called ``animals``.
+    1. Open the text editor you installed: Sublime Text. You will be creating and saving 4 different files to your ``Desktop``. 
+
+    **In the first file,** put the following:
+
+    .. sourcecode:: python
+
+        print "hello world"
+
+    Save the file as ``prog1.py``. You've now saved a Python program on your computer!
+
+
+
+    **In the second file,** put the following:
+
+    .. sourcecode:: python
+
+        def greeting(x):
+            return "hello " + x
+
+        print greeting("there")
+
+    Save this file as ``prog2.py``.
+    
+
+
+    **In the third file,** put the following:
+
+    :: 
+
+        this is a file
+        it has 
+        multiple
+        lines
+
+    Save this as ``unix_test_text.txt``.
+
+
+    **In the fourth file,** put the following:
+
+    ::
+
+        here is another file
+        what a wonderful
+        story this is
+
+    Save this file as ``another_text.txt``.
+
+    No need to take a screenshot of the file saving since you need them for the rest of the exercises, but if it's not working or is confusing, let staff know right away so we can help.
+
+.. external:: problem_set_4_unix_2
+
+    2. Open your Command Prompt program -- Terminal or Git Bash. ``cd`` to your ``Desktop``, as you saw in the chapter. Then type ``ls``. You should see a list of all file names on your Desktop, including the files you just saved in step 1. If you have any directories saved in your Desktop, you'll also see those names, of course. Take a screenshot that shows this worked for you.
+
+.. external:: problem_set_4_unix_3
+
+    3. You now want to make a new directory called ``new_class_programs`` in your ``Desktop``, and copy ``prog1.py`` and ``prog2.py`` into it. (Note that files will NOT disappear from your desktop when you've completed this step. There should be a copy of each file in both places.) 
+
+    Use Unix commands to do this, and take a screenshot of the commands you use + evidence they worked. (Hint: using commands like ``cd`` and ``ls`` and ``pwd`` can help you check what you've done when you're creating directories and copying files around! It will also be useful to remind yourself of what ``mkdir`` and ``cp`` do.) 
+
+    There is more than one perfectly reasonable way to complete this exercise, but all ways use a similar set of Unix commands.
+
+.. external:: problem_set_4_unix_4
+    
+    4. Now, you want to create a new directory *inside* the ``new_class_programs`` directory, called ``text_files``, and copy both ``unix_test_text.txt`` and ``another_text.txt`` into *that* folder. Use Unix commands to do this. 
+
+    When you've completed that, change directories to be inside that folder in your command prompt, and use the ``pwd`` command to show the full path of your location. (It should look *something like* this: ``/Users/Jackie/Desktop/new_class_programs/text_files``)
+
+    Take a screenshot showing that these things worked for you. Your screenshot should show the command you typed + evidence it worked.
+
+.. external:: problem_set_4_unix_5
+
+    5. You want to see what content is inside each of your files. Use a unix command to view the content of ``prog2.py`` before you open it. Take a screenshot to show that this worked.
+
+.. external:: problem_set_4_unix_6
+
+    6. You want to concatenate the 2 text files inside the ``text_files`` folder together, and save the result in a file called ``big_story.txt``, which should also be inside that directory. Use unix commands to do this. (Hint: You'll probably need more than 1 typed in the same line.)
+
+.. external:: problem_set_4_unix_7
+
+    7. You now want to see a list of all the files and/or directories inside your ``new_class_programs`` folder whose names include ``text``. Use Unix commands to do this. (Hint: You'll need pipe (``|``) and ``grep``, and ``ls``.)
+
+.. external:: problem_set_4_unix_8
+
+    8. Now that you have a bunch of practice with the unix command prompt, it's time to run Python natively on your computer. You've saved 2 Python files that are in your ``~/Desktop/new_class_programs`` directory. Go there in your command prompt, and run ``prog2.py`` by typing ``python prog2.py`` at the prompt. Take a screenshot of what happens. 
+
+    (Feel free to also play around -- you know a lot of programming now, and you can run it all on your computer, but it will look a little bit different in the command prompt than it did in the textbook.)
+
+.. note::
+
+    You may discover another way to run your python program directly from Sublime Text. We have found that this will not work for everything you need to do throughout the semester. Therefore, it's very important that you learn how to run your python programs from the unix command prompt, including figuring out how to connect to the right directory with the unix ``cd`` command. You will only get credit for these unix problems if your screenshots show that you ran the programs from the unix command prompt.
+
+.. note::
+
+  **This above is very important for the rest of the semester.** Starting with Problem Set 6, ALL of your problem set will be turned in via Canvas, and you will be writing code in a text editor and running it on your own computer. If you have any trouble running Python natively (on your computer), let an instructor know *right away.*
+
+.. _problem_set_4:
+
+In the next few questions, you’ll build components and then a complete program that lets people play Hangman.
+
+Below is an image from the middle of a game...
+
+.. image:: Figures/HangmanSample.JPG
+
+Your first task is just to understand the logic of the program, by matching up elements of the flow chart above with elements of the code below. In later problems, you'll fill in a few details that aren't fully implemented here.  
+
+You may find it helpful to run this program in order to understand it. It will tell you feedback about your last guess, but won't tell you where the correct letters were or how much health you have in the game, and it won't stop if you guess all the letters, so you can't *really* play with this version of the code here. (It can also go on for a very long time, until you exceed the time limit in the code window, unless you cancel it yourself.) Allowing the game to do those things (manage health, show you the word you've guessed so far) comes from code you will write in later problems!
+
+.. activecode:: ps_4_hangman_code_9
+  :hidecode:
+
+  **9.** This is the base code for a Hangman game. (If you have never played Hangman, you can go to ``https://en.wikipedia.org/wiki/Hangman_(game)`` for an explanation of what it is.)
+  ~~~~
+  def blanked(word, guesses):
+      return "blanked word"
+
+  def health_prompt(x, y):
+      return "health prompt"
+
+  def game_state_prompt(txt ="Nothing", h = 6, m_h = 6, word = "HELLO", guesses = ""):
+      res = "\n" + txt + "\n"
+      res = res + health_prompt(h, m_h) + "\n"
+      if guesses != "":
+          res = res + "Guesses so far: " + guesses.upper() + "\n"
+      else:
+          res = res + "No guesses so far" + "\n"
+          res = res + "Word: " + blanked(word, guesses) + "\n"
+
+      return(res)
+
+  def main():
+      max_health = 3
+      health = max_health
+      secret_word = raw_input("What's the word to guess? (Don't let the player see it!)")
+      secret_word = secret_word.upper() # everything in all capitals to avoid confusion
+      guesses_so_far = ""
+      game_over = False
+
+      feedback = "let's get started"
+
+      # Now interactively ask the user to guess
+      while not game_over:
+          prompt = game_state_prompt(feedback, health, max_health, secret_word, guesses_so_far)
+          next_guess = raw_input(prompt)
+          next_guess = next_guess.upper()
+          feedback = ""
+          if len(next_guess) != 1:
+              feedback = "I only understand single letter guesses. Please try again."
+          elif next_guess in guesses_so_far:
+              feedback = "You already guessed that"
+          else:
+              guesses_so_far = guesses_so_far + next_guess
+              if next_guess in secret_word:
+                  if blanked(secret_word, guesses_so_far) == secret_word:
+                     feedback = "Congratulations"
+                     game_over = True
+                  else:
+                      feedback = "Yes, that letter is in the word"
+              else: # next_guess is not in the word secret_word
+                  feedback = "Sorry, " + next_guess + " is not in the word."
+                  health = health - 1
+                  if health <= 0:
+                      feedback = " Waah, waah, waah. Game over."
+                      game_over= True
+
+      print(feedback)
+      print("The word was..." + secret_word)
+
+  import sys #don't worry about this line; you'll understand it next week
+  sys.setExecutionLimit(60000)     # let the game take up to a minute, 60 * 1000 milliseconds
+  main() # invoke the main() game function
+
+See the flow chart below for a better understanding of what's happening in the code for the Hangman game overall.Your first task is just to understand the logic of the program, by matching up elements of the flow chart above with elements of the code below. In later problems, you'll fill in a few details that aren't fully implemented in the code above.
+ 
+.. image:: Figures/HangmanFlowchart.jpg
+
+.. shortanswer:: ps4_1_a
+
+   What line(s) of code in the above code window do what's mentioned in the flowchart's Box 1? 
+
+.. shortanswer:: ps4_1_b
+
+   What line(s) of code do what's mentioned in Box 2?
+
+.. shortanswer:: ps4_1_c
+
+   What line(s) of code do what's mentioned in Box 3?
+
+.. shortanswer:: ps4_1_d
+ 
+   What line(s) of code do what's mentioned in Box 4?
+
+.. shortanswer:: ps4_1_e
+
+   What line(s) of code do what's mentioned in Box 5?
+
+.. shortanswer:: ps4_1_f
+
+   What line(s) of code do what's mentioned in Box 6?
+
+.. shortanswer:: ps4_1_g
+
+   What line(s) of code do what's mentioned in Box 7?
+
+.. shortanswer:: ps4_1_h
+
+   What line(s) of code do what's mentioned in Box 8?
+
+.. shortanswer:: ps4_1_i
+
+   What line(s) of code do what's mentioned in Box 9?
+
+.. shortanswer:: ps4_1_j
+
+   What line(s) of code do what's mentioned in Box 10?
+
+.. shortanswer:: ps4_1_k
+
+   What line(s) of code do what's mentioned in Box 11?
+
+
+.. activecode:: ps_4_10
+   :language: python
+   :autograde: unittest
+   :hidecode:
+
+   **10.** The next task you have is to create a correct version of the ``blanked`` function. It should take 2 inputs: a word, and a string of the letters that have been guessed already. 
+
+   It should return a string with the same number of characters as the word, but with the UNrevealed characters replaced by an underscore (a ``_``). 
+
+   **HINT:** Iterate through the letters in the word, accumulating characters as you go. If you try to iterate through the guesses, it's harder.
+
+   ~~~~   
+   # Define your function here.
+
+
+   # Sample calls to this function
+   # (Remember, these won't work until you define the function blanked)
+   print blanked("hello", "elj")
+   #should output _ell_
+   print blanked("almost","amsvr")
+   # should output a_m_s_ 
+
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(blanked('hello', 'elj'), "_ell_", "testing blanking of hello when e,l, and j have been guessed.")
+      def testTwo(self):
+         self.assertEqual(blanked('hello', ''), '_____', "testing blanking of hello when nothing has been guessed.")
+      def testThree(self):
+         self.assertEqual(blanked('ground', 'rn'), '_r__n_', "testing blanking of ground when r and n have been guessed.")
+      def testFour(self):
+         self.assertEqual(blanked('almost', 'vrnalmqpost'), 'almost', "testing blanking of almost when all the letters have been guessed.")
+
+   myTests().main()
+
+.. activecode:: ps_4_11
+    :autograde: unittest
+    :hidecode:
+
+    **11.** Now you have to create a good version of the ``health_prompt`` function: Define a function called ``health_prompt``. The first parameter should be the current health the player has (an integer), and the second parameter should be the maximum health a player can have (an integer). The function should return a string with ``+`` signs for the current health, and ``-`` signs for the health that has been lost so far.
+    ~~~~
+    # Define your function here.
+
+
+
+
+    # Sample invocations of the function.
+
+    print health_prompt(3, 7)
+    #this statement should produce the output
+    #health: +++----
+
+    print health_prompt(0, 4)
+    #this statement should produce the output
+    #health: ----
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+      def testOne(self):
+         self.assertEqual(health_prompt(3,7), "+++----", "Testing health_prompt(3,7)")
+      def testTwo(self):
+         self.assertEqual(health_prompt(0,4), "----", "Testing health_prompt(0,4)")
+      def testThree(self):
+         self.assertEqual(health_prompt(5,5), "+++++", "Testing health_prompt(5,5)")
+
+    myTests().main()
+
+
+.. external:: problem_set_4_12
+
+   **12.** You have all the pieces of a fully functioning hangman program! Now you can put together a program on your own computer to play Hangman.
+
+   In the below code window is all of the code for the hangman program, *except* for the two functions you just defined in problems 1 and 2. (It does not include the special lines allowing it to run in the textbook, and it does not have those function definitions, so this code will not run as expected! It's just provided here for you to copy.)
+
+   Copy your two function definitions, from the last two problems, into a *Python file* on your computer, just like ``prog1.py`` from last week, except a much more complicated program. Save that file as ``hangman.py``.
+
+   Then copy all the code in the box below into that file, too, underneath the function definitions you just copied in.
+
+   (This will let you play the game with a friend -- after you enter in a word, a bunch of blank lines will print out, and then when they get the computer to play, they won't see the word you typed!)
+
+   Save this Python program, and run it with the command line: ``cd`` to the correct directory where you saved the file, and then type ``python hangman.py``, as you learned last week.
+
+   **Submit** your python file called ``hangman.py`` AND a screenshot of you successfully running the code and playing the game to `Problem Set 4 Unix Exercises (same as above) <https://umich.instructure.com/courses/108426/assignments/139254>`_ on Canvas.
+
+   .. sourcecode:: python
      
-       Write code to look up the number of chickens that Old McDonald recorded and assign it to the variable ``num_chickens``.
+      def game_state_prompt(txt ="Nothing", h = 6, m_h = 6, word = "HELLO", guesses = ""):
+          res = "\n" + txt + "\n"
+          res = res + health_prompt(h, m_h) + "\n"
+          if guesses != "":
+              res = res + "Guesses so far: " + guesses.upper() + "\n"
+          else:
+              res = res + "No guesses so far" + "\n"
+          res = res + "Word: " + blanked(word, guesses) + "\n"
+   
+          return(res)
+
+      def main():
+          max_health = 3
+          health = max_health
+          secret_word = raw_input("What's the word to guess? (Don't let the player see it!)")
+          secret_word = secret_word.upper() # everything in all capitals to avoid confusion
+          guesses_so_far = ""
+          game_over = False
+
+          feedback = "let's get started"
+
+          # Now interactively ask the user to guess
+          while not game_over:
+              prompt = game_state_prompt(feedback, health, max_health, secret_word, guesses_so_far)
+              next_guess = raw_input(prompt)
+              next_guess = next_guess.upper()
+              feedback = ""
+              if len(next_guess) != 1:
+                  feedback = "I only understand single letter guesses. Please try again."
+              elif next_guess in guesses_so_far:
+                  feedback = "You already guessed that"
+              else:
+                  guesses_so_far = guesses_so_far + next_guess
+                  if next_guess in secret_word:
+                      if blanked(secret_word, guesses_so_far) == secret_word:
+                          feedback = "Congratulations"
+                          game_over = True
+                      else:
+                          feedback = "Yes, that letter is in the word"
+                  else: # next_guess is not in the word secret_word
+                      feedback = "Sorry, " + next_guess + " is not in the word."
+                      health = health - 1
+                      if health <= 0:
+                          feedback = " Waah, waah, waah. Game over."
+                          game_over= True
+
+          print(feedback)
+          print("The word was..." + secret_word)
+
+      main()
 
-       Write code to add the key-value pair ``"yak":3`` to the ``animals`` dictionary.
-
-       Write code to increase the value for the key ``"dogs"`` in the ``animals`` dictionary by 1. Do not hard code values -- this code should work no matter what the original value associated with key ``"dogs"`` is. You can assume that this key already exists in the dictionary. 
-       ~~~~
-       animals = {'cows': 2, 'chickens': 8, 'pigs': 4, 'mice': 72, 'cats': 9,'dogs': 1}
-       =====
-
-       from unittest.gui import TestCaseGui
-
-       class myTests(TestCaseGui):
-
-           def testOne(self):
-               self.assertEqual(num_chickens, animals['chickens'], "Testing that num_chickens has been assigned the value of the key 'chickens'")
-           def testTwo(self):
-               self.assertEqual(animals['yak'], 3, "Testing to see that 'yak' is a key in the dictionary animals with the correct value")
-           def testThree(self):
-               self.assertEqual(animals['dogs'], 2, "Testing that the value of 'dogs' is now 2 in the dictionary animals")
-
-       myTests().main()
-
-
-.. activecode:: ps_4_02
-       :language: python
-
-       **2.** Here's another dictionary, ``nd``. Write code to print out each key-value pair in it, one key and its value on each line. Your output should look somewhat like this (remember, the order may be different!):
-
-       ::
-       
-           autumn spring
-           4 seasons
-           23 345
-           well spring
-
-       **Hint:** Printing things with a comma, e.g. ``print "hello", "everyone"`` will print out those things on the same line with  a space in between them: ``hello everyone``.
-
-       Then, write code to increase the value of key ``"23"`` by 5. Your code should work no matter what the value of the key ``"23"`` is, as long as its value is an integer.
-
-       Finally, write code to print the value of the key ``"well"``. Your code should work no matter what the value of the key "well" is.
-       ~~~~
-       nd = {"autumn":"spring", "well":"spring", "4":"seasons","23":345}
-       =====
-
-       from unittest.gui import TestCaseGui
-
-       class myTests(TestCaseGui):
-
-          def testOne(self):
-             self.assertEqual(nd["23"], 350, "Testing that the value associated with the key '23' is 350")
-             self.assertIn("autumn spring", self.getOutput(), "Testing output (Don't worry about actual and expected values).") 
-             self.assertIn("well spring", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
-             self.assertIn("4 seasons", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
-             self.assertIn("23 345", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
-
-       myTests().main()
-
-
-.. activecode:: ps_4_03
-       :language: python
-       :available_files: about_programming.txt
-
-       **3.** We've included the same file in this problem set that we included in the last problem set -- ``about_programming.txt``. Write code to open the file and print out each line in the file that has the string ``program`` in it. (Note that each line with the string ``program`` in it should only print out once, even if the string ``program`` occurs in it more than once.) Then, write code (or edit the code that you already wrote!) to accumulate a list of the lines in the file that include the string ``program``. Save that list in a variable ``program_lines``.
-       ~~~~
-       # Write your code here!
-       =====
-
-       from unittest.gui import TestCaseGui
-
-       class myTests(TestCaseGui):
-
-          def testOne(self):
-             tmp = []
-             for l in open("about_programming.txt").readlines():
-                if "program" in l:
-                   tmp.append(l)
-             self.assertEqual(program_lines, tmp, "Testing that program_lines is a list of lines that contain the string 'program'")
-
-          def testOneA(self):
-              self.assertIn('open', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-              self.assertIn('other technical professions in that programmers, in general, do not need to be licensed', self.getOutput(), "Testing output (Don't worry about actual and expected values).")
-
-       myTests().main()
-
-.. activecode:: ps_4_04
-       :language: python
-
-       **4.** Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
-       ~~~~
-       nums = {}
-       num_words = ["two","three","four","seventeen","eight","not_a_number"]
-       # Write your code here.
-
-       =====
-
-       from unittest.gui import TestCaseGui
-
-       class myTests(TestCaseGui):
-
-          def testOne(self):
-             self.assertEqual(nums["two"], 0, "Testing that the key 'two' has been assigned the value of 0.")
-             self.assertEqual(type(nums["seventeen"]), type(3), "Testing that the key 'seventeen' has been assigned a value whose type is an integer.")
-             self.assertEqual(sorted(nums), sorted({"two": 0, "three": 0, "four": 0, "eight": 0, "seventeen": 0, "not_a_number": 0}), "Testing that the contents of nums is accurate.")
-
-          def testOneA(self):
-             self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-
-       myTests().main()
-
-.. activecode:: ps_4_05
-       :language: python
-
-       **5.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
-       ~~~~
-       s = "Number of slams in an old screen door depends upon how loud you shut it, the count of slices in a bread depends how thin you cut it, and amount 'o good inside a day depends on how well you live 'em. All depends, all depends, all depends on what's around ya."
-
-       # Write your code here.
-        
-       =====
-
-       from unittest.gui import TestCaseGui
-
-       class myTests(TestCaseGui):
-
-          def testOne(self):
-             self.assertEqual(abc, 'depends', "testing whether abc is set correctly")
-
-          def testOneA(self):
-             self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-
-       myTests().main()
-
-.. activecode:: ps_4_06
-       :language: python
-
-       **6.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
-       ~~~~
-       def subtract_five(inp):
-           print inp - 5
-           return None
-
-       y = subtract_five(9) - 6
-
-       =====
-
-       from unittest.gui import TestCaseGui
-
-       class myTests(TestCaseGui):
-
-          def testOne(self):
-             self.assertEqual(y, -2, "Testing if y is -2")
-
-       myTests().main()
-
-.. activecode:: ps_4_07
-       :language: python
-
-       **7.** Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
-       ~~~~ 
-       # We've started you off with the first line...
-       def change_amounts(num_here):
-           pass # delete this line and put in your own code for the body of the function.
-
-       =====
-
-       from unittest.gui import TestCaseGui
-
-       class myTests(TestCaseGui):
-
-          def testOne(self):
-             self.assertEqual(change_amounts(9), 11, "Testing if change_amounts(9) equals 11")
-             self.assertEqual(change_amounts(12), 17, "Testing if change_amounts(12) equals 17")
-
-       myTests().main()
-
-
-.. activecode:: ps_4_08
-       :language: python
-
-       **8.** Here's another bit of code that generates an error. Think about what's going on with the code below that causes a problem. Why does it cause an error? Write a comment explaining why an error occurs. Then change line 5 to print out the result of an expression that invokes the function ``change_amounts`` and evaluates to ``7``. (So line 5 should be a print statement whose result is printing the integer ``7``.)
-       ~~~~
-       def change_amounts(yp):
-           n = yp - 4
-           return n * 7
-
-       print yp
-
-       ====
-
-       from unittest.gui import TestCaseGui
-
-       class myTests(TestCaseGui):
-
-           def test_output(self):
-               self.assertIn("7", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
-
-       myTests().main()
 
 .. external:: ps4_dyu
 
-       Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131287>`_ on Canvas.
+    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139242>`_ assignment on Canvas.

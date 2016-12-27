@@ -12,13 +12,28 @@
     :linenothreshold: 500
 
 
-Activities through 12/01
+Activities through 12/02
 ========================
+
+.. note::
+
+  A note on this week's material. 
+
+  This week, we will cover the **Pyglet** library, which is one of several Python libraries that allow you to write games and interactive audio/visual programs in Python. This library also deals with the concepts of **event-driven loops**, which, if you go on to study JavaScript and other front-end web development, you'll see frequently. 
+
+  The Pyglet material this week -- the textbook reading, and the problem set, the lectures and discussion section -- is optional. (The reading response and DYU are the same as always.) If you choose to spend your week on Recursion and your final project preparation and not do these things, that's fine. However, if you study Human-Computer Interaction, you may find the Pyglet material especially interesting and useful; this week is for you! Even if you don't, you may find this material intriguing and fun. 
+
+  You are of course welcome to attend lectures and section but choose not to complete the Pyglet problem set. If you do, you're expected to do the lecture prep that corresponds with them -- otherwise, it will be harder to participate in lecture!
+
+  If you do complete the Pyglet problem set, its points count the same way as any other problem set. So if you did not do as well as you wanted to on more than 2 problem sets, this is also a chance to make up for one of those scores.
+
+  With that in mind...
 
 * **Before class Monday 11/28:**
 
+  * **IF YOU CHOOSE TO STUDY PYGLET MATERIAL:**
   * Read the below listed sections of :ref:`Pyglet <pyglet_chap>` (all except for the last subchapter on the Pong game), and install the ``pyglet`` library with the pip installer.
-  * Download the `Pyglet Materials <https://umich.instructure.com/courses/105657/files/folder/Pyglet%20Materials>`_ folder from Canvas and try out some of the code.
+  * Download the `Pyglet Materials <https://umich.instructure.com/courses/108426/files/folder/Pyglet%20Materials>`_ folder from Canvas and try out some of the code.
 
 .. usageassignment::
   :subchapters: Pyglet/Pyglet, Pyglet/pygletWindow, Pyglet/eventListener, Pyglet/windowContents, Pyglet/sounds, Pyglet/jinglingSquare, Pyglet/schedulingEvents
@@ -29,19 +44,15 @@ Activities through 12/01
 
 * **Before class Wednesday 11/30:**
 
+  * **IF YOU CHOOSE TO STUDY PYGLET MATERIAL:**
   * Read the **Pong** subchapter of :ref:`Pyglet <pyglet_chap>`, and review the earlier sections as necessary. You may want to check out the ``basepong.py`` file in the Pyglet Materials folder you downloaded.
   * Inside the Canvas **Pyglet Materials** folder (Files > Pyglet Materials) that you downloaded for Monday, there is a PDF called **LecturePongQuestions.pdf**. Try to answer questions 1-11 before class Wednesday, and bring a printed copy of the questions. (They are for you, you do not have to turn them in!) We will go over answers to those questions in class, and work on answering more of questions during lecture.
 
-.. usageassignment::
-  :subchapters: Pyglet/Pong
-  :assignment_name: Prep 21
-  :deadline: 2016-11-30 18:40
-  :pct_required: 50
-  :points: 50
-
 * **Before Sunday 12/04 at 11:59 PM:**
 
-  * Complete and submit your :ref:`Problem Set 11 <problem_set_11>`, and save an answer to your Demonstrate Understanding for this week (linked below).
+  * Complete and submit your :ref:`Problem Set 10 <problem_set_10>` (the problem set from last week's Recursion material).
+  * If you chose to do the Pyglet problem set, complete and submit your :ref:`Problem Set 11 <problem_set_11>`.
+  * Save an answer to your Demonstrate Understanding for this week (linked below).
   * Complete :ref:`Reading Response 12 <reading_response_12>`.
 
 
@@ -52,7 +63,7 @@ This Week's Reading Responses
 
 .. external:: rr_12
 
-  `Reading Response 12 <https://umich.instructure.com/courses/105657/assignments/131311>`_ on Canvas.
+  `Reading Response 12 <https://umich.instructure.com/courses/108426/assignments/139261>`_ on Canvas.
 
 
 .. _problem_set_11:
@@ -60,7 +71,7 @@ This Week's Reading Responses
 Problem Set
 -----------
 
-Go `HERE to see the Problem Set 11 assignment <https://umich.instructure.com/courses/105657/assignments/131297>`_, where you can find the files you need to download, and where you can submit your completed problem set file for this assignment.
+Go `HERE to see the Problem Set 11 assignment <https://umich.instructure.com/courses/108426/assignments/139252>`_, where you can find the files you need to download, and where you can submit your completed problem set file for this assignment.
 
 .. note::
 
@@ -79,7 +90,7 @@ Go `HERE to see the Problem Set 11 assignment <https://umich.instructure.com/cou
 
     To run this problem set, you will need to download all of the files in the folder Files > Problem Sets > PS11. 
 
-    You should edit and submit the ``106_ps11.py`` file, which should run if it is in a directory with all the other files we provided.
+    You should edit and submit the ``506_ps11.py`` file, which should run if it is in a directory with all the other files we provided.
 
     **Also note:** don't worry about the score in the upper right-hand corner if it does not work for you. On a number of computers we have found that it does not work. You are welcome to play around with it; it will not affect your grade.
 
@@ -127,7 +138,9 @@ Go `HERE to see the Problem Set 11 assignment <https://umich.instructure.com/cou
 
 	Hints on how to do this:   
 	(a) Make the Brick subclass of BallDeflector 
-	(b) Make the bricks be instances of the new Brick class instead of the BallDeflector class (call the Brick constructo instead of the BallDeflector constructor)   
+
+	(b) Make the bricks be instances of the new Brick class instead of the BallDeflector class (call the Brick constructor instead of the BallDeflector constructor) 
+    
 	(c) In the Brick class, override the ``deflect_ball()`` method: call the parent class' ``deflect_ball()`` method, so that the balls deflects normally, but also remove the brick from game instance's list of ``game_objects`` after that. 
 
 	That way, when the game tells all of it's game_objects to display themselves, this brick won't display. Also, when the ball tries to see if it's collided with any other game objects, it won't check with this brick any more.
@@ -142,4 +155,4 @@ Go `HERE to see the Problem Set 11 assignment <https://umich.instructure.com/cou
 
 .. external:: ps11_dyu
 
-    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131283>`_ assignment on Canvas.
+    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139239>`_ assignment on Canvas.

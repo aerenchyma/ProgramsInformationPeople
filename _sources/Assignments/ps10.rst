@@ -1,6 +1,6 @@
 :orphan:
 
-..  Copyright (C) Paul Resnick.  Permission is granted to copy, distribute
+..  Copyright (C) Jackie Cohen, Stephen Oney, Paul Resnick.  Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
@@ -8,36 +8,36 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-.. highlight:: python
-    :linenothreshold: 500
-
-
-Activities through 11/27 (through T-Giving Break)
+Activities through 11/27 (Through T-Giving Break)
 =================================================
 
-* **Before class Monday 11/21:**
+* **By Monday 11/21:**
 
-  * Read about the :ref:`Facebook API <fb_api_exercises>` and check out the slides on Canvas > Files > Lecture Slides > FB Graph API (especially slide #16!)
-  * Take a look at the `Facebook Graph API overview <https://developers.facebook.com/docs/graph-api/overview>`_
-  * Try out the `Facebook Graph API Explorer <https://developers.facebook.com/tools/explorer/>`_. You should try at least a couple different requests in the explorer and explore the resulting data (try copying it into jsoneditoronline.org!). 
-  * Note that if you don't use Facebook normally, you can get data from our SI 106 Facebook group by replacing ``me`` with the 106 Facebook group ID. Check out the problem set to find the 106 group ID! (We are not displaying it here because this page is publicly available, and our group is private to the class.)
-  * Read about `Paging with the Facebook API <https://developers.facebook.com/docs/graph-api/using-graph-api#paging>`_, focusing on **Offset-based pagination**. Don't worry if you don't understand all of this -- this is to give you an idea of what the possibilities are. There is an example of code that uses Facebook paging which you can look at in the ``fbapi.py`` code on Canvas.
-  * By Monday 11/21, we'll have available on Canvas a possible solution for the challenge problem on last week's Problem Set -- code for a Flickr tag recommender.
-
+  * Read the :ref:`Recursion <recursion_chap>` chapter and try the included exercises. This is some of the most challenging, intellectually advanced (and blow-your mind cool and interesting) material you will see this semester. Reading about it before the class session on Monday will be really helpful.
+  * You may want to review :ref:`Python modules <modules_chap>`. This week in the problem set, you will be using an external module that we have provided as a file that you will put in the same directory as the file you are running.
 
 .. usageassignment::
-  :subchapters: FacebookAPI/FBAPI
+  :subchapters: Recursion/WhatIsRecursion, Recursion/CalculatingtheSumofaListofNumbers, Recursion/TheThreeLawsofRecursion, Recursion/ConvertinganIntegertoaStringinAnyBase, Recursion/intro-VisualizingRecursion, Recursion/SierpinskiTriangle 
   :assignment_name: Prep 20
-  :deadline: 2016-11-21 18:40
-  :pct_required: 50
+  :deadline: 2016-11-28 22:40
+  :pct_required: 65
   :points: 50
 
-* **Wednesday's lecture will be time to work on problem sets, with a few staff members around.** We will not have discussion section this week. We will not have office hours during Thanksgiving break, but we will be online on the Facebook group when we can be! Happy Thanksgiving break.
+
+* **No class Wednesday 11/23.** Also no discussion section this week, and no office hours during Thanksgiving break, although staff will be online intermittently to post on the FB group and so on!
 
 * **Before Sunday 11/27 at 11:59 PM:**
 
-  * Complete and submit your :ref:`Problem Set 10 <problem_set_10>`, and save an answer to your Demonstrate Understanding for this week (linked below).
   * Complete :ref:`Reading Response 11 <reading_response_11>`.
+
+* **Before class Monday 11/28, after Thanksgiving break:** Turn in your `Final Project plan <https://umich.instructure.com/courses/108426/assignments/139250>`_ on Canvas!
+
+
+* PS 10, on Recursion, is not due Sunday 11/27, it is due **Sunday, 12/4** at 11:59 PM. 
+* Next week, we will release another problem set, which will be *optional.* It will be especially interesting for HCI-oriented students who want to understand the architecture of how event-driven interactive GUIs are programmed. You'll learn more about that soon. That will also be due (if you choose to do it) on **Sunday, 12/4**.
+* Your next DYU will *also* be due Sunday 12/4 at 11:59 PM. You can look ahead on Canvas to do these if you wish, and we will also be posting the *following* week of material shortly, on event-drive interactive GUIs.
+
+* **The only assignments due immediately after Thanksgiving break are your Final Project plan and a reading response.** However, it is probably a good idea to look at this problem set as soon as you can so you can prepare/arrange your next two weeks of work for this class!
 
 This Week's Reading Responses
 -----------------------------
@@ -46,8 +46,7 @@ This Week's Reading Responses
 
 .. external:: rr_11
 
-  `Reading Response 11 <https://umich.instructure.com/courses/105657/assignments/131310>`_ on Canvas.
-
+  `Reading Response 11 <https://umich.instructure.com/courses/108426/assignments/139260>`_ on Canvas.
 
 
 .. _problem_set_10:
@@ -55,194 +54,166 @@ This Week's Reading Responses
 Problem Set
 -----------
 
-Go `HERE to see the Problem Set 10 assignment <https://umich.instructure.com/courses/105657/assignments/131296>`_, where you can find the file you need to download and edit, and where you can submit your file for this assignment.
+Go `HERE to see the Problem Set 10 assignment <https://umich.instructure.com/courses/108426/assignments/139251>`_, where you can find direction to the files you need to download and edit, and where you can submit your file for this assignment.
 
 .. note::
 
-    Reminder: we do not debug code when grading, so we cannot grade code that does not run! Make sure your code runs before submitting it -- you should comment out any code that does not.
+  Reminder: we do not debug code when grading, so we cannot grade code that does not run! Make sure your code runs before submitting it -- you should comment out any code that does not.
+
+.. external:: ps_10_preamble
+
+  **IMPORTANT PREAMBLE**
+
+  For this problem set, we have provided 2 files: ``506_ps10.py``, your usual code file to edit, and ``os_506.py``.
+
+  ``os_506`` is an external module you'll be using in your problem set -- you can see that your code file imports ``os_506`` at the top. But it's one you'll save in the same directory, rather than one you install with pip. 
+
+  This module provides a 'fake file system' for you to run the code on your problem set with. That is, there are some 'simulated' directories and subdirectories and file names and file sizes.  You'll be writing code that can actually get information about your computer's file system, *but* in order to test it, make the problem set easy, make sure everyone's answers are the same, and ensure that you can't hurt your computer while you try stuff out, we're using **os_506** instead of the raw **os** module which allows you to interact with the files on your computer. At the end of the problem set, we encourage you to change the value of one variable, so that your functions will run against your computer's file system, rather than the fake one.
+
+
+  **You should not change ANY code in the os_506 file. It's very important that it stay exactly as you download it, the problem set depends on it! You also should not submit it to Canvas -- we will already have it when we run your submitted problem set.**
+
+You do not have to read the code in ``os_506.py``, though you are welcome to look at if you want. Like other modules you have imported, you can understand it just by understanding the functions that it makes available to you.
+
+
+-  ``join`` - takes two parts of a file system path and joins them according to the operating system's conventions. example: ``join('/users/soney', 'myProg.py')`` -> ``'/users/soney/myProg.py'``. On Windows, it might use ``\`` or ``\\`` instead of ``/`` as the character in between the two joined parts.
+
+- ``splitext`` - will separate an extension from a file name. For example, the invocation ``os.path.splitext('/usr/soney/file.txt')`` returns ``('/usr/soney/file', '.txt')``
+
+- ``listdir(path)`` - returns a list of all the filenames in a directory, given a string representing a path to a directory.
+
+- ``isfile(path)`` - returns True if the given path points to a file (not a directory)
+
+- ``isdir(path)`` - returns True if the given path points to a directory (not a file)
+
+- ``getsize(path)`` - returns the numeric size (in bytes) of a file. It only works if isfile(path) returns True.
 
 .. note::
 
-    For some of the problems on this Problem Set, you'll have to write your own tests, which should check whether the problems follow the instructions! 
+    In order to invoke any of these functions inside your problem set file, you'll need to have saved ``os_506.py`` in the same directory, and precede the invocations with that name, e.g. ``os_506.listdir('/usr/soney')``.
 
-    We suggest reading through the whole PSet first, and writing Unit Tests for each problem for which you need to do so, and *then* solving the problems themselves (test-driven development!).
+There is also one variable defined in the module that you will use.
 
-    It's a good idea to include, as the last argument to each of your tests, a brief, clear English description of what the test is checking for! e.g. "Testing whether the value of fb_data is a Python dictionary".
+- ``USE_REAL_FILESTYSTEM``. When this is set to True, the operations in the module will use the computer's real file system. When it is set to False, it will use the fake filesystem.
+
+Below you can see the directory and file structure in the fake (simulated) file system. For example, there is a file detroit.jpg (size 800) in the directory /Users/steve/Images/. The full path to it would be ``/Users/steve/Images/detroit.jpg``. If you called ``os_506.getsize(/Users/steve/Images/detroit.jpg)`` you would get a return value of 800. ::
+
+    Applications/:
+        Atom.app/:
+            (empty)
+        Sublime.app/:
+            (empty)
+    Users/:
+        steve/:
+            Images/:
+                detroit.jpg: 800
+                michigan_stadium.jpeg: 1000
+            Movies/:
+                convocation.mov: 60000
+                graduation.mov: 80000
+            Desktop/:
+                506/:
+                    ps10.py: 110
+                106/:
+                    ps10.py: 100
+        paul/:
+            Images/:
+                heinz_field.jpg: 900
+            code/:
+                runestone/:
+                    runestone_client.js: 599
+            Papers/:
+                paper1.pdf: 120
+                paper6.pdf: 140
+                paper3.pdf: 130
+        jackie/:
+            Documents/:
+                finalexam1.docx: 600
+    106_solutions/:
+        (empty)
+    ps10_solution.py: 500
+    506_solutions/:
+        (empty)
 
 .. external:: ps_10_01
-    
-    **PROBLEM 1**
+  
+  **PROBLEM 1**
 
-    We've provided a file ``samplepost.txt`` that contains a sample of data representing a Facebook post. (It won't have the same data that your Facebook posts have, of course, but it will have a very similar structure!) Using this for data investigation (try copying and pasting it into jsoneditoronline.org!), fill in the definition of the class ``Post`` to hold information about one post on Facebook.
+  Warm up: this problem doesn't use the file system operations. Fill in the definition of the ``sum`` function. It should accept a list of numbers, and return their sum.Your implementation may or may not be recursive (but it should not use the built in ``sum`` function in Python).
 
-    We've provided a skeleton of the ``Post`` class with some code:
+.. external:: ps_10_02
+  
+  **PROBLEM 2**
 
-    .. sourcecode:: python
+  We've provided a dictionary ``extension_types``: 
 
-        class Post():
-            """object representing status update"""
-            def __init__(self, post_dict={}):
-                if 'message' in post_dict:
-                    self.message = post_dict['message']
-                else:
-                    self.message = ""
-                
-            def positive(self):
-                return None
-                           
-            def negative(self):
-                return None
+  .. sourcecode:: python
 
-            def emo_score(self):
-                return None
+    extensionTypes = {
+    'movie': ['.mp4','.mov'],
+    'image': ['.jpg','.jpeg','.png','.bmp','.svg'],
+    'document': ['.docx','.pdf','.txt'],
+    'code': ['.py','.python','.java','.js']
+    }
 
-    Add to that code in your ``106_ps10.py`` file so that it fulfills the following instructions.
+  The keys in ``extensionTypes`` are broad media categories that could be on a computer. The values associated with those keys are *lists* of strings: file extensions that fall under those media categories.
 
-    If the post dictionary has a ``'comments'`` key, set an instance variable ``self.comments`` to hold the list of comment dictionaries you extract from ``post_dict``. Otherwise, set ``self.comments`` to be an empty list: ``[]``.
+  In this problem, you should complete a definition of the ``getFileType`` function, which accepts as input a ``path`` string, which should be a full path to a *file* (not a directory), and returns the string representing the media category that that file falls into (based on the ``extensionTypes`` declared above). Your implementation should not be recursive -- this function is a tool for the recursive function you will write later.
 
-    Note that something similar has already been done for the contents (``message``) of the original post, so you can use that as a template! Extracting the list of comment dictionaries from a post_dict is a little bit harder. Take a look at the sample of what a ``post_dict`` looks like in the file samplepost.txt / using jsoneditoronline in order to do nested data investigation.
+  Note that the ``os_506.splitext`` function will separate an extension from a file name. For example, the invocation ``os.path.splitext('/usr/soney/file.txt')`` returns ``('/usr/soney/file', '.txt')`` -- this may be useful to you here!
 
-    Now, similarly, *if* the post has any likes, set ``self.likes`` to the value of the list of likes dictionaries. Otherwise, if there are no ``'likes'``, set ``self.likes`` to hold an empty list.
+  We've provided some code that uses this to start out your function definition with, as follows:
 
-    Finally, finish defining three methods of the class Post:
+  .. sourcecode:: python
 
-    ``positive`` should return the number of words in the message that are in the list of positive words called ``pos_ws`` (provided in our code)
+    def getFileType(path):
+        filename,extension = os_506.splitext(path)
 
-    ``negative`` should return the number of words in the message that are in the list of negative words called ``neg_ws`` (provided in our code)
+        # TODO: Fill this in!
 
-    ``emo_score`` should return an integer: the difference between the positive and negative scores for that post. 
+        # If we can't find a matching category, return 'unknown' as a default
+        return 'unknown'
 
-    (Careful: "disgusting" and "disgust", for example, are 2 different words -- so if the word "disgust" is in a message, it should only get 1 negative count for that, not two.)
-
-    We have provided tests for this problem.
-
-    .. note::
-
-        Our tests for this problem do not include punctuation. We are not being fussy in our tests about whether you count an emotive word like beautiful if it has an exclamation point after it, as in the sentence "The sunset is beautiful!". You do not have to worry about accounting for punctuation for the sake of the problem set.
-
-        However, if you care about accuracy in your analyses, you may decide you do want to be fussy about that. Feel free to add a test to check for that. Here's a hint on how you might write code that would pass a stricter test.
-
-        1. If you split a string wherever there are spaces, you may get a string like "beautiful!" as one of the words
-        2. You can write a function that will strip punctuation from any string. ``s = s.replace("!", "")`` will remove all occurrences of ! and reassign the resulting string to the same variable s. You can repeat that for other punctuation symbols like commas and periods.
-        3. After stripping punctuation, you can check whether the string is in the list of positive words.
-
-
-.. activecode:: ps_10_02
-
-    **PROBLEM 2**
-
-    We've provided the following code in your ``106_ps9.py`` file, where you'll need it for the remainder of the problem set, including our tests. (Don't change it!) In this code window, add comments that describe what these lines of code do.
-    ~~~~
-    sample = open('samplepost.txt').read()
-    sample_post_dict = json.loads(sample)
-    p = Post(sample_post_dict)
 
 .. external:: ps_10_03
-    
-    **PROBLEM 3**
-
-    Now, get data from your last 100 posts on Facebook (or the last 100 posts in the 106 Facebook group).
-
-    We've provided some code here for you to use in order to do this:
-
-    We've provided a place for you to put your Facebook access token that you get from ``https://developers.facebook.com/tools/explorer``. (See your assigned readings/lecture materials for more detail.) Remember that in order to get data from our class FB group, you will need to use **version 2.3**, so that is the version we've included in the baseurl and shown in class and you will need to select the **user_groups** permission after you click Get Token. Also remember that every few hours, you'll need to get a new access token from the Graph explorer.
-
-    We've saved the base url for Facebook in a variable, ``baseurl``. The baseurl looks like this: ``https://graph.facebook.com/v2.3/me/feed``. That's the baseurl for fetching recent posts from your own feed. You'll also see we've provided a variable in your file called ``GROUP_ID``. You should replace the ``me`` in the baseurl with that variable's value if you want to get data from the course FB group.
-
-    We've also built your necessary params dictionary to get data about 100 Facebook posts, their comments, and their likes. This specifies exactly what information Facebook should provide about each of the posts. You could try other parameters as well, if you want.
-
-    .. sourcecode:: python
-
-        url_params = {}
-        url_params["access_token"] = access_token
-        url_params["fields"] = "comments{comments{like_count,from,message,created_time},like_count,from,message,created_time},likes,message,created_time,from"
-        url_params["limit"] = 100
-
-    Use the baseurl and url_params to make a request to the facebook API. Convert the results to a python dictionary and save it to the variable name ``fb_data``. (This will get you pretty complex data -- but you've seen data similar to it before, when we first did nested data investigation.)
-
-.. external:: ps_10_03_test
-
-    Write at least one unit test for Problem 3. Just check to make sure fb_data is a dictionary and that it has a key called 'data'.
-
-    You can write it just beneath the space for your code, or you can add your new tests to the other ``unittest.TestCase`` subclasses near the bottom of the problem set that we've already provided for a couple problems. We recommend putting your tests at the bottom of the file, and modeling your tests off the tests you already see there and the ones you see in previous problem sets!
-
   
+  **PROBLEM 3**
+
+  Now, finish the definition of a ``getSize`` function that accepts a string ``path`` as a full path to a file OR directory, and returns the numeric **size** (the number of bytes) of that file or directory, including all subdirectories.
+
+  This function must be recursive.
+
+  The base case is where the path is to a single file, in which case you return its size.
+
+  The recursive case occurs when the input path is to a directory, in which case you'll need to get the sizes of all files and subdirectories inside that directory, and add them up.
+
+  **Hint:** the function provided in our ``os_506`` module, ``os_506.getsize``, which returns the number of bytes a file contains, is useful here, as may be the ``sum`` function you defined earlier.
+
+  We have provided the code for the base case -- you just need to fill in the code for the recursive case beneath the line ``elif os_506.isdir(path): # recursive case``.
+
+  You do not have to use the list comprehension we've provided, but it may make things easier! Try to figure out what that list comprehensions produces, as that will help you understand why it will be useful to you. It may help you to add a print statement to see what it produces with various paths as input.
+
 .. external:: ps_10_04
-    
-    **PROBLEM 4**
+  
+  **PROBLEM 4**
 
-    Given all this Facebook data you have retrieved, create a list of instances of class ``Post``. Save that list of Post instances in a variable called ``post_insts``.
+  Write a `getCategorySizes` function that accepts 'path' as a full path to a file OR directory and returns a dictionary whose keys are file types that appear (use ``getFileType`` to find those!) and whose values are the **total size** of files (i.e., the sum of sizes) of that file type.
 
-    **NOTE:** This requires understanding -- but the code pattern is an accumulation pattern just like the many list accumulations you've already written this semester, and the code to create an instance is just calling the constructor of ``Post`` like you did for ``Photo`` and ``Photo2`` last week!
+  For example,
+  ``getCategorySizes('/Users/steve')`` might return ``{'movie': 140000, 'image': 1800, 'code': 210}``.
 
-.. external:: ps_10_04_test
+  We have provided some code AND some English for you. You'll need to translate the English into code inside the function definition in order to complete it. Some general hints about writing this function:
 
-    Write at least 2 tests for Problem 4. (**Hint:** One of those tests should be checking to make sure that at least one of the items in ``post_insts`` is an instance of class ``Post``! You may want to look at the material on testing for a value's type, to help with this.)
+  Accumulate a dictionary called bins as you recursively visit all the files in the directory and subdirectories. Each key in the ``bins`` dictionary will be one file type. The associated value for each key will be the sum of the filesizes of all files of that type. (Don't forget to pass the ``bins`` dictionary on each recursive call to ``getCategorySizes``!)
 
 .. external:: ps_10_05
-    
-    **PROBLEM 5**
+  
+  **PROBLEM 5 (OPTIONAL, not graded!)**
+  
+  All our tests use the "fake" filesystem, provided in the ``os_506`` module. Now that you have your code working, you can have some fun running on your actual filesystem.
 
-    Write code to compute the 3 people who liked the most posts in the feed, and save those people's names in a list called ``top_likers``.
+  Uncomment the line (provided in the code file): ``os_506.USE_REAL_FILESTYSTEM = True``.
 
-    Then compute the 3 people who commented most frequently in the feed, and save those people's names in a list called ``top_commenters``.
+  Call ``getCategorySizes`` and/or ``getSize`` on some of your directory paths, and print out the results! Suggestion: *don't* call ``getSize('/')`` unless you are prepared to wait a long time for the answer!
 
-    HINT: creating dictionaries and sorting may both be useful here.
-
-.. external:: ps_10_05_test
-
-  We have provided 1 test for Problem 5. Add at least 2 more methods to the ``Problem5`` test class to test the code for Problem 5.
-
-  Note that you may not be able to test *whose* names should be in the lists, since the correct answer may depend on recent activity in the feed, and thus is not stable over time. Think: what DO you know about the values ``top_commenters`` and ``top_likers`` ought to end up with, which you could check in a test?
-
-  Also note that the strings you get back from web data are **unicode** strings -- that's why we're testing for unicode strings in the one test that is already there. (Check it out!)
-
-.. external:: ps_10_06
-    
-    **PROBLEM 6**
-
-    Define a function called ``unique_facebookers`` that takes as input a list of ``Post`` instances.
-    
-    The function should return the string "commenters" if the number of unique people who commented on all of those posts is larger than the number of unique people who liked at least one post in your data. 
-
-    If the number of unique people who liked posts in your data is bigger than the number who commented, the function should return the string "likers". 
-
-    If the count of unique people who liked posts in your feed is equal to the count of unique people who made comments in your feed, it should return the string "equal". 
-
-    For example: if the comments on my posts are made by, in order: Mary, Tess, Nat, Jackson, Tess, and Mary, then 4 unique people commented. If the following people liked my posts, overall: Nat, Jackson, Jackson, Mary, then 3 unique people liked my posts. If this were the case in my Post instances list, invoking my ``unique_facebookers`` function on my list should return ``"commenters"``. 
-
-    Note that this is NOT the same as looking at whether there were more comments or likes overall!
-
-.. external:: ps_10_06_test
-
-    We have provided a unit test in the ``Problem6`` class at the bottom of the file that checks whether ``unique_facebookers`` is working correctly, but it's only one test.
-
-    Add at least 1 more test method to the ``Problem6`` class to test something else about the ``unique_facebookers`` function. 
-
-    **Hint:** What type should it return? What could go wrong with it? (There's no single correct answer, anything that works properly is fine, but this test does not need to be complex.) 
-
-    Check out the first test we've included for ``unique_facebookers`` to get an idea of how you can invoke it in a test to check its output given particular input.
-
-
-.. external:: ps_10_07
-    
-    **PROBLEM 7**
-
-    Write code to output a .csv file called emo_scores.csv that lets you make scatterplots (in Excel or Google sheets) showing net positivity (emo_scores) on x-axis and comment-counts and like-counts on the y-axis. 
-    
-    Each row in the CSV should represent one post, and should include: emo score, comment counts, and like counts, in that order.
-
-    Use the CSV to create a scatterplot of your data, which you can do in Excel or Google Sheets. Then, post a screenshot of your scatterplot to our facebook group! (You do not have to do this, but we encourage it.)
-
-    You can see what the scatterplot might look like in ``emo_scores.xlsx``, included in the assignment files. (In the example case, there's not an obvious correlation between positivity and how many comments or likes. There may not be, but you find that out by exploring the data!)
-
-    **Submit your generated .CSV to Canvas.** Please make sure it is saved with the exact name **emo_scores.csv** -- our grading process depends upon it having the correct name!
-
-    Can you see any trends or possible relationships between likes, comments, and emo_scores once you generate a scatterplot? (Something to consider/discuss. Not graded.)
-
-    Note that you can't easily test this, because it generates a file -- the test is seeing whether the file is formatted correctly and whether the data seems to make some sense when you generate the scatterplot!
-
-
-.. external:: ps10_dyu
-
-    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131282>`_ assignment on Canvas.
+  **Note:** if you have a directory with a really large number of files, and you implemented the sum function recursively, you may get an error when you run ``getSize`` on that directory. If that happens, try a directory with fewer files.
