@@ -250,61 +250,43 @@ You may find it helpful to run this program in order to understand it. It will t
   sys.setExecutionLimit(60000)     # let the game take up to a minute, 60 * 1000 milliseconds
   main() # invoke the main() game function
 
-See the flow chart below for a better understanding of what's happening in the code for the Hangman game overall.Your first task is just to understand the logic of the program, by matching up elements of the flow chart above with elements of the code below. In later problems, you'll fill in a few details that aren't fully implemented in the code above.
+See the flow chart below for a better understanding of what's happening in the code for the Hangman game overall. Your first task is just to understand the logic of the program, by matching up elements of the flow chart above with single numeric lines of the code below (which line of code corresponds to the box?). Answer in comments, below. *Each answer should be no more than 4 numbers that represent lines of code, but each question can be answered with 1 or 2 line numbers!*
+
+In later problems, you'll fill in a few details that aren't fully implemented in the code above.
  
 .. image:: Figures/HangmanFlowchart.jpg
 
-.. shortanswer:: ps4_1_a
+.. activecode:: ps_4_01
 
-   What line(s) of code in the above code window do what's mentioned in the flowchart's Box 1? 
+   # What line(s) of code in the above code window do what's mentioned in the flowchart's Box 1? 
 
-.. shortanswer:: ps4_1_b
+   # What line(s) of code do what's mentioned in Box 2?
 
-   What line(s) of code do what's mentioned in Box 2?
-
-.. shortanswer:: ps4_1_c
-
-   What line(s) of code do what's mentioned in Box 3?
-
-.. shortanswer:: ps4_1_d
+   #What line(s) of code do what's mentioned in Box 3?
  
-   What line(s) of code do what's mentioned in Box 4?
+   # What line(s) of code do what's mentioned in Box 4?
 
-.. shortanswer:: ps4_1_e
+   # What line(s) of code do what's mentioned in Box 5?
 
-   What line(s) of code do what's mentioned in Box 5?
+   # What line(s) of code do what's mentioned in Box 6?
 
-.. shortanswer:: ps4_1_f
+   # What line(s) of code do what's mentioned in Box 7?
 
-   What line(s) of code do what's mentioned in Box 6?
+   # What line(s) of code do what's mentioned in Box 8?
 
-.. shortanswer:: ps4_1_g
+   # What line(s) of code do what's mentioned in Box 9?
 
-   What line(s) of code do what's mentioned in Box 7?
+   # What line(s) of code do what's mentioned in Box 10?
 
-.. shortanswer:: ps4_1_h
-
-   What line(s) of code do what's mentioned in Box 8?
-
-.. shortanswer:: ps4_1_i
-
-   What line(s) of code do what's mentioned in Box 9?
-
-.. shortanswer:: ps4_1_j
-
-   What line(s) of code do what's mentioned in Box 10?
-
-.. shortanswer:: ps4_1_k
-
-   What line(s) of code do what's mentioned in Box 11?
+   # What line(s) of code do what's mentioned in Box 11?
 
 
-.. activecode:: ps_4_10
+.. activecode:: ps_4_02
    :language: python
    :autograde: unittest
    :hidecode:
 
-   **10.** The next task you have is to create a correct version of the ``blanked`` function. It should take 2 inputs: a word, and a string of the letters that have been guessed already. 
+   **2.** The next task you have is to create a correct version of the ``blanked`` function. It should take 2 inputs: a word, and a string of the letters that have been guessed already. 
 
    It should return a string with the same number of characters as the word, but with the UNrevealed characters replaced by an underscore (a ``_``). 
 
@@ -339,11 +321,11 @@ See the flow chart below for a better understanding of what's happening in the c
 
    myTests().main()
 
-.. activecode:: ps_4_11
+.. activecode:: ps_4_03
     :autograde: unittest
     :hidecode:
 
-    **11.** Now you have to create a good version of the ``health_prompt`` function: Define a function called ``health_prompt``. The first parameter should be the current health the player has (an integer), and the second parameter should be the maximum health a player can have (an integer). The function should return a string with ``+`` signs for the current health, and ``-`` signs for the health that has been lost so far.
+    **3.** Now you have to create a good version of the ``health_prompt`` function: Define a function called ``health_prompt``. The first parameter should be the current health the player has (an integer), and the second parameter should be the maximum health a player can have (an integer). The function should return a string with ``+`` signs for the current health, and ``-`` signs for the health that has been lost so far.
     ~~~~
     # Define your function here.
 
@@ -376,9 +358,9 @@ See the flow chart below for a better understanding of what's happening in the c
     myTests().main()
 
 
-.. external:: problem_set_4_12
+.. external:: problem_set_4_04
 
-   **12.** You have all the pieces of a fully functioning hangman program! Now you can put together a program on your own computer to play Hangman.
+   **4.** You have all the pieces of a fully functioning hangman program! Now you can put together a program on your own computer to play Hangman.
 
    In the below code window is all of the code for the hangman program, *except* for the two functions you just defined in problems 1 and 2. (It does not include the special lines allowing it to run in the textbook, and it does not have those function definitions, so this code will not run as expected! It's just provided here for you to copy.)
 
@@ -448,4 +430,4 @@ See the flow chart below for a better understanding of what's happening in the c
 
 .. external:: ps4_dyu
 
-    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139242>`_ assignment on Canvas.
+    Complete this week's `Demonstrate Your Understanding <>`_ assignment on Canvas.
