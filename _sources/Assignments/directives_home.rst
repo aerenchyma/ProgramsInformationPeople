@@ -1,15 +1,12 @@
 :orphan:
 
-.. This file is home to all non-HTML-generating assignment directives.
+.. This file is home to all non-HTML-generating assignment directives for 506 W17.
 
-.. problem sets
-
-.. TODO would be nice to change to PS01 in db
 .. assignment::
-  :name: PS1
+  :name: PS01
   :assignment_type: problem_set
   :questions: ps_1_1 100, ps_1_2 50, ps_1_3 150, ps_1_4 100, ps_1_5 100, ps_1_6 100, ps_1_7 150, ps_1_8 100, ps_1_9 100, ps_1_10 0, ps_1_11 50
-  :deadline: 2016-09-30 04:00
+  :deadline: 2017-01-16 05:00
   :points: 1000
   :autograde: unittest
 
@@ -17,7 +14,7 @@
   :name: PS02
   :assignment_type: problem_set
   :questions: ps_2_1 150, ps_2_2 100, ps_2_3 150, ps_2_4 150, ps_2_5 100, ps_2_6 150, ps_2_7 100, ps_2_8 100
-  :deadline: 2016-09-30 04:00
+  :deadline: 2017-01-23 05:00
   :points: 1000
   :autograde: unittest
 
@@ -25,14 +22,14 @@
   :name: PS03
   :assignment_type: problem_set
   :questions: ps_3_1 100, ps_3_2 200, ps_3_3 100, ps_3_4 150, ps_3_5 100, ps_3_6 200, ps_3_7 150
-  :deadline: 2016-10-03 04:00
+  :deadline: 2017-01-30 05:00
   :points: 1000
   :autograde: unittest
 
 .. assignment::
   :name: PS04
   :assignment_type: problem_set
-  :questions: problem_set_4_unix_1 300, ps4_1_a 25, ps4_1_b 25, ps4_1_c 25, ps4_1_d 25, ps4_1_e 25, ps4_1_f 25, ps4_1_g 25, ps4_1_h 25, ps4_1_i 25, ps4_1_j 25, ps4_1_k 25, ps_4_10 225, ps_4_11 200
+  :questions: problem_set_4_unix_1 300, ps_4_01 275, ps_4_02 225, ps_4_03 200
   :deadline: 2016-10-10 04:00
   :points: 1000
   :autograde: unittest
@@ -183,8 +180,6 @@
   :questions: ps7_dyu 100
   :points: 100
 
-
 .. discussion section attendance
-.. TODO post mass uploader
 
-.. other
+.. mass uploader
