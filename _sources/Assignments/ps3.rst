@@ -18,50 +18,34 @@ Activities through 9/30
 
 You have the following graded activities:
 
-* **Before Monday's class, 9/26:**
+* **Before Monday's class, 1/30:**
 
-  * Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
+  * Read :ref:`Dictionary Accumulation<dictionary_accum_chap>`
+
+.. usageassignment::
+    :subchapters: BuildingAProgram/TheStrategy, DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary, DictionaryAccumulation/AccumulatingResultsFromaDictionary, DictionaryAccumulation/AccumulatingaMaximumValue, DictionaryAccumulation/AccumulatingtheBestKey
+    :assignment_name: Lecture Prep 04
+    :deadline: 2017-01-30 17:10
+    :pct_required: 75
+    :points: 50
+
+* Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
 
 .. usageassignment::
     :subchapters: Functions/FunctionDefinitions,Functions/FunctionInvocation,Functions/FunctionParameters,Functions/Returningavaluefromafunction,Functions/Afunctionthataccumulates,Functions/DecodingaFunction,Functions/MethodInvocations,Functions/Variablesandparametersarelocal,Functions/GlobalVariables,Functions/Functionscancallotherfunctions,Functions/FlowofExecutionSummary,Functions/Printvs.return,Functions/PassingMutableObjects,Functions/SideEffects
-    :assignment_name: Prep 06
-    :deadline: 2016-09-30 04:00
-    :pct_required: 80
+    :assignment_name: Lecture Prep 05
+    :deadline: 2016-01-25 17:10
+    :pct_required: 75
     :points: 50
 
 
-* **Before Wednesday's class, 9/28:**
-  
-  * Read :ref:`While loops<while_chap>`, and do the exercises in that chapter
-
-
-.. usageassignment::
-    :subchapters: IndefiniteIteration/intro-indefiniteiteration, IndefiniteIteration/ThewhileStatement, IndefiniteIteration/listenerLoop
-    :assignment_name: Prep 07
-    :deadline: 2016-09-30 04:00
-    :pct_required: 80
-    :points: 50
-
-
-* **Before Friday 9/30 at 6:30 PM:**
+* **Before Sunday 1/29 at 11:59 PM:**
 
   * Save answers to each of the exercises in :ref:`Problem Set 3 <problem_set_3>` and submit your **Demonstrate Your Understanding** assignment to Canvas (linked in the problem set).
-
-  * You have a grace period for the problem set and DYU submission until Sunday 10/2 at 11:59 pm.
-
-This Week's Reading Responses
------------------------------
-
-.. _reading_response_4:
-
-.. external:: rr_4
-
-  `Reading Response 4 <https://umich.instructure.com/courses/108426/assignments/139265>`_ on Canvas.
 
 
 Problem Set
 -----------
-**This problem set is in draft. You may look at it and run code. The problems/instructions may change slightly while this disclaimer remains here.**
 
 .. _problem_set_3:
 
@@ -74,7 +58,7 @@ Problem Set
    (Wikipedia)
 
 
-.. activecode:: ps_3_1
+.. activecode:: ps_3_01
    :language: python
    :hidecode:
 
@@ -96,37 +80,12 @@ Problem Set
 
    myTests().main()
 
-.. activecode:: ps_3_2
-   :available_files: timely_file.txt
-   :language: python
-   :autograde: unittest
-   :hidecode:
 
-   **2.** We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Save the string that is most common word in the file in the variable ``abc``. 
-
-   ~~~~
-   # Write code here!
-        
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testCode(self):
-         self.assertNotIn("= 'the'", self.getEditorText(), "Testing code input (Don't worry about actual and expected values)")
-         self.assertIn("open",self.getEditorText(),"Testing that you have probably opened the file (Don't worry about actual and expected values)")
-
-      def testOne(self):
-         self.assertEqual(abc, 'the', "testing whether abc is set correctly.")
-
-   myTests().main()
-
-.. activecode:: ps_3_3
+.. activecode:: ps_3_02
    :language: python
    :hidecode:
 
-   **3.** Below is a function definition. **DO NOT** change it! 
+   **2.** Below is a function definition. **DO NOT** change it! 
 
    We have also provided some invocations of that function. Run those and see what they do.
 
@@ -157,12 +116,12 @@ Problem Set
    # Write your comments here.
 
 
-.. activecode:: ps_3_04
+.. activecode:: ps_3_03
    :language: python
    :autograde: unittest
    :hidecode:
 
-   **4.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
+   **3.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
    ~~~~
    s = "Number of slams in an old screen door depends upon how loud you shut it, the count of slices in a bread depends how thin you cut it, and amount 'o good inside a day depends on how well you live 'em. All depends, all depends, all depends on what's around ya."
 
@@ -183,11 +142,11 @@ Problem Set
    myTests().main()
 
 
-.. activecode:: ps_3_05
+.. activecode:: ps_3_04
    :language: python
    :hidecode:
 
-   **5.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
+   **4.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
    ~~~~
    def subtract_five(inp):
        print inp - 5
@@ -207,12 +166,12 @@ Problem Set
    myTests().main()
 
 
-.. activecode:: ps_3_06
+.. activecode:: ps_3_05
    :language: python
    :hidecode:
    :autograde: unittest
 
-   **6.** Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
+   **5.** Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
    ~~~~ 
    # We've started you off with the first line...
    def change_amounts(num_here):
@@ -231,7 +190,7 @@ Problem Set
    myTests().main()
 
 
-.. activecode:: ps_3_07
+.. activecode:: ps_3_06
    :language: python
    :autograde: unittest
    :hidecode:
@@ -276,4 +235,4 @@ Problem Set
 
 .. external:: ps3_dyu
 
-   Submit your `Demonstrate Your Understanding <>`_ for this week on Canvas.
+   Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231778>`_ for this week on Canvas.
