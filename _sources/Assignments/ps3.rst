@@ -1,6 +1,6 @@
 :orphan:
 
-..  Copyright (C) Paul Resnick.  Permission is granted to copy, distribute
+..  Copyright (C) Jackie Cohen, Paul Resnick.  Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
@@ -29,9 +29,6 @@ You have the following graded activities:
     :pct_required: 80
     :points: 50
 
-* **Before Tuesday 9/27 at 11:59 pm:**
-
-  * Read Chapter 3 of The Most Human Human and answer `Reading Response 4 <https://umich.instructure.com/courses/108426/assignments/139265>`_ on Canvas.
 
 * **Before Wednesday's class, 9/28:**
   
@@ -159,11 +156,38 @@ Problem Set
 
    # Write your comments here.
 
-.. activecode:: ps_3_4
+
+.. activecode:: ps_3_04
+   :language: python
+   :autograde: unittest
+   :hidecode:
+
+   **4.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
+   ~~~~
+   s = "Number of slams in an old screen door depends upon how loud you shut it, the count of slices in a bread depends how thin you cut it, and amount 'o good inside a day depends on how well you live 'em. All depends, all depends, all depends on what's around ya."
+
+   # Write your code here.
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+    def testOne(self):
+       self.assertEqual(abc, 'depends', "testing whether abc is set correctly")
+
+    def testOneA(self):
+       self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+
+   myTests().main()
+
+
+.. activecode:: ps_3_05
    :language: python
    :hidecode:
 
-   **4.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
+   **5.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
    ~~~~
    def subtract_five(inp):
        print inp - 5
@@ -183,12 +207,12 @@ Problem Set
    myTests().main()
 
 
-.. activecode:: ps_3_5
+.. activecode:: ps_3_06
    :language: python
    :hidecode:
    :autograde: unittest
 
-   **5.** Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
+   **6.** Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
    ~~~~ 
    # We've started you off with the first line...
    def change_amounts(num_here):
@@ -207,12 +231,12 @@ Problem Set
    myTests().main()
 
 
-.. activecode:: ps_3_6
+.. activecode:: ps_3_07
    :language: python
    :autograde: unittest
    :hidecode:
 
-   **6.** Define a function ``is_prefix`` that takes two strings as inputs and returns the boolean value ``True`` if the first string is a prefix of the second string, but returns the boolean value ``False`` otherwise.
+   **6.** Define a function ``is_prefix`` that takes two strings as inputs and returns the boolean value ``True`` if the first string is a prefix of the second string, but returns the boolean value ``False`` otherwise. You can assume the first string will always be shorter than, or the same length as, the second string.
 
    ~~~~   
    # Define your function here.
@@ -225,6 +249,7 @@ Problem Set
    print is_prefix("Hi","Hello") # should print False
    print is_prefix("lo","Hello") # should print False
    print is_prefix("Hel","Hello") # should print True
+   print is_prefix("Hello","Hello") # should print True
    # Remember, these won't work at all until you have defined a function called is_prefix
 
    =====
@@ -235,36 +260,20 @@ Problem Set
 
       def testOne(self):
          self.assertEqual(is_prefix("Big", "Bigger"), True, "Testing whether 'Big' is a prefix of 'Bigger'")
+      def testTwo(self):
          self.assertEqual(is_prefix("Bigger", "Big"), False, "Testing whether 'Bigger' is a prefix of 'Big'")
+      def testThree(self):
          self.assertEqual(is_prefix('ge', 'Bigger'), False, "Testing whether 'ge' is a prefix of 'Bigger'")
+      def testFour(self):
          self.assertEqual(is_prefix('Bigge', "Bigger"), True, "Testing whether 'Bigge' is a prefix of 'Bigger'")
-
-   myTests().main()
-
-.. activecode:: ps_3_7
-   :language: python
-   :hidecode:
-
-   **7.** Write code that repeatedly asks the user to input numbers. Keep going until the sum of the numbers is 21 or more. Print out the total.
-   ~~~~
-   # Write your code here!
-
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testCode(self):
-         self.assertIn("print", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
-         self.assertIn("while", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
-         self.assertIn("+", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
-         self.assertIn("raw_input", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+      def testFive(self):
+         self.assertEqual(is_prefix("Bigger","Bigger"),True,"Testing whether 'Bigger' counts as a prefix of 'Bigger'")
+      def testSix(self):
+         self.assertEqual(is_prefix("big","Bigger"),False,"Testing whether 'big' is a prefix of 'Bigger'")
 
    myTests().main()
 
 
 .. external:: ps3_dyu
 
-   Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/105657/assignments/131286>`_ for this week on Canvas.
+   Submit your `Demonstrate Your Understanding <>`_ for this week on Canvas.
