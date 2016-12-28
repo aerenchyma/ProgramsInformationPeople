@@ -9,51 +9,42 @@
     License".
 
 
-Activities through 10/7
+Activities through 2/05
 =======================
 
-* **Before Monday's class, 10/3:**
+* **Before Monday's class, 1/30:**
 
-  * Read :ref:`Unix<unix_chapter>`, and try the exercises in that chapter on your computer
-  * Read `this tutorial on Unix pipes <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_ (you can ignore the ``who`` command in the tutorial) and `this tutorial on the Unix command grep <http://www.ee.surrey.ac.uk/Teaching/Unix/unix2.html>`_ (you can scroll down to it on that page).
-  * **If you use a Windows computer,** read and do the installation in the :ref:`instructions for installing git bash<install_git_bash>` section. 
-  * **Everyone** should read :ref:`Installing a text editor<text_editor_installation>` and the subsequent sections on installing and running python (there is a section for mac users and a section for Windows users). Try to do the exercises and installations. You will address any installation problems you have (hopefully none! Fingers crossed) in section this week.
-
-  * The installation chapter explains the software we will help you support in this course. We strongly recommend that you use this.
-    
-  * You are not being graded on *whether you have read* the installation chapter, but you are expected to have done so if you need to! We will proceed with the assumption after this week that you have a setup that is congruent with this course, so please make sure that is the case.
-    
-  * If you have already installed Python, check to **make sure you have Python 2.7 installed on your computer.** We will be using that version of Python in this course, and the files we provide you and expect you to use will not always be compatible with both. If you have installed Python 3, you can and should download Python 2.7.12 `here <https://www.python.org/downloads/>`_. (If you do not have access to a personal computer, you should already have contacted the instructional staff, but please do so ASAP!)
+  * Read *just the selected parts listed* of :ref:`Files<files_chap>` (we'll look at the rest soon)
+  * Review :ref:`Functions<functions_chap>` (not graded, but recommended)
+  * Read :ref:`Optional and Keyword Parameters<optional_params_chap>`
 
 .. usageassignment::
-  :subchapters: Unix/CommandPrompt, Unix/FoldersAndPaths, Unix/DirectoriesAndCopying, Unix/lessCommand
-  :assignment_name: Prep 08
-  :deadline: 2016-10-03 21:40
+  :subchapters: OptionalAndKeywordParameters/OptionalParameters, OptionalAndKeywordParameters/KeywordParameters,Files/intro-WorkingwithDataFiles, Files/ReadingaFile, Files/AlternativeFileReadingMethods, Files/Iteratingoverlinesinafile, Files/FilesRecipe
+  :assignment_name: Lecture Prep 06
+  :deadline: 2017-01-30 17:10
   :pct_required: 80
   :points: 50
 
-* **Before Tuesday 10/4 at 11:59 PM:**
+* **Before Wednesday's class, 2/01:**
 
-  * Complete :ref:`Reading Response 5<reading_response_5>`.
-
-* **Before Wednesday's class, 10/5:**
-
-  * Read :ref:`Optional and Keyword Parameters<optional_params_chap>`  and try the exercises in the sections listed below.
+  * Read :ref:`Tuples<tuples_chap>`
+  * Read :ref:`Sorting and anonymous functions<sort_chap>`
 
 .. usageassignment::
-  :subchapters: OptionalAndKeywordParameters/OptionalParameters, OptionalAndKeywordParameters/KeywordParameters
-  :assignment_name: Prep 09
-  :deadline: 2016-10-05 21:40
+  :subchapters: Sort/intro-SortingwithSortandSorted, Sort/Optionalreverseparameter, Sort/Optionalkeyparameter, Sort/Anonymousfunctionswithlambdaexpressions, Sort/SortingaDictionary, Sort/StableSorting, Tuples/Tuples, Tuples/TuplePacking, Tuples/TuplesasReturnValues, Tuples/TupleAssignmentwithunpacking, Tuples/UnpackingDictionaryItems
+  :assignment_name: Lecture Prep 07
+  :deadline: 2016-02-01 17:10
   :pct_required: 80
   :points: 50
 
-* **Before Sunday 10/9 at 11:59 PM:**
 
-  * Complete all of :ref:`Problem Set 4<problem_set_4>`, including the :ref:`Problem Set 4 Unix Exercises<problem_set_4_unix>` and the Demonstrate Your Understanding assignment for this week.
+* **Before Sunday 2/05 at 11:59 PM:**
+
+  * Complete all of the below :ref:`Problem Set 4<problem_set_4>` and the Demonstrate Your Understanding assignment for this week.
 
 .. note::
 
-  This week's problem set involves some saving code in Activecode windows below, and some work on your own computer + submission of screenshots to Canvas. All of the instructions are below!
+  Note that your problem set 4 this week is only worth **500 points**. Soon, you'll do installation exercises and learning about your file system in an upcoming discussion section (or on your own if you prefer) that will supply the remaining 500 points.
 
 .. datafile:: timely_file.txt
    :hide:
@@ -74,7 +65,7 @@ Problem Set
    :autograde: unittest
    :hidecode:
 
-   **1.** We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Save the string that is most common word in the file in the variable ``abc``. 
+   **1.** We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Save the string that is most common word in the file in the variable ``abc``. (Hint: you had a problem quite similar to this one in PS3!)
 
    ~~~~
    # Write code here!
@@ -275,75 +266,8 @@ In later problems, you'll fill in a few details that aren't fully implemented in
 
     myTests().main()
 
-
-.. external:: problem_set_4_05
-
-   **5.** You have all the pieces of a fully functioning hangman program! Now you can put together a program on your own computer to play Hangman.
-
-   In the below code window is all of the code for the hangman program, *except* for the two functions you just defined in problems 1 and 2. (It does not include the special lines allowing it to run in the textbook, and it does not have those function definitions, so this code will not run as expected! It's just provided here for you to copy.)
-
-   Copy your two function definitions, from the last two problems, into a *Python file* on your computer, just like ``prog1.py`` from last week, except a much more complicated program. Save that file as ``hangman.py``.
-
-   Then copy all the code in the box below into that file, too, underneath the function definitions you just copied in.
-
-   (This will let you play the game with a friend -- after you enter in a word, a bunch of blank lines will print out, and then when they get the computer to play, they won't see the word you typed!)
-
-   Save this Python program, and run it with the command line: ``cd`` to the correct directory where you saved the file, and then type ``python hangman.py``, as you learned last week.
-
-   .. sourcecode:: python
-     
-      def game_state_prompt(txt ="Nothing", h = 6, m_h = 6, word = "HELLO", guesses = ""):
-          res = "\n" + txt + "\n"
-          res = res + health_prompt(h, m_h) + "\n"
-          if guesses != "":
-              res = res + "Guesses so far: " + guesses.upper() + "\n"
-          else:
-              res = res + "No guesses so far" + "\n"
-          res = res + "Word: " + blanked(word, guesses) + "\n"
-   
-          return(res)
-
-      def main():
-          max_health = 3
-          health = max_health
-          secret_word = raw_input("What's the word to guess? (Don't let the player see it!)")
-          secret_word = secret_word.upper() # everything in all capitals to avoid confusion
-          guesses_so_far = ""
-          game_over = False
-
-          feedback = "let's get started"
-
-          # Now interactively ask the user to guess
-          while not game_over:
-              prompt = game_state_prompt(feedback, health, max_health, secret_word, guesses_so_far)
-              next_guess = raw_input(prompt)
-              next_guess = next_guess.upper()
-              feedback = ""
-              if len(next_guess) != 1:
-                  feedback = "I only understand single letter guesses. Please try again."
-              elif next_guess in guesses_so_far:
-                  feedback = "You already guessed that"
-              else:
-                  guesses_so_far = guesses_so_far + next_guess
-                  if next_guess in secret_word:
-                      if blanked(secret_word, guesses_so_far) == secret_word:
-                          feedback = "Congratulations"
-                          game_over = True
-                      else:
-                          feedback = "Yes, that letter is in the word"
-                  else: # next_guess is not in the word secret_word
-                      feedback = "Sorry, " + next_guess + " is not in the word."
-                      health = health - 1
-                      if health <= 0:
-                          feedback = " Waah, waah, waah. Game over."
-                          game_over= True
-
-          print(feedback)
-          print("The word was..." + secret_word)
-
-      main()
-
+In discussion section, you'll see these things all put together. Soon, you'll put these together yourself and run your completed hangman program on your own computer, instead of in the textbook.
 
 .. external:: ps4_dyu
 
-    Complete this week's `Demonstrate Your Understanding <>`_ assignment on Canvas.
+    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231779>`_ assignment on Canvas.
