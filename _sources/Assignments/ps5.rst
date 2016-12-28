@@ -1,6 +1,6 @@
 :orphan:
 
-..  Copyright (C) Paul Resnick.  Permission is granted to copy, distribute
+..  Copyright (C) Jackie Cohen, Paul Resnick.  Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
@@ -8,49 +8,36 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Activities through 10/19 (through Fall Break)
-=============================================
+Activities through 2/19
+=======================
 
-* **Before class Monday 10/10:**
+* **Before class Monday 2/13:**
+  
+  * Read :ref:`Unix<unix_chapter>`, and try the exercises in that chapter on your computer
+  * Read `this tutorial on Unix pipes <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_ (you can ignore the ``who`` command in the tutorial) and `this tutorial on the Unix command grep <http://www.ee.surrey.ac.uk/Teaching/Unix/unix2.html>`_ (you can scroll down to it on that page).
+  * **If you use a Windows computer,** read and do the installation in the :ref:`instructions for installing git bash<install_git_bash>` section. 
+  * **Everyone** should read :ref:`Installing a text editor<text_editor_installation>` and the subsequent sections on installing and running python (there is a section for mac users and a section for Windows users). Try to do the exercises and installations. You will address any installation problems you have (hopefully none! Fingers crossed) in section this week.
 
-  * Read :ref:`Tuples <tuples_chap>` and try exercises in the sections listed below
-  * Read :ref:`Nested Data and Nested Iteration<nested_chap>` and try exercises in sections listed below
-  * Read just the :ref:`introduction to Unit Testing<test_cases_chap>`. (We will discuss this on Monday in lecture! You do *not* have to read the rest of this chapter beyond the introductory section; it addreses material we have not learned yet in this course. We will focus in more depth on that material later in the semester. But this week is the first time you will see the code for Unit Tests, so we will teach you how to understand the output you get from them when you run problem sets on your own computer.)
-
-.. usageassignment::
-  :subchapters: Testing/intro-TestCases, Tuples/Tuples, Tuples/TuplePacking, Tuples/TuplesasReturnValues, Tuples/TupleAssignmentwithunpacking, Tuples/UnpackingDictionaryItems, NestedData/ListswithComplexItems, NestedData/NestedDictionaries, NestedData/NestedIteration, NestedData/DebuggingNestedData
-  :assignment_name: Prep 10
-  :deadline: 2016-10-10 21:40
-  :pct_required: 80
-  :points: 50
-
-
-* **Before Tuesday 10/11 at 11:59 PM:**
-
-  * Complete :ref:`Reading Response 6<reading_response_6>`.
-
-* **Before Wednesday's class, 10/12:**
-
-  * Read :ref:`Sorting<sort_chap>` and try the exercises in the sections listed below.
-  * Read about `Unix diff <http://www.computerhope.com/unix/udiff.htm>`_ and `Unix curl <https://en.wikipedia.org/wiki/CURL#Examples_of_cURL_use_from_command_line>`_ commands. 
-  * NOTE: The latter link about ``curl`` is just one small section of a Wikipedia article that will help you understand what is happening when you use the Unix ``curl`` command. We will unpack this further later on!
+  * The installation chapter explains the software we will help you support in this course. We strongly recommend that you use this.
+    
+  * You are not being graded on *whether you have read* the installation chapter, but you are expected to have done so if you need to! We will proceed with the assumption after this week that you have a setup that is congruent with this course, so please make sure that is the case.
+    
+  * If you have already installed Python, check to **make sure you have Python 2.7 installed on your computer.** We will be using that version of Python in this course, and the files we provide you and expect you to use will not always be compatible with both. If you have installed Python 3, you can and should download Python 2.7.12 `here <https://www.python.org/downloads/>`_. (If you do not have access to a personal computer, you should already have contacted the instructional staff, but please do so ASAP!)
 
 .. usageassignment::
-  :subchapters: Sort/intro-SortingwithSortandSorted, Sort/Optionalreverseparameter, Sort/Optionalkeyparameter, Sort/Anonymousfunctionswithlambdaexpressions, Sort/SortingaDictionary, Sort/StableSorting
-  :assignment_name: Prep 11
-  :deadline: 2016-10-12 21:40
-  :pct_required: 80
+  :subchapters: Unix/CommandPrompt, Unix/FoldersAndPaths, Unix/DirectoriesAndCopying, Unix/lessCommand
+  :assignment_name: Lecture Prep 10
+  :deadline: 2016-10-03 21:40
+  :pct_required: 75
   :points: 50
 
-* **Before Sunday 10/16 at 11:59 PM:**
+* **Midterm exam Wednesday 2/15.**
 
-  * Complete all of :ref:`Problem Set 5 <problem_set_5>` and the Demonstrate Your Understanding assignment for this week.  
-
-* **Note that your midterm is during class time on Wednesday, October 19, in Angell Hall.** See syllabus. We strongly suggest that you look through all Extra Exercises and do practice problems to prepare. Announcements will follow. 
+* **By Sunday, 2/19, compete Problem Set 5 and submit it to Canvas (see below).**
 
 .. note::
 
-	Starting this week, your problem sets will be completed in ``.py`` files that you will download from Canvas and edit to add your answers. You will test them and work on them by running them via the command prompt, as you practiced last week. 
+	Starting this week, with **problem set 5**, your problem sets will be completed in ``.py`` files that you will download from Canvas and edit to add your answers. You will test them and work on them by running them via the command prompt. 
 
 	Note that the test output will look different now -- you won't have the nice box with colors that you have in the textbook. However, you will still have the same information and more power to see what is being tested.
 
@@ -61,22 +48,13 @@ Activities through 10/19 (through Fall Break)
 	**Please make sure that you include the "ps#", e.g. ``ps5`` in your problem set file name when you submit it.** (Even better, don't change the file name at all!) That will make the instructional team's lives much easier.
 
 
-This Week's Reading Responses
------------------------------
-
-.. _reading_response_6:
-
-.. external:: rr_6
-
-  `Reading Response 6 <https://umich.instructure.com/courses/108426/assignments/139267>`_ on Canvas.
-
 
 .. _problem_set_5:
 
 Problem Set
 -----------
 
-To find the file for your problem set, and to submit your assignment on Canvas, go `HERE <https://umich.instructure.com/courses/108426/assignments/183945>`_.
+To find the file for your problem set, and to submit your assignment on Canvas, go `HERE <https://umich.instructure.com/courses/150918/assignments/231793>`_.
 
 .. external:: ps_5_1
 
@@ -133,8 +111,6 @@ To find the file for your problem set, and to submit your assignment on Canvas, 
 
 		**Suggestion:** It's a good idea to come up with some sample "test cases" to help yourself work through this, in addition to the tests we have provided in your code file. Come up with sample lists where it's easy to figure out what the correct sorting is, and make invocations to your function using that input, and print out the results. If you get different output than you expect, trace through the process to figure out where it might have gone wrong. Writing out an English plan for this and translating it into code bit by bit may also be a good idea.
 
-
-
 .. external:: ps5_dyu
 
-    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139243>`_ assignment on Canvas.
+    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231780>`_ assignment on Canvas.
