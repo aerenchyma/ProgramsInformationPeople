@@ -13,7 +13,7 @@
     :linenothreshold: 500
 
 
-Activities through 9/30
+Activities through 9/29
 =======================
 
 You have the following graded activities:
