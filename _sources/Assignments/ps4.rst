@@ -22,7 +22,7 @@ Activities through 2/05
   :subchapters: OptionalAndKeywordParameters/OptionalParameters, OptionalAndKeywordParameters/KeywordParameters,Files/intro-WorkingwithDataFiles, Files/ReadingaFile, Files/AlternativeFileReadingMethods, Files/Iteratingoverlinesinafile, Files/FilesRecipe
   :assignment_name: Lecture Prep 06
   :deadline: 2017-01-30 17:10
-  :pct_required: 80
+  :pct_required: 75
   :points: 50
 
 * **Before Wednesday's class, 2/01:**
@@ -33,8 +33,8 @@ Activities through 2/05
 .. usageassignment::
   :subchapters: Sort/intro-SortingwithSortandSorted, Sort/Optionalreverseparameter, Sort/Optionalkeyparameter, Sort/Anonymousfunctionswithlambdaexpressions, Sort/SortingaDictionary, Sort/StableSorting, Tuples/Tuples, Tuples/TuplePacking, Tuples/TuplesasReturnValues, Tuples/TupleAssignmentwithunpacking, Tuples/UnpackingDictionaryItems
   :assignment_name: Lecture Prep 07
-  :deadline: 2016-02-01 17:10
-  :pct_required: 80
+  :deadline: 2017-02-01 17:10
+  :pct_required: 75
   :points: 50
 
 
