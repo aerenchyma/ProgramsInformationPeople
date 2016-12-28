@@ -25,7 +25,7 @@ Activities through 9/16
   * Check out our `Piazza<>` forums on the Canvas site.
 
 * **Before class on 1/9:**
-  * Read :ref:`General Intro <the_way_of_the_program>`, :ref:`Building a Program <build_program_chap>`, :ref:`Simple Python Data<simple_python_data>`, and :ref:`Objects and Turtle Graphics<turtles_chap>`.
+  * Read :ref:`General Intro <the_way_of_the_program>`, :ref:`Simple Python Data<simple_python_data>`, and :ref:`Objects and Turtle Graphics<turtles_chap>`.
   * When reading, run the activecodes and answer the multiple choice questions. There may also be exercises at the end of each chapter. These are optional (though trying them is recommended, trying all of those is not requierd, and getting them correct is also *not required*).
   * We are starting out with a *lot* of material. That is because we are going to speed through a lot of the beginning foundational material, and slow down in a couple weeks -- this stuff is the basis of everything else we'll do, so it is important to absorb and review as we go -- you can always come back to this! *When you have questions about this stuff, you should ask them, come to office hours, post on Piazza!*
 
@@ -38,10 +38,10 @@ Activities through 9/16
     :points: 50
 
 * **Before class Wednesday 1/11:**
-  * Read :ref:`Debugging tips<debugging_chap>`, :ref:`Sequences<sequences_chap>`, and :ref:`Iteration<iteration_chap>`, and try a bunch of the exercises in the below listed sections.
+  * Read :ref:`Debugging tips<debugging_chap>`, :ref:`Sequences<sequences_chap>`, :ref:`Building a Program <build_program_chap>`, and :ref:`Iteration<iteration_chap>`, and try a bunch of the exercises in the below listed sections.
 
 .. usageassignment::
-    :subchapters: Sequences/intro-Sequences, Sequences/OperationsonStrings, Sequences/IndexOperatorWorkingwiththeCharactersofaString, Sequences/OperationsandStrings, Sequences/StringMethods, Sequences/Length, Sequences/TheSliceOperator, Sequences/StringsareImmutable, Sequences/Theinandnotinoperators, Sequences/Characterclassification, Sequences/Lists, Sequences/ListValues, Sequences/ListLength, Sequences/AccessingElements, Sequences/ListMembership, Sequences/ConcatenationandRepetition, Sequences/ListSlices, Sequences/ListsareMutable, Sequences/ListDeletion, Sequences/ObjectsandReferences, Sequences/Aliasing, Sequences/CloningLists, Sequences/ListMethods, Sequences/AppendversusConcatenate, Sequences/SplitandJoin, Iteration/intro-Iteration, Iteration/TheforLoop, Iteration/FlowofExecutionoftheforLoop, Iteration/Stringsandforloops, Iteration/TraversalandtheforLoopByIndex, Iteration/Listsandforloops, Iteration/TheAccumulatorPattern, Iteration/TheAccumulatorPatternwithLists, Iteration/TheAccumulatorPatternwithStrings
+    :subchapters: Sequences/intro-Sequences, Sequences/OperationsonStrings, Sequences/IndexOperatorWorkingwiththeCharactersofaString, Sequences/OperationsandStrings, Sequences/StringMethods, Sequences/Length, Sequences/TheSliceOperator, Sequences/StringsareImmutable, Sequences/Theinandnotinoperators, Sequences/Characterclassification, Sequences/Lists, Sequences/ListValues, Sequences/ListLength, Sequences/AccessingElements, Sequences/ListMembership, Sequences/ConcatenationandRepetition, Sequences/ListSlices, Sequences/ListsareMutable, Sequences/ListDeletion, Sequences/ObjectsandReferences, Sequences/Aliasing, Sequences/CloningLists, Sequences/ListMethods, Sequences/AppendversusConcatenate, Sequences/SplitandJoin, Iteration/intro-Iteration, Iteration/TheforLoop, Iteration/FlowofExecutionoftheforLoop, Iteration/Stringsandforloops, Iteration/TraversalandtheforLoopByIndex, Iteration/Listsandforloops, Iteration/TheAccumulatorPattern, Iteration/TheAccumulatorPatternwithLists, Iteration/TheAccumulatorPatternwithStrings, BuildingAProgram/UnderstandingCode
     :assignment_name: Lecture Prep 02
     :deadline: 2017-01-11 17:10
     :pct_required: 65
