@@ -12,7 +12,7 @@
 .. highlight:: python
     :linenothreshold: 500
 
-Activities through 9/23
+Activities through 1/22
 =======================
 
 You have the following graded activities:
@@ -33,23 +33,10 @@ You have the following graded activities:
     :pct_required: 80
     :points: 50
 
-
-* **Before Wednesday's class 9/21:**
-
-  * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and try the exercises in that chapter (You may want to refresh yourself on :ref:`Dictionaries<dictionaries_chap>`)
-
-.. usageassignment::
-    :subchapters: BuildingAProgram/TheStrategy, DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary, DictionaryAccumulation/AccumulatingResultsFromaDictionary, DictionaryAccumulation/AccumulatingaMaximumValue, DictionaryAccumulation/AccumulatingtheBestKey
-    :assignment_name: Prep 05
-    :deadline: 2016-09-30 04:00
-    :pct_required: 70
-    :points: 50
-
-* By **Friday 9/23 at 6:30PM**, save answers to the exercises in **Problem Set 2**:
+* By **Sunday 1/22 at 11:59PM**, save answers to the exercises in **Problem Set 2**:
 
   * Complete each of the problem set problems.
   * Submit your Demonstrate Your Understanding assignment (linked in the problem set).
-  * Note that you have a grace period for the problem set and DYU submissions until Sunday 9/25 at 11:59 PM. 
 
 .. _problem_set_2:
 
@@ -96,7 +83,7 @@ Problem Set
    security clearance). However, representing oneself as a "professional software engineer"
    without a license from an accredited institution is illegal in many parts of the world.
 
-.. activecode:: ps_2_1
+.. activecode:: ps_2_01
    :language: python
    :available_files: about_programming.txt
    :autograde: unittest
@@ -118,7 +105,7 @@ Problem Set
 
    myTests().main()
 
-.. activecode:: ps_2_2
+.. activecode:: ps_2_02
    :language: python
    :autograde: unittest
    :hidecode:
@@ -166,7 +153,7 @@ Problem Set
 
    myTests().main()
 
-.. activecode:: ps_2_3
+.. activecode:: ps_2_03
    :language: python
    :autograde: unittest
    :hidecode:
@@ -205,7 +192,7 @@ Problem Set
 
    myTests().main()
 
-.. activecode:: ps_2_4
+.. activecode:: ps_2_04
    :language: python
    :autograde: unittest
    :hidecode:
@@ -229,7 +216,7 @@ Problem Set
 
    myTests().main()
 
-.. activecode:: ps_2_5
+.. activecode:: ps_2_05
    :language: python
    :autograde: unittest
    :hidecode:
@@ -251,12 +238,14 @@ Problem Set
 
    myTests().main()
 
-.. activecode:: ps_2_6
+.. activecode:: ps_2_06
    :language: python
    :autograde: unittest
    :hidecode:
 
-   **6.** Here's another dictionary, ``nd``. Write code to print out each key-value pair in it, one key and its value on each line. Your output should look somewhat like this (remember, the order may be different!):
+   **6.** Here's another dictionary, ``nd``. 
+   **PART 1**
+   Write code to print out each key-value pair in it, one key and its value on each line. Your output should look somewhat like this (remember, the order may be different!):
 
    ::
 
@@ -267,8 +256,10 @@ Problem Set
 
    **Hint:** Printing things with a comma, e.g. ``print "hello", "everyone"`` will print out those things on the same line with  a space in between them: ``hello everyone``.
 
+   **PART 2**
    Then, write code to increase the value of key ``"23"`` by 5. Your code should work no matter what the value of the key ``"23"`` is, as long as its value is an integer.
 
+   **PART 3**
    Finally, write code to print the value of the key ``"well"``. Your code should work no matter what the value of the key "well" is.
    ~~~~
    nd = {"autumn":"spring", "well":"spring", "4":"seasons","23":345}
@@ -287,7 +278,7 @@ Problem Set
 
    myTests().main()
 
-.. activecode:: ps_2_7
+.. activecode:: ps_2_07
    :language: python
    :autograde: unittest
    :hidecode:
@@ -310,38 +301,11 @@ Problem Set
        self.assertEqual(sorted(nums), sorted({"two": 0, "three": 0, "four": 0, "eight": 0, "seventeen": 0, "not_a_number": 0}), "Testing that the contents of nums is accurate.")
 
     def testOneA(self):
-       self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+       self.assertIn('for', self.getEditorText(), "Testing that there is a for inside your code (Don't worry about actual and expected values).")
 
    myTests().main()
-
-.. activecode:: ps_2_8
-   :language: python
-   :autograde: unittest
-   :hidecode:
-
-   **8.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
-   ~~~~
-   s = "Number of slams in an old screen door depends upon how loud you shut it, the count of slices in a bread depends how thin you cut it, and amount 'o good inside a day depends on how well you live 'em. All depends, all depends, all depends on what's around ya."
-
-   # Write your code here.
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-    def testOne(self):
-       self.assertEqual(abc, 'depends', "testing whether abc is set correctly")
-
-    def testOneA(self):
-       self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-
-   myTests().main()
-
-
 
 
 .. external:: ps2_dyu
 
-    Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139240>`_ for this week on Canvas.
+    Submit your `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231777>`_ for this week on Canvas.

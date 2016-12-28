@@ -14,7 +14,7 @@
     :linenothreshold: 500
 
 
-Activities through 9/16
+Activities through 1/15
 =======================
 
 * **By the end of this week (or as soon as you join the course):**
@@ -51,7 +51,7 @@ Activities through 9/16
 
 * **By Sunday 1/15 at 11:59 PM:** 
 
-  * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`, including doing the first `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231785>`_ (DYU).
+  * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`, including doing the first `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231785>`_ (DYU), also linked below in the problem set.
 
 .. _problem_set_1:
 
