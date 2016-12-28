@@ -1,6 +1,6 @@
 :orphan:
 
-..  Copyright (C) Paul Resnick.  Permission is granted to copy, distribute
+..  Copyright (C) Jackie Cohen, Paul Resnick.  Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
@@ -17,86 +17,41 @@
 Activities through 9/16
 =======================
 
-* **Before your first discussion section, this week (preferably before first lecture on Wednesday 9/7):**
+* **By the end of this week (or as soon as you join the course):**
+  
+  * Read `the course syllabus <>`_.
+  * Fill out `this google form assignment<>`_ about grading and assignments in this course to make sure we are all on the same page!
+  * Fill in a little `info about you </runestone/default/bio>`_.
+  * Check out our `Piazza<>` forums on the Canvas site.
 
-  * Fill in a little `info about you </runestone/default/bio>`_ and, optionally, upload a picture that looks like how you look in class, so we can start to learn your names.
-  * Sign up for/join the `Facebook group <https://www.facebook.com/groups/323187111349524/>`_
-  * Read :ref:`General Intro <the_way_of_the_program>`. When reading, run the activecodes and answer the multiple choice questions. If there are exercises at the end of a chapter, try to do at least some of them.
-
-  * You may also want to review the material you covered to waive 502/early chapters in the textbook, like Simple Python Data this week.
+* **Before class on 1/9:**
+  * Read :ref:`General Intro <the_way_of_the_program>`, :ref:`Building a Program <build_program_chap>`, :ref:`Simple Python Data<simple_python_data>`, and :ref:`Objects and Turtle Graphics<turtles_chap>`.
+  * When reading, run the activecodes and answer the multiple choice questions. There may also be exercises at the end of each chapter. These are optional (though trying them is recommended, trying all of those is not requierd, and getting them correct is also *not required*).
+  * We are starting out with a *lot* of material. That is because we are going to speed through a lot of the beginning foundational material, and slow down in a couple weeks -- this stuff is the basis of everything else we'll do, so it is important to absorb and review as we go -- you can always come back to this! *When you have questions about this stuff, you should ask them, come to office hours, post on Piazza!*
 
 .. usageassignment::
-    :chapters: GeneralIntro
-    :assignment_name: Prep 01
-    :deadline: 2016-09-30 04:00
-    :pct_required: 80
+    :subchapters: GeneralIntro/intro-TheWayoftheProgram, GeneralIntro/Algorithms, GeneralIntro/ThePythonProgrammingLanguage, GeneralIntro/SpecialWaystoExecutePythoninthisBook, GeneralIntro/MoreAboutPrograms, GeneralIntro/WhatisDebugging, GeneralIntro/Syntaxerrors, GeneralIntro/RuntimeErrors, GeneralIntro/SemanticErrors, GeneralIntro/ExperimentalDebugging, GeneralIntro/FormalandNaturalLanguages, GeneralIntro/ATypicalFirstProgram, SimplePythonData/intro-VariablesExpressionsandStatements, SimplePythonData/Values, SimplePythonData/Operators, SimplePythonData/FunctionCalls, SimplePythonData/DataTypes, SimplePythonData/Typeconversionfunctions, SimplePythonData/Variables, SimplePythonData/VariableNamesandKeywords, SimplePythonData/OrderofOperations, SimplePythonData/BooleanValuesandBooleanExpressions, SimplePythonData/Logicaloperators, SimplePythonData/PrecedenceofOperators, SimplePythonData/Reassignment, SimplePythonData/UpdatingVariables, SimplePythonData/HardCoding, SimplePythonData/Input, PythonTurtle/intro-HelloLittleTurtles, PythonTurtle/OurFirstTurtleProgram, PythonTurtle/InstancesAHerdofTurtles,
+    PythonTurtle/ObjectInstances, PythonTurtle/SummaryOfTurtleMethods
+    :assignment_name: Lecture Prep 01
+    :deadline: 2017-01-09 17:10
+    :pct_required: 50
     :points: 50
 
-* **By Sunday 9/11 at 11:59 pm:**
-
-  * read the intro and chapter 1 of The Most Human Human book.
-  * Answer `RR 1 <https://umich.instructure.com/courses/108426/assignments/139258>`_ .
-
-
-* **Before Monday's class, 9/12:**
-
-  * Read :ref:`Simple Python Data<simple_python_data>`. When reading, run the activecodes and answer the multiple choice questions. If there are exercises at the end of a chapter, try to do at least some of them. That goes for all reading assignments, so we'll stop repeating that...
-  * Read :ref:`Object Instances and Turtle graphics<turtles_chap>`.
-  * Read :ref:`Debugging tips<debugging_chap>`.
+* **Before class Wednesday 1/11:**
+  * Read :ref:`Debugging tips<debugging_chap>`, :ref:`Sequences<sequences_chap>`, and :ref:`Iteration<iteration_chap>`, and try a bunch of the exercises in the below listed sections.
 
 .. usageassignment::
-    :chapters: SimplePythonData, Debugging, PythonTurtle
-    :assignment_name: Prep 03
-    :deadline: 2016-09-30 04:00
+    :subchapters: Sequences/intro-Sequences, Sequences/OperationsonStrings, Sequences/IndexOperatorWorkingwiththeCharactersofaString, Sequences/OperationsandStrings, Sequences/StringMethods, Sequences/Length, Sequences/TheSliceOperator, Sequences/StringsareImmutable, Sequences/Theinandnotinoperators, Sequences/Characterclassification, Sequences/Lists, Sequences/ListValues, Sequences/ListLength, Sequences/AccessingElements, Sequences/ListMembership, Sequences/ConcatenationandRepetition, Sequences/ListSlices, Sequences/ListsareMutable, Sequences/ListDeletion, Sequences/ObjectsandReferences, Sequences/Aliasing, Sequences/CloningLists, Sequences/ListMethods, Sequences/AppendversusConcatenate, Sequences/SplitandJoin, Iteration/intro-Iteration, Iteration/TheforLoop, Iteration/FlowofExecutionoftheforLoop, Iteration/Stringsandforloops, Iteration/TraversalandtheforLoopByIndex, Iteration/Listsandforloops, Iteration/TheAccumulatorPattern, Iteration/TheAccumulatorPatternwithLists, Iteration/TheAccumulatorPatternwithStrings
+    :assignment_name: Lecture Prep 02
+    :deadline: 2017-01-11 17:10
     :pct_required: 65
-    :points: 50
-
-* **By Tuesday night 11:59, 9/13:**
-
-  * Read from the beginning through the middle of page 7 of `Minds, Brains, and Programs <https://umich.instructure.com/courses/105657/files?preview=2142149>`_, by Richard Searle. (It's in the Canvas Files folder, if that link doesn't work.)
-  * Answer `RR 2 <https://umich.instructure.com/courses/108426/assignments/139263>`_ .
-
-
-* **Before Wednesday's class, 9/14:**
-
-  * Read :ref:`Sequences <sequences_chap>`, and try exercises in that chapter. 
-  * Read :ref:`Iteration <iteration_chap>`, and try exercises in that chapter. (**Note:** Not included in the lecture prep for points due to our mistake, but it *is* very important that you read and understand it!)
-
-.. usageassignment::
-    :subchapters: Sequences/intro-Sequences, Sequences/OperationsonStrings, Sequences/IndexOperatorWorkingwiththeCharactersofaString, Sequences/OperationsandStrings, Sequences/StringMethods, Sequences/Length, Sequences/TheSliceOperator, Sequences/StringsareImmutable, Sequences/Theinandnotinoperators, Sequences/Characterclassification, Sequences/Lists, Sequences/ListValues, Sequences/ListLength, Sequences/AccessingElements, Sequences/ListMembership, Sequences/ConcatenationandRepetition, Sequences/ListSlices, Sequences/ListsareMutable, Sequences/ListDeletion, Sequences/ObjectsandReferences, Sequences/Aliasing, Sequences/CloningLists, Sequences/ListMethods, Sequences/AppendversusConcatenate, Sequences/SplitandJoin
-    :assignment_name: Prep 02
-    :deadline: 2016-09-30 04:00
-    :pct_required: 80
     :points: 50
 
 * Participation in your discussion section this week
 
-* **By Friday 9/16 at 6:30 PM:** 
+* **By Sunday 1/15 at 11:59 PM:** 
 
-  * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`, including doing the first `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139248>`_ (DYU).
-
-* **By Sunday 9/18 at 11:59 pm:** (We include this in your assignments for next week, too)
-
-  * Read chapter 2 of The Most Human Human and answer `Reading Response 3 <https://umich.instructure.com/courses/108426/assignments/139264>`_ .
-
-
-* Note that there is a grace period for the problem set and DYU assignment until **Sunday 9/18 at 5:00 PM**. You will not lose any points if you submit before then, even if you submit after the Friday deadline. After the grace period, we do not accept late assignments. See syllabus.
-
-
-This Week's Reading Responses 
------------------------------
-.. _reading_response_1:
-
-.. external:: rr_1
-
-  `Reading Response 1 <https://umich.instructure.com/courses/105657/assignments/131308>`_ on Canvas.
-
-.. _reading_response_2:
-
-.. external:: rr_2
-
-  `Reading Response 2 <https://umich.instructure.com/courses/105657/assignments/131313>`_ on Canvas.
-
+  * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`, including doing the first `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231785>`_ (DYU).
 
 .. _problem_set_1:
 
@@ -107,7 +62,7 @@ Problem Set
 
 
 
-.. activecode:: ps_1_1
+.. activecode:: ps_1_01
     :language: python
     :autograde: unittest
 
@@ -135,7 +90,7 @@ Problem Set
     myTests().main()
    
     
-.. activecode:: ps_1_2
+.. activecode:: ps_1_02
     :include: addl_functions
     :language: python
     :autograde: unittest
@@ -158,7 +113,7 @@ Problem Set
     myTests().main()
 
 
-.. activecode:: ps_1_3
+.. activecode:: ps_1_03
     :include: addl_functions
     :language: python
     :autograde: unittest
@@ -186,7 +141,7 @@ Problem Set
 
     print pear
 
-.. activecode:: ps_1_4
+.. activecode:: ps_1_04
     :language: python
     :autograde: unittest
 
@@ -206,7 +161,7 @@ Problem Set
 
     myTests().main()
 
-.. activecode:: ps_1_5
+.. activecode:: ps_1_05
     :include: addl_functions
     :language: python
     :autograde: unittest
@@ -247,7 +202,7 @@ Problem Set
 
     myTests().main()
 
-.. activecode:: ps_1_6
+.. activecode:: ps_1_06
        :language: python
        :autograde: unittest
 
@@ -276,7 +231,7 @@ Problem Set
 
        myTests().main()
 
-.. activecode:: ps_1_7
+.. activecode:: ps_1_07
     :include: addl_functions
     :language: python
 
@@ -331,7 +286,7 @@ Problem Set
     print "==========="
     print "\n\nThere are no tests for this problem"
 
-.. activecode:: ps_1_8
+.. activecode:: ps_1_08
     :language: python
     :autograde: unittest
 
@@ -381,7 +336,7 @@ Problem Set
 
     myTests().main()
 
-.. activecode:: ps_1_9
+.. activecode:: ps_1_09
     :language: python
     :autograde: unittest
   
@@ -419,6 +374,8 @@ Problem Set
 
    Order the code fragments in the order in which the Python interpreter would evaluate them, when evaluating that last line of code.
 
+   Not graded for pset points. But important practice!
+
    -----
    Look up the variable ella and find that it is an instance of a Turtle object
    =====
@@ -440,17 +397,17 @@ Problem Set
 .. activecode:: ps_1_11
     :language: python
 
-    **11.** Write a program that uses the turtle module to draw something interesting. It doesn't have to be complicated, but draw something different than we did in the textbook or in class. (Optional but encouraged: post a screenshot of the artistic outcome to the Facebook group, or a short video of the drawing as it is created.) (Hint: if you are drawing something complicated, it could get tedious to watch it draw over and over. Try setting ``.speed(10)`` for the turtle to draw fast, or ``.speed(0)`` for it to draw super fast with no animation.)
+    **11.** Write a program that uses the turtle module to draw something. It doesn't have to be complicated, but draw something different than we did in the textbook or in class. (Optional but encouraged: post a screenshot of the artistic outcome to Piazza, or a short video of the drawing as it is created.) (Hint: if you are drawing something complicated, it could get tedious to watch it draw over and over. Try setting ``.speed(10)`` for the turtle to draw fast, or ``.speed(0)`` for it to draw super fast with no animation.)
     ~~~~
     import turtle
 
 
 .. external:: ps1_dyu
 
-    Complete the `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139248>`_ for this week.
+    Complete the `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231785>`_ for this week.
     
 
-That's the end of the problem set. In the hidden code below, you will find the definitions of functions square, random_digit, and greeting that were used elsewhere in the problem set. They're hidden because you don't yet need to understand how function definitions work. But if you want a preview, feel free to click on Show/hide code.
+That's the end of the problem set. In the hidden code below, you will find the definitions of functions that were used elsewhere in the problem set. They're hidden because you don't yet need to understand how function definitions work. But if you want a preview, feel free to click on Show/Hide Code.
 
 .. activecode:: addl_functions
     :nopre:
