@@ -1,6 +1,6 @@
 :orphan:
 
-..  Copyright (C) Paul Resnick.  Permission is granted to copy, distribute
+..  Copyright (C) Jackie Cohen, Paul Resnick.  Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
@@ -17,12 +17,9 @@ Activities through 9/23
 
 You have the following graded activities:
 
-* **By Sunday 9/18 at 11:59 pm:** 
-    
-  * Read chapter 2 of The Most Human Human and answer `RR 3 <https://umich.instructure.com/courses/108426/assignments/139264>`_ .
+* **No class Monday 1/16 for MLK Day.**
 
-* **Before class Monday 9/19:**
-
+* **Before class Wednesday 1/18:**
   * Read :ref:`Conditionals <conditionals_chap>`
   * Read :ref:`File Input/Output <files_chap>`
   * Read :ref:`Dictionaries<dictionaries_chap>`
@@ -31,8 +28,8 @@ You have the following graded activities:
 
 .. usageassignment::
     :subchapters: Selection/ConditionalExecutionBinarySelection, Selection/OmittingtheelseClauseUnarySelection, Selection/Nestedconditionals, Selection/Chainedconditionals, Files/intro-WorkingwithDataFiles, Files/FindingaFileonyourDisk, Files/ReadingaFile, Files/AlternativeFileReadingMethods, Files/Iteratingoverlinesinafile, Files/FilesRecipe, Files/WritingTextFiles, Dictionaries/intro-Dictionaries, Dictionaries/Dictionaryoperations, Dictionaries/Dictionarymethods, Dictionaries/Aliasingandcopying, BuildingAProgram/UnderstandingCode
-    :assignment_name: Prep 04
-    :deadline: 2016-09-30 04:00
+    :assignment_name: Lecture Prep 03
+    :deadline: 2017-01-18 17:10
     :pct_required: 80
     :points: 50
 
@@ -40,7 +37,6 @@ You have the following graded activities:
 * **Before Wednesday's class 9/21:**
 
   * Read :ref:`Accumulating results in dictionaries<dictionary_accum_chap>`, and try the exercises in that chapter (You may want to refresh yourself on :ref:`Dictionaries<dictionaries_chap>`)
-  * Read another part of :ref:`Building A Program<build_program_chap>`
 
 .. usageassignment::
     :subchapters: BuildingAProgram/TheStrategy, DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary, DictionaryAccumulation/AccumulatingResultsFromaDictionary, DictionaryAccumulation/AccumulatingaMaximumValue, DictionaryAccumulation/AccumulatingtheBestKey
@@ -54,15 +50,6 @@ You have the following graded activities:
   * Complete each of the problem set problems.
   * Submit your Demonstrate Your Understanding assignment (linked in the problem set).
   * Note that you have a grace period for the problem set and DYU submissions until Sunday 9/25 at 11:59 PM. 
-
-This Week's Reading Responses
------------------------------
-
-.. _reading_response_3:
-
-.. external:: rr_3
-    
-    `Reading Response 3 <https://umich.instructure.com/courses/105657/assignments/131314>`_ on Canvas.
 
 .. _problem_set_2:
 
@@ -331,7 +318,6 @@ Problem Set
    :language: python
    :autograde: unittest
    :hidecode:
-
 
    **8.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
    ~~~~
