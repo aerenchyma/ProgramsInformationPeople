@@ -20,10 +20,11 @@ You have the following graded activities:
 
 * **Before Monday's class, 1/30:**
 
-  * Read :ref:`Dictionary Accumulation<dictionary_accum_chap>`
+  * Read :ref:`Dictionary Accumulation<dictionary_accum_chap>` and try the exercises in below listed sections
+  * Read :ref:`Indefinite Iteration<while_chap>` and try the exercises in below listed sections
 
 .. usageassignment::
-    :subchapters: BuildingAProgram/TheStrategy, DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary, DictionaryAccumulation/AccumulatingResultsFromaDictionary, DictionaryAccumulation/AccumulatingaMaximumValue, DictionaryAccumulation/AccumulatingtheBestKey
+    :subchapters: BuildingAProgram/TheStrategy, DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary, DictionaryAccumulation/AccumulatingResultsFromaDictionary, DictionaryAccumulation/AccumulatingaMaximumValue, DictionaryAccumulation/AccumulatingtheBestKey, IndefiniteIteration/intro-indefiniteiteration, IndefiniteIteration/ThewhileStatement, IndefiniteIteration/listenerLoop
     :assignment_name: Lecture Prep 04
     :deadline: 2017-01-30 17:10
     :pct_required: 75

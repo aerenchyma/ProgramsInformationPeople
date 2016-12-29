@@ -17,10 +17,9 @@ Activities through 2/05
   * Read *just the selected parts listed* of :ref:`Files<files_chap>` (we'll look at the rest soon)
   * Review :ref:`Functions<functions_chap>` (not graded, but recommended)
   * Read :ref:`Optional and Keyword Parameters<optional_params_chap>`
-  * Read :ref:`Indefinite Iteration<>` and try the exercises
 
 .. usageassignment::
-  :subchapters: OptionalAndKeywordParameters/OptionalParameters, OptionalAndKeywordParameters/KeywordParameters,IndefiniteIteration/intro-indefiniteiteration, IndefiniteIteration/ThewhileStatement, IndefiniteIteration/listenerLoop, Files/intro-WorkingwithDataFiles, Files/ReadingaFile, Files/AlternativeFileReadingMethods, Files/Iteratingoverlinesinafile, Files/FilesRecipe
+  :subchapters: OptionalAndKeywordParameters/OptionalParameters, OptionalAndKeywordParameters/KeywordParameters, Files/intro-WorkingwithDataFiles, Files/ReadingaFile, Files/AlternativeFileReadingMethods, Files/Iteratingoverlinesinafile, Files/FilesRecipe
   :assignment_name: Lecture Prep 06
   :deadline: 2017-01-30 17:10
   :pct_required: 75
