@@ -1,6 +1,6 @@
 :orphan:
 
-..  Copyright (C) Paul Resnick.  Permission is granted to copy, distribute
+..  Copyright (C) Jackie Cohen, Paul Resnick.  Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
@@ -8,70 +8,61 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Activities through 10/28
-========================
+Activities through 3/5 (through Spring Break)
+=============================================
 
-* **Before class Monday 10/24:**
+* **Before class Monday 2/20:**
 
   * Read :ref:`Python modules <modules_chap>`
   * Make sure to read :ref:`pip module installer <pip_chap>` (and install the ``pip`` module)
   * Read :ref:`Fetching data <requests_chap>`
   * Read :ref:`REST APIs<rest_apis_chap>`
+  * Check out `this iTunes Search API documentation<https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/>`_ and consider how to use it to make an API request. You don't have to understand it, but you *should* have taken a good look at it.
 
 .. usageassignment::
   :subchapters: PythonModules/intro-ModulesandGettingHelp, PythonModules/Therandommodule, Installation/pip, Requests/intro, Requests/fetching_a_page, Requests/how_the_Internet_works, Requests/urls, Requests/http, Requests/requests_details, RESTAPIs/intro, RESTAPIs/RequestURLs, RESTAPIs/DebugURLs, RESTAPIs/jsonlib, RESTAPIs/unicode, RESTAPIs/requestsCookbook
-  :assignment_name: Prep 12
-  :deadline: 2016-10-24 21:40
-  :pct_required: 80
+  :assignment_name: Lecture Prep 11
+  :deadline: 2017-02-20 17:30
+  :pct_required: 75
   :points: 50
 
-
-
-
-* **Before Tuesday 10/25 at 11:59 PM:**
-
-  * Complete :ref:`Reading Response 7<reading_response_7>`.
-
-* **Before Wednesday's class, 10/26:**
+* **Before Wednesday's class, 2/22:**
 
   * Read :ref:`Try/Except <exceptions_chap>`
   * Read :ref:`String Formatting<formatting_chap>`
   * You may find it helpful to read this `External Tutorial on Reading CSV Files <https://thenewcircle.com/s/post/1572/python_for_beginners_reading_and_manipulating_csv_files>`_
   * Read :ref:`Writing files<write_text_file_chap>` (also note :ref:`Writing CSV files<csv_chap>`)
   * Read :ref:`Using REST APIs<using_RESTAPIs_chap>`
-  * Read :ref:`How to Fix Common Problems with Python Interpreter<gotchas_chap>`, which may also be helpful as we move forward. We may add to this (for your use and help; you will *not* be graded on reading additional material added later), too!
+  * Read :ref:`How to Fix Common Problems using your native machine's Python<gotchas_chap>`, which may also be helpful as we move forward.
 
 .. usageassignment::
   :subchapters: Exceptions/intro-exceptions, Exceptions/using-exceptions, StringFormatting/intro-PrintinginPython2.7, StringFormatting/Interpolation, StringFormatting/CSV, Files/WritingTextFiles, UsingRESTAPIs/cachingResponses, UsingRESTAPIs/flickr,
     NativeInterpreterGotchas/FixCommonProblems
   :assignment_name: Prep 13
-  :deadline: 2016-10-26 21:40
-  :pct_required: 80
+  :deadline: 2017-02-26 17:30
+  :pct_required: 75
   :points: 50
 
-* **Before Sunday 10/30 at 11:59 PM:**
+* **Before Sunday 3/5 at 11:59 PM:**
 
   * Complete all of :ref:`Problem Set 6 <problem_set_6>` and the Demonstrate Your Understanding assignment for this week.
 
-This Week's Reading Responses
------------------------------
+.. note::
 
-.. _reading_response_7:
+  Your Problem Set 6 is due after spring break. However, we *strongly* suggest you try to finish it beforehand, by this Sunday 2/26! We will not be holding office hours over spring break.
 
-.. external:: rr_7
-
-  `Reading Response 7 <https://umich.instructure.com/courses/108426/assignments/139268>`_ on Canvas.
+  You may also want to take a look at Problem Set 7 over spring break, since you'll need to read to prepare for the Monday afterward.
 
 .. _problem_set_6:
 
 Problem Set
 -----------
 
-Go `HERE to see the Problem Set 6 assignment <https://umich.instructure.com/courses/108426/assignments/184508>`_, where you can find the file to download and edit and submit files for this assignment.
+Go `HERE to see the Problem Set 6 assignment <https://umich.instructure.com/courses/150918/assignments/231794>`_, where you can find where to edit and submit files for this assignment.
 
 You'll see very abbreviated instructions for each step in the file you download. Here on this page, you'll see extended instructions for each step to complete the problem set.
 
-Note especially for this problem set, since you're getting real live data, we cannot test everything. You'll have to both look at our tests and examine your output to ensure that you have the correct results! (We will look at your results and output when we grade the problem set.)
+Note especially for this problem set, since you're getting real live data, we cannot test everything. You'll have to both look at our tests and instructions AND examine your output to ensure that you have reasonable results. (We will look at your results and output when we grade the problem set. As always, we do not grade problem sets that do not run. Make sure you have no syntax errors!)
 
 ----
 
@@ -79,7 +70,7 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
 .. note::
 
-    Almost all of the following exercises build on one another. You can use code you wrote in earlier exercises in later ones. If you keep this in mind, this problem set'll be even easier for you!
+    Almost all of the following exercises build on one another. You can use code you wrote in earlier exercises in later ones. If you keep this in mind, this problem set may be even easier for you.
 
 .. external:: ps_6_1
 
@@ -155,7 +146,7 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
     At this point, you'll consider the code you've written so far in your file, and make it generalizable. Which means... FUNCTIONS.
 
-    Define a function called ``get_airport()`` that acPROBLcepts a three-letter airport code string as input, and returns a Python dictionary (like the one you saved in ``airport_data`` above) with data about that airport. 
+    Define a function called ``get_airport()`` that accepts a three-letter airport code string as input, and returns a Python dictionary (like the one you saved in ``airport_data`` above) with data about that airport. 
 
     This function should work no matter where it is called, with just the input of an airport code like "DTW" or "PDX"! It should *not* depend upon global variables. (So, if you input ``"DTW"`` into your ``get_airport`` function, you should get a different result returned than if you invoke the function with the input ``"LAX"``, and so on.
 
@@ -197,18 +188,20 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
     **Using real live data to write a CSV file**
 
-    Finally, instead of printing out the results of code like you wrote above, you'll write the data to a CSV file. Iterate over the same list ``possible_airports`` again, but this time, write code to write to a CSV file called ``airport_temps.csv`` with 4 columns: ``airport_code``, ``status_reason``, ``current_temp``, ``recent_update``. Your resulting CSV file should have at least 5 lines: 4 lines for real airport data, and 1 line for the column headers.
+    Finally, instead of printing out the results of code like you wrote above, you'll write the data to a CSV file. Iterate over the same list ``possible_airports`` again, but this time, write code to write to a CSV file called ``airport_temps.csv`` with 4 columns: ``airport_code``, ``status_reason``, ``current_temp``, ``recent_update``. 
+
+    Your resulting CSV file should have at least 5 lines: 4 lines for real airport data, and 1 line for the column headers. The content of each cell should have well-formatted data: no extra parentheses, just the specific value that corresponds to that header!
 
     In a case where you encounter an invalid airport code, you should *not* write to the CSV file. Instead, you should print to the console: ``Failed for airport <whatever the bad airport code is>``. Use a try/except block to do this.
 
     **Make sure the CSV file you create is called airport_temps.csv. We will run tests on the CSV files post-submission, and we depend on the name of the file being correct.**
 
-    Open the document in Excel or Google Sheets to make sure that it is properly formatted.
+    Open the document in Excel or in Google Drive to make sure that it is properly formatted.
 
     **You should not upload the CSV file your code creates -- when we run your code, it'll appear!**
 
 
 .. external:: ps6_dyu
 
-    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139244>`_ assignment on Canvas.
+    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231781>`_ assignment on Canvas.
 
