@@ -17,7 +17,7 @@ Activities through 3/5 (through Spring Break)
   * Make sure to read :ref:`pip module installer <pip_chap>` (and install the ``pip`` module)
   * Read :ref:`Fetching data <requests_chap>`
   * Read :ref:`REST APIs<rest_apis_chap>`
-  * Check out `this iTunes Search API documentation<https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/>`_ and consider how to use it to make an API request. You don't have to understand it, but you *should* have taken a good look at it.
+  * Check out `this iTunes Search API documentation <https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/>`_ and consider how to use it to make an API request. You don't have to understand it, but you *should* have taken a good look at it.
 
 .. usageassignment::
   :subchapters: PythonModules/intro-ModulesandGettingHelp, PythonModules/Therandommodule, Installation/pip, Requests/intro, Requests/fetching_a_page, Requests/how_the_Internet_works, Requests/urls, Requests/http, Requests/requests_details, RESTAPIs/intro, RESTAPIs/RequestURLs, RESTAPIs/DebugURLs, RESTAPIs/jsonlib, RESTAPIs/unicode, RESTAPIs/requestsCookbook
@@ -38,7 +38,7 @@ Activities through 3/5 (through Spring Break)
 .. usageassignment::
   :subchapters: Exceptions/intro-exceptions, Exceptions/using-exceptions, StringFormatting/intro-PrintinginPython2.7, StringFormatting/Interpolation, StringFormatting/CSV, Files/WritingTextFiles, UsingRESTAPIs/cachingResponses, UsingRESTAPIs/flickr,
     NativeInterpreterGotchas/FixCommonProblems
-  :assignment_name: Prep 13
+  :assignment_name: Lecture Prep 12
   :deadline: 2017-02-26 17:30
   :pct_required: 75
   :points: 50
