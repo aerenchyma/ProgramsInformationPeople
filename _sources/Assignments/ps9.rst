@@ -15,4 +15,4 @@ TBA
 
 .. external:: ps9_dyu
 
-    Complete this week's `Demonstrate Your Understanding <>`_ assignment on Canvas.
+    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231784>`_ assignment on Canvas.

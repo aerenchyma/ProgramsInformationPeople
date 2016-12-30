@@ -47,7 +47,7 @@ Problem Set
 
 **WARNING: THIS PROBLEM SET MAY CHANGE SLIGHTLY UNTIL THIS NOTICE DISAPPEARS**
 
-Go `HERE to see the Problem Set 8 assignment <>`_, where you can find the file you need to download and edit, and where you can submit your file for this assignment.
+Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/courses/150918/assignments/231796>`_, where you can find the file you need to download and edit, and where you can submit your file for this assignment.
 
 .. note::
 
@@ -188,4 +188,4 @@ Go `HERE to see the Problem Set 8 assignment <>`_, where you can find the file y
 
 .. external:: ps8_dyu
 
-    Complete this week's `Demonstrate Your Understanding <>`_ assignment on Canvas.
+    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231783>`_ assignment on Canvas.

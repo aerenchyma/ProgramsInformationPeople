@@ -22,7 +22,7 @@ Activities through 2/19
     
   * You are not being graded on *whether you have read* the installation chapter, but you are expected to have done so if you need to! We will proceed with the assumption after this week that you have a setup that is congruent with this course, so please make sure that is the case.
     
-  * If you have already installed Python, check to **make sure you have Python 2.7 installed on your computer.** We will be using that version of Python in this course, and the files we provide you and expect you to use will not always be compatible with both. If you have installed Python 3, you can and should download Python 2.7.12 `here <https://www.python.org/downloads/>`_. (If you do not have access to a personal computer, you should already have contacted the instructional staff, but please do so ASAP!)
+  * If you have already installed Python, check to **make sure you have Python 2.7 installed on your computer.** We will be using that version of Python in this course, and the files we provide you and expect you to use will not always be compatible with both. If you have installed Python 3, you can and should download `Python 2.7.12 here <https://www.python.org/downloads/>`_. (If you do not have access to a personal computer, you should already have contacted the instructional staff, but please do so ASAP!)
 
 .. usageassignment::
   :subchapters: Unix/CommandPrompt, Unix/FoldersAndPaths, Unix/DirectoriesAndCopying, Unix/lessCommand

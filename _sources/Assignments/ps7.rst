@@ -52,4 +52,4 @@ Much like the last couple weeks, you'll see abbreviated instructions and provide
 
 .. external:: ps7_dyu
 
-    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139245>`_ assignment on Canvas.
+    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231782>`_ assignment on Canvas.
