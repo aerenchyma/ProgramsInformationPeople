@@ -8,239 +8,184 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Activities through 11/11
-========================
+Activities through 3/19
+=======================
 
-* **Before class Monday 11/7:**
+* **Before class Monday 3/13:**
 
-  * Read :ref:`Advanced Accumulation <list_comp_chap>` and try any activities in the listed sub-chapters
-
-.. usageassignment::
-  :subchapters: AdvancedAccumulation/intro, AdvancedAccumulation/map, AdvancedAccumulation/filter, AdvancedAccumulation/listcomp, AdvancedAccumulation/reduce, AdvancedAccumulation/zip
-  :assignment_name: Prep 16
-  :deadline: 2016-11-07 22:40
-  :pct_required: 80
-  :points: 50
-
-* **Before class Wednesday 11/9:**
-
-  * Read :ref:`Testing <test_cases_chap>` and try any activities in the listed sub-chapters
-  * We strongly suggest you also try writing some of these Unit Test examples in your own code files!
+  * Read the sections listed below from the :ref:`Classes <chap_constructor>` chapter, and try the exercises in those sections.
 
 .. usageassignment::
-  :subchapters: Testing/intro-TestCases, Testing/Testingfunctions, Testing/Testingclasses
-  :assignment_name: Prep 17
-  :deadline: 2016-11-09 22:40
-  :pct_required: 80
+  :subchapters: Classes/intro-ClassesandObjectstheBasics, Classes/ObjectsRevisited, Classes/UserDefinedClasses, Classes/ImprovingourConstructor, Classes/AddingOtherMethodstoourClass,   Classes/ObjectsasArgumentsandParameters, Classes/ConvertinganObjecttoaString, Classes/InstancesasReturnValues, Classes/sorting_instances, Classes/ClassVariablesInstanceVariables, Classes/ThinkingAboutClasses, Classes/ClassesHoldingData, Classes/Tamagotchi
+  :assignment_name: Lecture Prep 15
+  :deadline: 2017-03-13 17:30
+  :pct_required: 75
   :points: 50
 
-* **Before Sunday 11/13 at 11:59 PM:**
+* **Before class Wednesday 3/15:**
+
+  * Read about the :ref:`Facebook API <fb_api_exercises>`.
+  * Read the `Facebook Graph API overview <https://developers.facebook.com/docs/graph-api/overview>`_
+  * Try out the `Facebook Graph API Explorer <https://developers.facebook.com/tools/explorer/>`_. You should try at least a couple different requests in the explorer and explore the resulting data (try copying it into jsoneditoronline.org!).
+  * Read about `Paging with the Facebook API <https://developers.facebook.com/docs/graph-api/using-graph-api#paging>`_, focusing on **Offset-based pagination**, which we will focus on in lecture / will discuss further on Wednesday.
+
+.. usageassignment::
+  :subchapters: FacebookAPI/FBAPI
+  :assignment_name: Lecture Prep 16
+  :deadline: 2017-03-15 17:30
+  :pct_required: 50
+  :points: 50
+
+* **Before Sunday 3/19 at 11:59 PM:**
 
   * Complete and submit your :ref:`Problem Set 8 <problem_set_8>`, and save an answer to your Demonstrate Understanding for this week (linked below).
-  * Complete :ref:`Reading Response 9 <reading_response_9>`.
-
-This Week's Reading Responses
------------------------------
-
-.. _reading_response_9:
-
-.. external:: rr_9
-
-  `Reading Response 9 <https://umich.instructure.com/courses/108426/assignments/139270>`_ on Canvas.
-
 
 .. _problem_set_8:
 
 Problem Set
 -----------
 
-Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/courses/108426/assignments/139256>`_, where you can find the file you need to download and edit, and where you can submit your file for this assignment.
+**WARNING: THIS PROBLEM SET MAY CHANGE SLIGHTLY UNTIL THIS NOTICE DISAPPEARS**
 
-.. note::
-
-	Note that each problem on this problem set has two parts: solving the problem, and writing Unit Tests for that problem that check that you have solved it per the instructions! 
-	
-	It may be easier to write the Unit Tests for each problem first, and then solve the problems themselves (this is known as test-driven development).
-
-	You should include, as the third argument to each of your tests, a brief, clear English description of what the test is checking for! e.g. "Testing whether the first element of the list student_tups is type tuple".
+Go `HERE to see the Problem Set 8 assignment <>`_, where you can find the file you need to download and edit, and where you can submit your file for this assignment.
 
 .. note::
 
 	Reminder: we do not debug code when grading, so we cannot grade code that does not run! Make sure your code runs before submitting it -- you should comment out any code that does not.
 
+.. note::
 
-.. external:: ps_8_01
-	
-	**PROBLEM 1**
+    There are a few things in this problem set that cannot be tested: you'll have to examine your output and how your problems work to be 100% sure they work correctly, but passing the tests will give you good guidance about whether or not your code is doing what it should!
 
-	We've provided a definition of a class Student, similar to one you may have seen in lecture. Do not change that code:
+.. external:: ps_9_01
+    
+    **PROBLEM 1**
 
-	.. sourcecode:: python
+    We've provided a file ``samplepost.txt`` that contains a sample of data representing a Facebook post. Using this for data investigation (try copying and pasting it into jsoneditoronline.org!), fill in the definition of the class ``Post`` to hold information about one post on Facebook.
 
-		class Student():
-		    def __init__(this_Student, name, years_at_umich=1):
-		        this_Student.name = name
-		        this_Student.years_UM = years_at_umich
-		        this_Student.bonus_points = random.randrange(1000)
+    We've provided a skeleton of the ``Post`` class with some code:
 
-		    def shout(this_Student, phrase_to_shout):
-		        print phrase_to_shout  # print is for ppl!
+    .. sourcecode:: python
 
-		    def __str__(this_Student):
-		        return "My name is {}, and I've been at UMich for about {} years.".format(this_Student.name,this_Student.years_UM)
+        class Post():
+            """object representing status update"""
+            def __init__(self, post_dict={}):
+                if 'message' in post_dict:
+                    self.message = post_dict['message']
+                else:
+                    self.message = ""
+                
+            def positive(self):
+                return None
+                           
+            def negative(self):
+                return None
 
-		    def year_at_umich(this_Student):
-		        return this_Student.years_UM
+            def emo_score(self):
+                return None
 
-	You should define a subclass of ``Student``, ``Programming_Student``.
+    Add to that code in your ``506_ps9.py`` file so that it fulfills the following instructions.
 
-	* The ``Programming_Student`` class should have an instance variable called ``number_programs_written`` whose value gets passed into the Programming_Student constructor after the ``years_at_umich``. The default value for the ``number_programs_written`` instance variable should be 0.
+    If the post dictionary has a ``'comments'`` key, set an instance variable ``self.comments`` to hold the list of comment dictionaries you extract from ``post_dict``. Otherwise, set ``self.comments`` to be an empty list: ``[]``.
 
-	* The ``Programming_Student`` class should also have a method called ``write_programs``. The ``write_programs`` method accepts an optional parameter called ``progs``, which should be an integer representing the number of programs the Programming_Student will write. Its default value is ``1``. When the write_programs method is called on an instance of Programming_Student, the ``progs`` number should be added to the instance's ``number_programs_written``.
+    Note that something similar has already been done for the contents (``message``) of the original post, so you can use that as a template! Extracting the list of comment dictionaries from a post_dict is a little bit harder. Take a look at the sample of what a ``post_dict`` looks like in the file samplepost.txt / using jsoneditoronline in order to do nested data investigation.
 
-	* The ``Programming_Student`` class should also have a method called ``productivity``. The productivity method should return the average number of programs that the Programming_Student has written per year (that is, divide its ``number_programs_written`` by its ``years_UM``  -- using float division, not integer divison, so you can get a decimal in your answer).
+    Now, similarly, *if* the post has any likes, set ``self.likes`` to the value of the list of likes dictionaries. Otherwise, if there are no ``'likes'``, set ``self.likes`` to hold an empty list.
 
-	* When the ``shout`` method is called for the ``Programming_Student`` class, the phrase ``"Also, Python is pretty cool."`` should print after the phrase to shout. You should be calling the parent ``shout`` method to make this happen.
+    Finally, finish defining three methods of the class Post:
 
-	* The printed representation of an instance of ``Programming_Student`` should look something like ``"My name is Julie, I've been at UMich for about 100 years, and I have written 90 programs while here."``, where **Julie**, **100**, and **90** are in the place of the instance variable values for each instance you create. Override the Student ``__str__`` method for the Programming_Student class to make that happen.
+    ``positive`` should return the number of words in the message that are in the list of positive words called ``pos_ws`` (provided in our code)
 
-.. external:: ps_8_01_test
+    ``negative`` should return the number of words in the message that are in the list of negative words called ``neg_ws`` (provided in our code)
 
-	Write unit tests in your file below your ``Programming_Student`` class definition that ensure that your code does what the instructions say. You should write at least 3 unit tests. 
+    ``emo_score`` should return an integer: the difference between the positive and negative scores for that post. 
 
-	Hint: You'll need to create an instance of your Programming_Student class in order to test your code: see the **Testing Classes** section of the textbook!
+    (Careful: "disgusting" and "disgust", for example, are 2 different words -- so if the word "disgust" is in a message, it should only get 1 negative count for that, not two.)
 
-	(You can include each test in the same subclass of ``unittest.TestCase``, or you can create multiple subclasses of ``unittest.TestCase``. However, each unique ``assert`` statement should be in its own method. See the bottom of the files of your ``506_ps7.py`` and ``506_ps6.py``, as well as the textbook chapters, for examples!) 
+.. activecode:: ps_9_02
 
-	Note that the ``unittest.main(verbosity=2)`` line of code provided at the end of your problem set file is what actually *runs* the tests you write.
+    **PROBLEM 2**
 
-.. external:: ps_8_02
+    We've provided the following code in your ``506_ps9.py`` file, where you'll need it for the problem set. In this code window, add comments that describe what these lines of code do.
+    ~~~~
+    sample = open('samplepost.txt').read()
+    sample_post_dict = json.loads(sample)
+    p = Post(sample_post_dict)
 
-	**PROBLEM 2**
+.. external:: ps_9_03
+    
+    **PROBLEM 3**
 
-	We've provided three lists for you in your code file, like so:
+    Now, get a json-formatted version of your last 100 posts on Facebook (or the last 100 posts from a public group, e.g. **TBA**.
 
-	.. sourcecode:: python
+    We've provided some code here for you to use in order to do this:
 
-		# Provided code
-		names = ["Albert", "Bisi", "Cai", "Dinesh", "Euijin"]
-		seniority = [1, 5, 2, 4, 1]
-		programs_written = [10, 500, 20, 131, 46]
+    We've provided a place for you to put your Facebook access token than you get from ``https://developers.facebook.com/tools/explorer``. (See your assigned readings/lecture materials for more detail.) Remember that in order to get data from a public group, you will need to use **version 2.3**, so that is the version we've included in the baseurl and shown in class and you will need to select the **user_groups** permission after you click Get Token. Also remember that every few hours, you'll need to get a new access token from the Graph explorer.
 
-	The following problems, through Problem 7, build on one another, so make sure you understand what is happening step by step.
+    We've saved the base url for Facebook in a variable, ``baseurl``. The baseurl looks like this: ``https://graph.facebook.com/v2.3/me/feed``. 'All the data from my own Facebook feed.' You'll also see we've provided a variable in your file called ``GROUP_ID``. You should replace the ``me`` in the baseurl with that variable's value if you want to get data from a public FB group instead of a personal Facebook.
 
-	First, create a list of tuples, in which the first tuple in the list is the first value from each list: ``names``, ``seniority``, and ``programs_written``: ``("Albert", 1, 10)``, and the second tuple in the list is each of the second elements of these lists ``("Bisi", 5, 500)``, and so on. 
+    We've also built your necessary params dictionary to get data about Facebook posts, their comments, and their likes, though you can try other parameters as well!
 
-	Save that list in a variable called ``student_tups``. Do not hard-code it -- so, don't just type it out! 
+    .. sourcecode:: python
 
-	(**Hint to make this easier:** check out ``https://www.programsinformationpeople.org/runestone/static/506F16/AdvancedAccumulation/zip.html``)
+        url_params = {}
+        url_params["access_token"] = access_token
+        url_params["fields"] = "comments{comments{like_count,from,message,created_time},like_count,from,message,created_time},likes,message,created_time,from"
 
-.. external:: ps_8_02_test
+    This will get you pretty complex data -- but you've seen data similar to it before, when we first did nested data investigation.
 
-	Write a unit test to check whether the list of tuples ``student_tups`` holds the correct value.
+    Given all this stuff, you should write code to make a request to the Facebook API, and you should retrieve up to 200 posts from your Facebook feed or from the class FB group, using paging. Convert the data you collect into a Python object, and save it in the variable ``fb_data``.
 
-.. external:: ps_8_03
+.. external:: ps_9_04
+    
+    **PROBLEM 4**
 
-	**PROBLEM 3**
+    Given all this Facebook data you have, use a list comprehension to create a list of instances of class ``Post``. Save that list of Post instances in a variable called ``post_insts``.
 
-	Use a list comprehension with the ``student_tups`` list that you just created in order to create a list of ``Programming_Student`` instances. Save the list of ``Programming_Student`` instances in a variable called ``programmers``.
+    **NOTE:** This requires understanding -- but only one line of code, given the code you have already written above!
 
-.. external:: ps_8_03_test
+.. external:: ps_9_05
+    
+    **PROBLEM 5**
 
-	Write at least 3 unit tests that check whether the ``programmers`` list is correct. Does it have the elements it is supposed to have? 
+    Write code to compute the 3 people who liked the most posts in the feed, and save those people's names in a list called ``top_likers``. Compute the 3 people who commented most frequently in the feed, and save those people's names in a list called ``top_commenters``.
 
-	Hints to help you decide: Is the first element of the list the correct type? Does it have the attributes it should have? Is the ``programmers`` list the correct length?
+    HINT: creating dictionaries and sorting may both be useful here.
 
-.. external:: ps_8_04
+.. external:: ps_9_06
+    
+    **PROBLEM 6**
 
-	**PROBLEM 4**
+    Define a function called ``unique_facebookers`` that takes as input a list of ``Post`` instances.
+    
+    The function should return the string "commenters" if the number of unique people who commented on all of those posts is larger than the number of unique people who liked at least one post in your data. 
 
-	Use the Python ``map`` function on the ``programmers`` list you just created, in order to create a list of numbers representing the **productivity** of each student. 
+    If the number of unique people who liked posts in your data is bigger than the number who commented, the function should return the string "likers". 
 
-	Save the new list in a variable called ``productivities``. (The first couple of values should be the equivalent of ``10.0/1`` and ``500.0/5``...) 
+    If the count of unique people who liked posts in your feed is equal to the count of unique people who made comments in your feed, it should return the string "equal". 
 
-	Be sure to make use of the ``productivity`` method that you defined for the ``Programming_Student`` class.
+    For example: if the comments on my posts are made by, in order: Mary, Tess, Nat, Jackson, Tess, and Mary, then 4 unique people commented. If the following people liked my posts, overall: Nat, Jackson, Jackson, Mary, then 3 unique people liked my posts. If this were the case in my Post instances list, invoking my ``unique_facebookers`` function on my list should return ``"commenters"``. 
 
-.. external:: ps_8_04_test
+    Note that this is NOT the same as looking at whether there were more comments or likes overall!
 
-	Write a unit test to check whether the list of tuples ``productivities`` holds the correct value.
 
-.. external:: ps_8_05
+.. external:: ps_9_07
+    
+    **PROBLEM 7**
 
-	**PROBLEM 5**
+    Write code to output a .csv file called emo_scores.csv that lets you make scatterplots (in Excel or Google sheets) showing net positivity (emo_scores) on x-axis and comment-counts and like-counts on the y-axis. 
+    
+    Each row in the CSV should represent one post, and should include: emo score, comment counts, and like counts, in that order.
 
-	Use a list comprehension on the list ``programmers`` that you created above, in order to create a list of tuples wherein each tuple has a student's name as the first element and the student's productivity value as the second element. 
+    Use the CSV to create a scatterplot of your data, which you can do in Excel or Google Sheets. Then, post a screenshot of your scatterplot to our facebook group! (You do not have to do this, but we encourage it.)
 
-	Save the list of tuples in a variable called ``names_and_productivities``. The first tuple should be ``("Albert", 10.0)`` and the second should be ``("Bisi", 100.0)``, and so on.
+    You can see what the scatterplot might look like in ``emo_scores.xlsx``, included in the assignment files. (In the example case, there's not an obvious correlation between positivity and how many comments or likes. There may not be, but you find that out by exploring the data!)
 
-.. external:: ps_8_05_test
+    **Submit your generated .CSV to Canvas.** Please make sure it is saved with the exact name **emo_scores.csv** -- our grading process depends upon it having the correct name!
 
-	Write a unit test that checks whether ``names_and_productivities`` holds the correct value.
+    Can you see any trends or possible relationships between likes, comments, and emo_scores once you generate a scatterplot? (Something to consider/discuss. Not graded.)
 
-.. external:: ps_8_06
-
-	**PROBLEM 6**
-
-	Use the Python ``filter`` function to select the subset of ``programmers`` instances who have names with 5 or more characters. Save the resulting list in a variable called ``long_names``.
-
-.. external:: ps_8_06_test
-
-	Write a unit test that checks whether ``long_names`` holds the correct value. (Hint: It should hold a list of ``Programming_Student`` instances... but it should not include every element of the ``programmers`` list!)
-
-.. external:: ps_8_07
-
-	**PROBLEM 7**
-
-	Use a list comprehension to generate a list of strings: **just the names**  of the ``Programming_Student`` instances where the lengths of their names are longer than the number of years they've been at UM (i.e., ``["Albert", "Cai", "Dinesh", "Eujin"]``). Assign the result list to a variable called ``names_with_not_too_much_seniority``.
-
-.. external:: ps_8_07_test
-
-	Write a unit test that checks whether ``names_with_not_too_much_seniority`` holds the correct value.
-
-.. external:: ps_8_08_test
-
-	**PROBLEM 8**
-
-	We have provided a function definition for you, called ``good_cards``. 
-
-	It takes as input a list of integers. Each integer has a value between 1 and 10 (inclusive: each value could be 1, and it could be 10). You can think of the integers in the input list as representing cards with values 1-10.
-
-	The function simulates a blackjack game (a type of poker game): the function is supposed to return an integer which represents a *count* of how many values ('cards') from the input list ``L`` can be accepted before the sum of the accepted values becomes greater than 21. 
-
-	(In blackjack, if the sum of cards is over 21, the player is "busted" and loses that game. For those familiar with special Blackjack game rules, in this function, the integer value ``1`` should always count as just ``1``, not as ``11``. For those who do not know the game, you need only pay attention to the description of what this function ought to do to write good tests for it!) 
-
-	If the list of all the values in the input list ``L`` do not add up to 21, the ``good_cards`` function should return the total length of the input list ``L``. Otherwise, the function should return the number of values in input list ``L`` it took to reach a sum of 21. The code we've written for the function is as shown here, also provided in your problem set Python file:
-
-	.. sourcecode:: python
-
-		def good_cards(L):
-		    sum = 0
-		    c = 0
-		    to_return = []
-		    for card in L:
-		        sum += card
-		        c += 1
-		        if sum >= 21:
-		            break
-		    return c
-
-.. mchoice:: ps_8_08_mc
-   :answer_a: Return value tests
-   :answer_b: Side effect tests
-   :answer_c: Both
-   :feedback_a: Yes! This function returns a value, so you'll want to check whether it returns the correct output given a variety of different inputs.
-   :feedback_b: This function does not have an effect on anything outside its local scope, so you will not need to write any side-effect tests.
-   :feedback_c: In this case, there's no need for side-effect tests. Usually this answer is true when you write tests for a class definition, but somewhat rarely for a function outside a class definition.
-   :correct: a
-
-   **Ungraded, but helpful for Problem 8:** To write unit tests for this function ``good_cards``, should you create return-value tests, side-effect tests, or both? 
-
-.. external:: ps_8_08
-
-    Finally, in your code file, write unit tests for the good_cards function. Make sure you consider edge cases. What if ``L`` does not have enough values in the list to get to 21, will the function work correctly? What if the sum of the values in ``L`` is exactly 21? What if it takes a lot of "cards" to get to 21? What if it takes very few values from the input list ``L`` to add up to 21? etc. 
-
-    (You may assume that all values in the function's input list ``L`` will be in the range of 1 - 10 and will be integers; you do not need to test for that. Here, you should not write tests that deal with bad input to the ``good_cards`` function, only tests that check whether the function will work properly, per the description above, for a variety of different inputs.)
 
 .. external:: ps8_dyu
 
-    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/108426/assignments/139246>`_ assignment on Canvas.
+    Complete this week's `Demonstrate Your Understanding <>`_ assignment on Canvas.

@@ -15,7 +15,13 @@ Activities through 3/12
 
   * Review the :ref:`Flickr API<flickr_api_chap>` and :ref:`Caching Responses<caching_responses>` from last week.
   * We are posting a file on Canvas in Files > Code Samples that shows code to access the Flickr API which is commented thoroughly. You should download this, look at it, and try it out!
- 
+
+.. usageassignment::
+  :subchapters: UsingRESTAPIs/cachingResponses, UsingRESTAPIs/flickr
+  :assignment_name: Lecture Prep 13
+  :deadline: 2017-03-06 17:30
+  :pct_required: 65
+  :points: 50 
 
 * **Before class Wednesday 3/8:**
 
