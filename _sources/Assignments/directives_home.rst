@@ -13,7 +13,7 @@
 .. assignment::
   :name: PS02
   :assignment_type: problem_set
-  :questions: ps_2_1 150, ps_2_2 100, ps_2_3 150, ps_2_4 150, ps_2_5 100, ps_2_6 150, ps_2_7 100, ps_2_8 100
+  :questions: ps_2_01 150, ps_2_02 100, ps_2_03 150, ps_2_04 200, ps_2_05 150, ps_2_06 150, ps_2_07 100
   :deadline: 2017-01-23 05:00
   :points: 1000
   :autograde: unittest
@@ -21,7 +21,7 @@
 .. assignment::
   :name: PS03
   :assignment_type: problem_set
-  :questions: ps_3_1 100, ps_3_2 200, ps_3_3 100, ps_3_4 150, ps_3_5 100, ps_3_6 200, ps_3_7 150
+  :questions: ps_3_01 150, ps_3_02 200, ps_3_03 150, ps_3_04 150, ps_3_05 150, ps_3_06 200
   :deadline: 2017-01-30 05:00
   :points: 1000
   :autograde: unittest
@@ -29,16 +29,15 @@
 .. assignment::
   :name: PS04
   :assignment_type: problem_set
-  :questions: problem_set_4_unix_1 300, ps_4_01 275, ps_4_02 225, ps_4_03 200
-  :deadline: 2016-10-10 04:00
-  :points: 1000
+  :questions: ps_4_01 100, ps_4_02 220, ps_4_03 60, ps_4_04 60
+  :deadline: 2017-02-05 05:00
+  :points: 500
   :autograde: unittest
 
 .. assignment::
   :name: PS05
   :assignment_type: problem_set
   :questions: ps_5_1 100, ps_5_2 100, ps_5_3 200, ps_5_4 200, ps_5_5 100, ps_5_6 100, ps_5_7 100, ps_5_8 100
-  :deadline: 2016-10-17 04:00
   :points: 1000
   :autograde: unittest
 
@@ -50,91 +49,17 @@
   :points: 1000
   :autograde: unittest
 
-.. assignment::
-  :name: PS07
-  :assignment_type: problem_set
-  :questions: ps_7_1 100, ps_7_2 100, ps_7_3 200, ps_7_4 200, ps_7_5 200, ps_7_6 100, ps_7_7 100
-  :points: 1000
-  :autograde: unittest
+.. ps7 TODO
 
 .. assignment::
   :name: PS08
   :assignment_type: problem_set
-  :questions: ps_8_01 200, ps_8_02 100, ps_8_03 100, ps_8_04 100, ps_8_05 100, ps_8_06 100, ps_8_07 100, ps_8_08 200
+  :questions: ps_8_01 300, ps_8_02 100, ps_8_03 100, ps_8_04 100, ps_8_05 200, ps_8_06 100, ps_8_07 100
   :points: 1000
   :autograde: unittest
-
-.. assignment::
-  :name: PS09
-  :assignment_type: problem_set
-  :questions: ps_9_01 300, ps_9_02 100, ps_9_03 100, ps_9_04 100, ps_9_05 200, ps_9_06 100, ps_9_07 100
-  :points: 1000
-  :autograde: unittest
-
-.. assignment::
-  :name: PS10
-  :assignment_type: problem_set
-  :questions: ps_10_01 200, ps_10_02 200, ps_10_03 300, ps_10_04 300
-  :points: 1000
-  :autograde: unittest
-
-.. assignment::
-  :name: PS11
-  :assignment_type: problem_set
-  :questions: ps_11_01 200, ps_11_02 300, ps_11_03 300, ps_11_04 200
-  :points: 1000
-
 
 .. reading responses
-
-.. assignment::
-  :name: response_1
-  :assignment_type: reading_response
-  :questions: rr_1 100
-  :points: 100
-
-.. assignment::
-  :name: response_2
-  :assignment_type: reading_response
-  :questions: rr_2 100
-  :points: 100
-
-.. assignment::
-  :name: response_3
-  :assignment_type: reading_response
-  :questions: rr_3 100
-  :points: 100
-
-.. assignment::
-  :name: response_4
-  :assignment_type: reading_response
-  :questions: rr_4 100
-  :points: 100
-
-.. assignment::
-  :name: response_5
-  :assignment_type: reading_response
-  :questions: rr_5 100
-  :points: 100
-
-.. assignment::
-  :name: response_6
-  :assignment_type: reading_response
-  :questions: rr_6 100
-  :points: 100
-
-.. assignment::
-  :name: response_7
-  :assignment_type: reading_response
-  :questions: rr_7 100
-  :points: 100
-
-.. assignment::
-  :name: response_8
-  :assignment_type: reading_response
-  :questions: rr_8 100
-  :points: 100
-
+.. none W17
 
 .. demonstrate understanding (dyus)
 
@@ -180,6 +105,18 @@
   :questions: ps7_dyu 100
   :points: 100
 
+.. assignment::
+  :name: dyu8
+  :assignment_type: dyu
+  :questions: ps8_dyu 100
+  :points: 100
+
+.. assignment::
+  :name: dyu9
+  :assignment_type: dyu
+  :questions: ps9_dyu 100
+  :points: 100
+
 .. discussion section attendance
 
-.. mass uploader
+.. mass uploader TODO
