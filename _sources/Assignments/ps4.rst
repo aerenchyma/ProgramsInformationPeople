@@ -63,7 +63,6 @@ Problem Set
    :available_files: timely_file.txt
    :language: python
    :autograde: unittest
-   :hidecode:
 
    **1.** We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Save the string that is most common word in the file in the variable ``abc``. (Hint: you had a problem quite similar to this one in PS3!)
 
@@ -98,7 +97,7 @@ You may find it helpful to run this program in order to understand it. It will t
 .. activecode:: ps_4_hangman_code
   :hidecode:
 
-  This is the base code for a Hangman game. (If you have never played Hangman, you can go to ``https://en.wikipedia.org/wiki/Hangman_(game)`` for an explanation of what it is.)
+  This is the base code for a Hangman game, without some of the important useful functionality. (If you have never played Hangman, you can go to ``https://en.wikipedia.org/wiki/Hangman_(game)`` for an explanation of what it is.)
   ~~~~
   def blanked(word, guesses):
       return "blanked word"
@@ -193,7 +192,6 @@ In later problems, you'll fill in a few details that aren't fully implemented in
 .. activecode:: ps_4_03
    :language: python
    :autograde: unittest
-   :hidecode:
 
    **3.** The next task you have is to create a correct version of the ``blanked`` function. It should take 2 inputs: a word, and a string of the letters that have been guessed already. 
 
@@ -232,7 +230,6 @@ In later problems, you'll fill in a few details that aren't fully implemented in
 
 .. activecode:: ps_4_04
     :autograde: unittest
-    :hidecode:
 
     **4.** Now you have to create a good version of the ``health_prompt`` function: Define a function called ``health_prompt``. The first parameter should be the current health the player has (an integer), and the second parameter should be the maximum health a player can have (an integer). The function should return a string with ``+`` signs for the current health, and ``-`` signs for the health that has been lost so far.
     ~~~~

@@ -30,7 +30,9 @@ You have the following graded activities:
     :pct_required: 75
     :points: 50
 
-* Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
+* **Before Wednesday's class 2/1:**
+  
+  * Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
 
 .. usageassignment::
     :subchapters: Functions/FunctionDefinitions,Functions/FunctionInvocation,Functions/FunctionParameters,Functions/Returningavaluefromafunction,Functions/Afunctionthataccumulates,Functions/DecodingaFunction,Functions/MethodInvocations,Functions/Variablesandparametersarelocal,Functions/GlobalVariables,Functions/Functionscancallotherfunctions,Functions/FlowofExecutionSummary,Functions/Printvs.return,Functions/PassingMutableObjects,Functions/SideEffects
@@ -61,7 +63,6 @@ Problem Set
 
 .. activecode:: ps_3_01
    :language: python
-   :hidecode:
 
    **1.** Write code **that will keep printing what the user inputs over and over until the user enters the string "quit".**
 
@@ -84,7 +85,6 @@ Problem Set
 
 .. activecode:: ps_3_02
    :language: python
-   :hidecode:
 
    **2.** Below is a function definition. **DO NOT** change it! 
 
@@ -120,7 +120,6 @@ Problem Set
 .. activecode:: ps_3_03
    :language: python
    :autograde: unittest
-   :hidecode:
 
    **3.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
    ~~~~
@@ -145,7 +144,6 @@ Problem Set
 
 .. activecode:: ps_3_04
    :language: python
-   :hidecode:
 
    **4.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
    ~~~~
@@ -169,7 +167,6 @@ Problem Set
 
 .. activecode:: ps_3_05
    :language: python
-   :hidecode:
    :autograde: unittest
 
    **5.** Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
@@ -194,7 +191,6 @@ Problem Set
 .. activecode:: ps_3_06
    :language: python
    :autograde: unittest
-   :hidecode:
 
    **6.** Define a function ``is_prefix`` that takes two strings as inputs and returns the boolean value ``True`` if the first string is a prefix of the second string, but returns the boolean value ``False`` otherwise. You can assume the first string will always be shorter than, or the same length as, the second string.
 
