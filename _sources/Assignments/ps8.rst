@@ -57,7 +57,7 @@ Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/cour
 
     There are a few things in this problem set that cannot be tested: you'll have to examine your output and how your problems work to be 100% sure they work correctly, but passing the tests will give you good guidance about whether or not your code is doing what it should!
 
-.. external:: ps_9_01
+.. external:: ps_8_01
     
     **PROBLEM 1**
 
@@ -102,7 +102,7 @@ Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/cour
 
     (Careful: "disgusting" and "disgust", for example, are 2 different words -- so if the word "disgust" is in a message, it should only get 1 negative count for that, not two.)
 
-.. activecode:: ps_9_02
+.. activecode:: ps_8_02
 
     **PROBLEM 2**
 
@@ -112,7 +112,7 @@ Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/cour
     sample_post_dict = json.loads(sample)
     p = Post(sample_post_dict)
 
-.. external:: ps_9_03
+.. external:: ps_8_03
     
     **PROBLEM 3**
 
@@ -136,7 +136,7 @@ Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/cour
 
     Given all this stuff, you should write code to make a request to the Facebook API, and you should retrieve up to 200 posts from your Facebook feed or from the class FB group, using paging. Convert the data you collect into a Python object, and save it in the variable ``fb_data``.
 
-.. external:: ps_9_04
+.. external:: ps_8_04
     
     **PROBLEM 4**
 
@@ -144,7 +144,7 @@ Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/cour
 
     **NOTE:** This requires understanding -- but only one line of code, given the code you have already written above!
 
-.. external:: ps_9_05
+.. external:: ps_8_05
     
     **PROBLEM 5**
 
@@ -152,7 +152,7 @@ Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/cour
 
     HINT: creating dictionaries and sorting may both be useful here.
 
-.. external:: ps_9_06
+.. external:: ps_8_06
     
     **PROBLEM 6**
 
@@ -169,7 +169,7 @@ Go `HERE to see the Problem Set 8 assignment <https://umich.instructure.com/cour
     Note that this is NOT the same as looking at whether there were more comments or likes overall!
 
 
-.. external:: ps_9_07
+.. external:: ps_8_07
     
     **PROBLEM 7**
 
