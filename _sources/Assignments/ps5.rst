@@ -33,7 +33,7 @@ Activities through 2/19
 
 * **Midterm exam Wednesday 2/15.**
 
-* **By Sunday, 2/19, compete Problem Set 5 and submit it to Canvas (see below).**
+* **Before Sunday, 2/19 11:59 PM, compete Problem Set 5 and submit it to Canvas (see below).**
 
 .. note::
 
