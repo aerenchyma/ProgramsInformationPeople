@@ -18,26 +18,27 @@ Activities through 1/15
 =======================
 
 * **By the end of this week (or as soon as you join the course):**
-  
-  * Read `the course syllabus <>`_.
-  * Fill out `this google form assignment<>`_ about grading and assignments in this course to make sure we are all on the same page!
-  * Fill in a little `info about you </runestone/default/bio>`_.
-  * Check out our `Piazza<>` forums on the Canvas site.
 
-* **Before class on 1/9:**
+  * Read `the course syllabus <https://umich.instructure.com/courses/150918/files?preview=3591972>`_ 
+  * Fill out the google form assignment you'll receive in a Canvas announcement (link TBA here).
+  * Fill in a little `info about you </runestone/default/bio>`_ 
+  * Check out our Piazza forums on the Canvas site.
+
+* **Before class on Monday 1/9:**
+
   * Read :ref:`General Intro <the_way_of_the_program>`, :ref:`Simple Python Data<simple_python_data>`, and :ref:`Objects and Turtle Graphics<turtles_chap>`.
   * When reading, run the activecodes and answer the multiple choice questions. There may also be exercises at the end of each chapter. These are optional (though trying them is recommended, trying all of those is not requierd, and getting them correct is also *not required*).
-  * We are starting out with a *lot* of material. That is because we are going to speed through a lot of the beginning foundational material, and slow down in a couple weeks -- this stuff is the basis of everything else we'll do, so it is important to absorb and review as we go -- you can always come back to this! *When you have questions about this stuff, you should ask them, come to office hours, post on Piazza!*
+  * We are starting out with a *lot* of material. That is because we are going to speed through a lot of the beginning foundational material, and slow down in a couple weeks -- this stuff is the basis of everything else we'll do, so it is important to absorb and review as we go -- you can always come back to this! When you have questions about this stuff, you should ask them, come to office hours, post on Piazza!
 
 .. usageassignment::
-    :subchapters: GeneralIntro/intro-TheWayoftheProgram, GeneralIntro/Algorithms, GeneralIntro/ThePythonProgrammingLanguage, GeneralIntro/SpecialWaystoExecutePythoninthisBook, GeneralIntro/MoreAboutPrograms, GeneralIntro/WhatisDebugging, GeneralIntro/Syntaxerrors, GeneralIntro/RuntimeErrors, GeneralIntro/SemanticErrors, GeneralIntro/ExperimentalDebugging, GeneralIntro/FormalandNaturalLanguages, GeneralIntro/ATypicalFirstProgram, SimplePythonData/intro-VariablesExpressionsandStatements, SimplePythonData/Values, SimplePythonData/Operators, SimplePythonData/FunctionCalls, SimplePythonData/DataTypes, SimplePythonData/Typeconversionfunctions, SimplePythonData/Variables, SimplePythonData/VariableNamesandKeywords, SimplePythonData/OrderofOperations, SimplePythonData/BooleanValuesandBooleanExpressions, SimplePythonData/Logicaloperators, SimplePythonData/PrecedenceofOperators, SimplePythonData/Reassignment, SimplePythonData/UpdatingVariables, SimplePythonData/HardCoding, SimplePythonData/Input, PythonTurtle/intro-HelloLittleTurtles, PythonTurtle/OurFirstTurtleProgram, PythonTurtle/InstancesAHerdofTurtles,
-    PythonTurtle/ObjectInstances, PythonTurtle/SummaryOfTurtleMethods
+    :subchapters: GeneralIntro/intro-TheWayoftheProgram, GeneralIntro/Algorithms, GeneralIntro/ThePythonProgrammingLanguage, GeneralIntro/SpecialWaystoExecutePythoninthisBook, GeneralIntro/MoreAboutPrograms, GeneralIntro/WhatisDebugging, GeneralIntro/Syntaxerrors, GeneralIntro/RuntimeErrors, GeneralIntro/SemanticErrors, GeneralIntro/ExperimentalDebugging, GeneralIntro/FormalandNaturalLanguages, GeneralIntro/ATypicalFirstProgram, SimplePythonData/intro-VariablesExpressionsandStatements, SimplePythonData/Values, SimplePythonData/Operators, SimplePythonData/FunctionCalls, SimplePythonData/DataTypes, SimplePythonData/Typeconversionfunctions, SimplePythonData/Variables, SimplePythonData/VariableNamesandKeywords, SimplePythonData/OrderofOperations, SimplePythonData/BooleanValuesandBooleanExpressions, SimplePythonData/Logicaloperators, SimplePythonData/PrecedenceofOperators, SimplePythonData/Reassignment, SimplePythonData/UpdatingVariables, SimplePythonData/HardCoding, SimplePythonData/Input,PythonTurtle/intro-HelloLittleTurtles,PythonTurtle/OurFirstTurtleProgram,PythonTurtle/InstancesAHerdofTurtles,PythonTurtle/ObjectInstances,PythonTurtle/SummaryOfTurtleMethods
     :assignment_name: Lecture Prep 01
-    :deadline: 2017-01-09 17:10
-    :pct_required: 50
+    :deadline: 2017-01-11 17:10
+    :pct_required: 65
     :points: 50
 
 * **Before class Wednesday 1/11:**
+  
   * Read :ref:`Debugging tips<debugging_chap>`, :ref:`Sequences<sequences_chap>`, :ref:`Building a Program <build_program_chap>`, and :ref:`Iteration<iteration_chap>`, and try a bunch of the exercises in the below listed sections.
 
 .. usageassignment::
@@ -47,7 +48,7 @@ Activities through 1/15
     :pct_required: 65
     :points: 50
 
-* Participation in your discussion section this week
+* Go to your discussion section this week, Wednesday or Thursday afternoon
 
 * **By Sunday 1/15 at 11:59 PM:** 
 

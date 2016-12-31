@@ -20,6 +20,7 @@ You have the following graded activities:
 * **No class Monday 1/16 for MLK Day.**
 
 * **Before class Wednesday 1/18:**
+
   * Read :ref:`Conditionals <conditionals_chap>`
   * Read :ref:`File Input/Output <files_chap>`
   * Read :ref:`Dictionaries<dictionaries_chap>`
@@ -44,12 +45,6 @@ Problem Set
 -----------
 
 **Instructions:** Write the code you want to save in the provided boxes, and click **save & run** for each one. The last code you have saved for each one by the deadline is what will be graded.
-
-
-Problem Set
------------
-
-**Instructions:** Write the code you want to save in the provided boxes, and click **run** for each one, which will save what is in the code window. The last code you have saved for each one by the deadline is what will be graded.
 
 .. datafile::  about_programming.txt
    :hide:
