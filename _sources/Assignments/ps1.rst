@@ -25,6 +25,7 @@ Activities through 1/15
   * Check out our Piazza forums on the Canvas site.
   * Read `this piece, called Coding Magic <http://marieflanagan.com/coding-magic/>`_ by Marie LeBlanc Flanigan
 
+
 * **Before class on Monday 1/9:**
 
   * Read :ref:`General Intro <the_way_of_the_program>`, :ref:`Simple Python Data<simple_python_data>`, and :ref:`Objects and Turtle Graphics<turtles_chap>`.
