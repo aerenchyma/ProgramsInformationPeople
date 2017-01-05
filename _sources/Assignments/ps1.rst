@@ -20,9 +20,10 @@ Activities through 1/15
 * **By the end of this week (or as soon as you join the course):**
 
   * Read `the course syllabus <https://umich.instructure.com/courses/150918/files?preview=3591972>`_ 
-  * Fill out the google form assignment you'll receive in a Canvas announcement (link TBA here).
+  * Fill out `this google form assignment <https://goo.gl/forms/deIuG2hYLuBUpTXH2>`_
   * Fill in a little `info about you </runestone/default/bio>`_ 
   * Check out our Piazza forums on the Canvas site.
+  * Read `this piece, called Coding Magic <http://marieflanagan.com/coding-magic/>`_ by Marie LeBlanc Flanigan
 
 * **Before class on Monday 1/9:**
 
