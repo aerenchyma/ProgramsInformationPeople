@@ -23,7 +23,7 @@ Activities through 1/15
   * Fill out `this google form assignment <https://goo.gl/forms/deIuG2hYLuBUpTXH2>`_
   * Fill in a little `info about you </runestone/default/bio>`_ 
   * Check out our Piazza forums on the Canvas site.
-  * Read `this piece, called Coding Magic <http://marieflanagan.com/coding-magic/>`_ by Marie LeBlanc Flanigan
+  * Read `this piece, called Coding Magic <http://marieflanagan.com/coding-magic/>`_ by Marie LeBlanc Flanagan
 
 
 * **Before class on Monday 1/9:**
