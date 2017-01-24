@@ -14,7 +14,7 @@ Activities through 2/05
 
 * **Before Monday's class, 1/30:**
 
-  * Read *just the selected parts listed* of :ref:`Files<files_chap>` (we'll look at the rest soon)
+  * Review *just the selected parts listed* of :ref:`Files<files_chap>` (we'll look at the rest soon)
   * Review :ref:`Functions<functions_chap>` (not graded, but recommended)
   * Read :ref:`Optional and Keyword Parameters<optional_params_chap>`
 

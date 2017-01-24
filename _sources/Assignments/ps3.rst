@@ -22,6 +22,7 @@ You have the following graded activities:
 
   * Read :ref:`Dictionary Accumulation<dictionary_accum_chap>` and try the exercises in below listed sections
   * Read :ref:`Indefinite Iteration<while_chap>` and try the exercises in below listed sections
+  * Check out *just the first few sections* of :ref:`Files<files_chap>` (we'll look at the rest soon) -- not graded, since this was missing from your original assignment, but included for later reference!
 
 .. usageassignment::
     :subchapters: BuildingAProgram/TheStrategy, DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary, DictionaryAccumulation/AccumulatingResultsFromaDictionary, DictionaryAccumulation/AccumulatingaMaximumValue, DictionaryAccumulation/AccumulatingtheBestKey, IndefiniteIteration/intro-indefiniteiteration, IndefiniteIteration/ThewhileStatement, IndefiniteIteration/listenerLoop
