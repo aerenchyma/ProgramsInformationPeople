@@ -21,7 +21,7 @@ Activities through 2/05
 .. usageassignment::
   :subchapters: OptionalAndKeywordParameters/OptionalParameters, OptionalAndKeywordParameters/KeywordParameters, Files/intro-WorkingwithDataFiles, Files/ReadingaFile, Files/AlternativeFileReadingMethods, Files/Iteratingoverlinesinafile, Files/FilesRecipe
   :assignment_name: Lecture Prep 06
-  :deadline: 2017-01-30 17:10
+  :deadline: 2017-02-01 05:00
   :pct_required: 75
   :points: 50
 

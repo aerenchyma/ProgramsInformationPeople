@@ -35,7 +35,7 @@ Activities through 1/15
 .. usageassignment::
     :subchapters: GeneralIntro/intro-TheWayoftheProgram, GeneralIntro/Algorithms, GeneralIntro/ThePythonProgrammingLanguage, GeneralIntro/SpecialWaystoExecutePythoninthisBook, GeneralIntro/MoreAboutPrograms, GeneralIntro/WhatisDebugging, GeneralIntro/Syntaxerrors, GeneralIntro/RuntimeErrors, GeneralIntro/SemanticErrors, GeneralIntro/ExperimentalDebugging, GeneralIntro/FormalandNaturalLanguages, GeneralIntro/ATypicalFirstProgram, SimplePythonData/intro-VariablesExpressionsandStatements, SimplePythonData/Values, SimplePythonData/Operators, SimplePythonData/FunctionCalls, SimplePythonData/DataTypes, SimplePythonData/Typeconversionfunctions, SimplePythonData/Variables, SimplePythonData/VariableNamesandKeywords, SimplePythonData/OrderofOperations, SimplePythonData/BooleanValuesandBooleanExpressions, SimplePythonData/Logicaloperators, SimplePythonData/PrecedenceofOperators, SimplePythonData/Reassignment, SimplePythonData/UpdatingVariables, SimplePythonData/HardCoding, SimplePythonData/Input,PythonTurtle/intro-HelloLittleTurtles,PythonTurtle/OurFirstTurtleProgram,PythonTurtle/InstancesAHerdofTurtles,PythonTurtle/ObjectInstances,PythonTurtle/SummaryOfTurtleMethods
     :assignment_name: Lecture Prep 01
-    :deadline: 2017-01-11 17:10
+    :deadline: 2017-02-01 05:00
     :pct_required: 65
     :points: 50
 
@@ -46,7 +46,7 @@ Activities through 1/15
 .. usageassignment::
     :subchapters: Sequences/intro-Sequences, Sequences/OperationsonStrings, Sequences/IndexOperatorWorkingwiththeCharactersofaString, Sequences/OperationsandStrings, Sequences/StringMethods, Sequences/Length, Sequences/TheSliceOperator, Sequences/StringsareImmutable, Sequences/Theinandnotinoperators, Sequences/Characterclassification, Sequences/Lists, Sequences/ListValues, Sequences/ListLength, Sequences/AccessingElements, Sequences/ListMembership, Sequences/ConcatenationandRepetition, Sequences/ListSlices, Sequences/ListsareMutable, Sequences/ListDeletion, Sequences/ObjectsandReferences, Sequences/Aliasing, Sequences/CloningLists, Sequences/ListMethods, Sequences/AppendversusConcatenate, Sequences/SplitandJoin, Iteration/intro-Iteration, Iteration/TheforLoop, Iteration/FlowofExecutionoftheforLoop, Iteration/Stringsandforloops, Iteration/TraversalandtheforLoopByIndex, Iteration/Listsandforloops, Iteration/TheAccumulatorPattern, Iteration/TheAccumulatorPatternwithLists, Iteration/TheAccumulatorPatternwithStrings, BuildingAProgram/UnderstandingCode
     :assignment_name: Lecture Prep 02
-    :deadline: 2017-01-11 17:10
+    :deadline: 2017-02-01 05:00
     :pct_required: 65
     :points: 50
 

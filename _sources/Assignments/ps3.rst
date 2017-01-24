@@ -13,12 +13,12 @@
     :linenothreshold: 500
 
 
-Activities through 9/29
+Activities through 1/29
 =======================
 
 You have the following graded activities:
 
-* **Before Monday's class, 1/30:**
+* **Before Monday's class, 1/23:**
 
   * Read :ref:`Dictionary Accumulation<dictionary_accum_chap>` and try the exercises in below listed sections
   * Read :ref:`Indefinite Iteration<while_chap>` and try the exercises in below listed sections
@@ -26,18 +26,18 @@ You have the following graded activities:
 .. usageassignment::
     :subchapters: BuildingAProgram/TheStrategy, DictionaryAccumulation/intro-AccumulatingMultipleResultsInaDictionary, DictionaryAccumulation/AccumulatingResultsFromaDictionary, DictionaryAccumulation/AccumulatingaMaximumValue, DictionaryAccumulation/AccumulatingtheBestKey, IndefiniteIteration/intro-indefiniteiteration, IndefiniteIteration/ThewhileStatement, IndefiniteIteration/listenerLoop
     :assignment_name: Lecture Prep 04
-    :deadline: 2017-01-30 17:10
+    :deadline: 2017-02-01 05:00
     :pct_required: 75
     :points: 50
 
-* **Before Wednesday's class 2/1:**
+* **Before Wednesday's class 1/25:**
   
   * Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
 
 .. usageassignment::
     :subchapters: Functions/FunctionDefinitions,Functions/FunctionInvocation,Functions/FunctionParameters,Functions/Returningavaluefromafunction,Functions/Afunctionthataccumulates,Functions/DecodingaFunction,Functions/MethodInvocations,Functions/Variablesandparametersarelocal,Functions/GlobalVariables,Functions/Functionscancallotherfunctions,Functions/FlowofExecutionSummary,Functions/Printvs.return,Functions/PassingMutableObjects,Functions/SideEffects
     :assignment_name: Lecture Prep 05
-    :deadline: 2016-01-25 17:10
+    :deadline: 2017-02-01 05:00
     :pct_required: 75
     :points: 50
 
