@@ -23,7 +23,7 @@ Activities through 2/12
 .. usageassignment::
   :subchapters: Testing/intro-TestCases, GeneralIntro/ExperimentalDebugging,Unix/CommandPrompt, Unix/FoldersAndPaths, Unix/DirectoriesAndCopying, Unix/lessCommand
   :assignment_name: Lecture Prep 08
-  :deadline: 2017-02-06 20:30
+  :deadline: 2017-02-08 20:30
   :pct_required: 75
   :points: 50
 
