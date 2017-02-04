@@ -14,15 +14,14 @@ Activities through 2/12
 * **Before class Monday 2/6:**
   
   * Read just the :ref:`introduction to Unit Testing<test_cases_chap>`. (We will discuss this on Monday in lecture! You do *not* have to read the rest of this chapter beyond the introductory section; it addreses material we have not learned yet in this course. We will focus in more depth on that material later in the semester. But this week is the first time you will see the code for Unit Tests, so we will teach you how to understand the output you get from them when you run problem sets on your own computer.)
-  * Review the below sections about debugging!
-  * Read the :ref:`Unix<unix_chapter>`, and try the exercises in that chapter on your computer
+  * Review :ref:`Sorting<sort_chap>` (not graded this time) and below section about debugging
+  * Read the :ref:`Unix<unix_chapter>` chapter and try the exercises in that chapter on your computer
   * Read :ref:`Installing a text editor<text_editor_installation>` section and make sure you have a text editor installed. (You can leave the rest of the installation chapter aside, though it may be a useful reference.)
   * Read the `Python installation instructions <https://umich.instructure.com/courses/150918/assignments/269709>`_ on Canvas, 
 
 
-
 .. usageassignment::
-  :subchapters: Testing/intro-TestCases, GeneralIntro/Syntaxerrors, GeneralIntro/RuntimeErrors, GeneralIntro/SemanticErrors, GeneralIntro/ExperimentalDebugging,Unix/CommandPrompt, Unix/FoldersAndPaths, Unix/DirectoriesAndCopying, Unix/lessCommand
+  :subchapters: Testing/intro-TestCases, GeneralIntro/ExperimentalDebugging,Unix/CommandPrompt, Unix/FoldersAndPaths, Unix/DirectoriesAndCopying, Unix/lessCommand
   :assignment_name: Lecture Prep 08
   :deadline: 2017-02-06 20:30
   :pct_required: 75
@@ -31,7 +30,6 @@ Activities through 2/12
 * **Before Wednesday's class, 2/8:**
 
   * Read `this tutorial on Unix pipes <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_ (you can ignore the ``who`` command in the tutorial) and `this tutorial on the Unix command grep <http://www.ee.surrey.ac.uk/Teaching/Unix/unix2.html>`_ (you can scroll down to it on that page).
-  * Review :ref:`Sorting<sort_chap>` (not graded this time)
   * Read :ref:`Nested Data and Nested Iteration<nested_chap>` and try exercises in sections listed below
 
 .. usageassignment::
@@ -41,17 +39,18 @@ Activities through 2/12
   :pct_required: 75
   :points: 50
 
-* Before next Monday's class:
-  * Read about `Unix diff <http://www.computerhope.com/unix/udiff.htm>`_ and `Unix curl <https://en.wikipedia.org/wiki/CURL#Examples_of_cURL_use_from_command_line>`_ commands. 
-  * NOTE: The latter link about ``curl`` is just one small section of a Wikipedia article that will help you understand what is happening when you use the Unix ``curl`` command. We will unpack this further!
+* Before Sunday, *2/19* 11:59 PM, compete the :ref:`Unix Exercises<problem_set_4_unix>` and submit screenshots to Canvas (see below).
+
+* Before Sunday, *2/19* 11:59 PM, compete :ref:`Problem Set 5<problem_set_5>` and submit it to Canvas (see below).
 
 * **Note that your midterm is next week, during class time on Wednesday, February 15.** It will cover all material up through sorting, but not Unix. More info in announcement.
 
+
 .. note::
 
-  **Your :ref:`Problem Set 5<problem_set_5>` is due Sunday FEBRUARY 19th, NOT February 12th.** 
+  **Your Problem Set 5 is due Sunday FEBRUARY 19th, NOT February 12th.** 
 
-  However, the :ref:`Unix Exercises<problem_set_4_unix_exercises>` that are the other 500 points for PS 4 are *also* due February 19, and your midterm is so we recommend you try to complete PS 5 this week!
+  However, the Unix Exercises that are the other 500 points missing from PS4 are *also* due February 19, and your midterm is so we recommend you try to complete PS 5 this week!
 
 .. note::
 
@@ -66,9 +65,7 @@ Activities through 2/12
 	**Please make sure that you include the "ps#", e.g. ``ps5`` in your problem set file name when you submit it.** (Even better, don't change the file name at all!) That will make the instructional team's lives much easier.
 
 
-* **Before Sunday, 2/19 11:59 PM, compete the Unix Exercises and submit screenshots to Canvas (see below).**
 
-* **Before Sunday, 2/19 11:59 PM, compete Problem Set 5 and submit it to Canvas (see below).**
 
 
 .. _problem_set_4_unix:
