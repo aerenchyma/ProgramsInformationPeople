@@ -560,14 +560,17 @@ Unix
    Unix/DirectoriesAndCopying.rst
    Unix/lessCommand.rst
 
-Discussion Section Resources
-::::::::::::::::::::::::::::
+Discussion Section Resources (F16)
+::::::::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
    :hidden:
 
    navhelp.rst
+   SectionResources/section4_106_f16 
+   SectionResources/section5_106
+   Inheritance/ExtraExercises
 
 .. toctree::
    :maxdepth: 2
