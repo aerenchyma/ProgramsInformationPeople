@@ -560,8 +560,8 @@ Unix
    Unix/DirectoriesAndCopying.rst
    Unix/lessCommand.rst
 
-Discussion Section Resources (F16)
-::::::::::::::::::::::::::::::::::
+Discussion Section Resources
+::::::::::::::::::::::::::::
 
 .. toctree::
    :maxdepth: 2
