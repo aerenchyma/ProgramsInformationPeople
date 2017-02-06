@@ -21,7 +21,7 @@
 .. assignment::
   :name: PS03
   :assignment_type: problem_set
-  :questions: ps_3_01 150, ps_3_02 200, ps_3_03 150, ps_3_04 150, ps_3_05 150, ps_3_06 200
+  :questions: ps_3_01 150, ps_3_02 200, ps_3_03 200, ps_3_04 150, ps_3_05 200, ps_3_06 200
   :deadline: 2017-01-30 05:00
   :points: 1000
   :autograde: unittest
