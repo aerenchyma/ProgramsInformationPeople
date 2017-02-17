@@ -1,6 +1,6 @@
 :orphan:
 
-..  Copyright (C) Jackie Cohen, Paul Resnick.  Permission is granted to copy, distribute
+..  Copyright (C) Jackie Cohen.  Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
@@ -12,15 +12,18 @@ Activities through 3/5 (through Spring Break)
 =============================================
 
 * **Before class Monday 2/20:**
-
+  
+  * Read :ref:`Try/Except <exceptions_chap>`
+  * Read :ref:`String Formatting<formatting_chap>`
+  * You may find it helpful to read this `External Tutorial on Reading CSV Files <https://thenewcircle.com/s/post/1572/python_for_beginners_reading_and_manipulating_csv_files>`_
+  * Read :ref:`Writing files<write_text_file_chap>` (also note :ref:`Writing CSV files<csv_chap>`)
   * Read :ref:`Python modules <modules_chap>`
-  * Make sure to read :ref:`pip module installer <pip_chap>` (and install the ``pip`` module)
+  * Make sure to read :ref:`pip module installer <pip_chap>` (and install the ``pip`` module by downloading the `get-pip.py` program and running it with admin permissions -- see Canvas announcement/instructions for help with this if you have any problems!) 
+  * Read :ref:`How to Fix Common Problems using your native machine's Python<gotchas_chap>`, which may also be helpful as we move forward.
   * Read :ref:`Fetching data <requests_chap>`
-  * Read :ref:`REST APIs<rest_apis_chap>`
-  * Check out `this iTunes Search API documentation <https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/>`_ and consider how to use it to make an API request. You don't have to understand it, but you *should* have taken a good look at it.
 
 .. usageassignment::
-  :subchapters: PythonModules/intro-ModulesandGettingHelp, PythonModules/Therandommodule, Installation/pip, Requests/intro, Requests/fetching_a_page, Requests/how_the_Internet_works, Requests/urls, Requests/http, Requests/requests_details, RESTAPIs/intro, RESTAPIs/RequestURLs, RESTAPIs/DebugURLs, RESTAPIs/jsonlib, RESTAPIs/unicode, RESTAPIs/requestsCookbook
+  :subchapters: PythonModules/intro-ModulesandGettingHelp, PythonModules/Therandommodule, Exceptions/intro-exceptions, Exceptions/using-exceptions, StringFormatting/intro-PrintinginPython2.7, StringFormatting/Interpolation, StringFormatting/CSV, Files/WritingTextFiles,  Installation/pip, NativeInterpreterGotchas/FixCommonProblems, Requests/intro, Requests/fetching_a_page, Requests/how_the_Internet_works, Requests/urls, Requests/http, Requests/requests_details
   :assignment_name: Lecture Prep 11
   :deadline: 2017-02-20 17:30
   :pct_required: 75
@@ -28,22 +31,19 @@ Activities through 3/5 (through Spring Break)
 
 * **Before Wednesday's class, 2/22:**
 
-  * Read :ref:`Try/Except <exceptions_chap>`
-  * Read :ref:`String Formatting<formatting_chap>`
-  * You may find it helpful to read this `External Tutorial on Reading CSV Files <https://thenewcircle.com/s/post/1572/python_for_beginners_reading_and_manipulating_csv_files>`_
-  * Read :ref:`Writing files<write_text_file_chap>` (also note :ref:`Writing CSV files<csv_chap>`)
-  * Read :ref:`Using REST APIs<using_RESTAPIs_chap>`
-  * Read :ref:`How to Fix Common Problems using your native machine's Python<gotchas_chap>`, which may also be helpful as we move forward.
+  * Read :ref:`REST APIs<rest_apis_chap>`
+  * Check out `this iTunes Search API documentation <https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/>`_ and consider how to use it to make an API request. You don't have to understand it, but you *should* have taken a good look at it.
+  * Read `this document about APIs and Caching <https://paper.dropbox.com/doc/Rest-APIs-and-Caching-506W17-draft-GUSnNpkwXNWBaXIQs451y>`_ (it's a draft, but it contains important information)
+  
 
 .. usageassignment::
-  :subchapters: Exceptions/intro-exceptions, Exceptions/using-exceptions, StringFormatting/intro-PrintinginPython2.7, StringFormatting/Interpolation, StringFormatting/CSV, Files/WritingTextFiles, UsingRESTAPIs/cachingResponses, UsingRESTAPIs/flickr,
-    NativeInterpreterGotchas/FixCommonProblems
+  :subchapters: RESTAPIs/intro, RESTAPIs/RequestURLs, RESTAPIs/DebugURLs, RESTAPIs/jsonlib, RESTAPIs/unicode, RESTAPIs/requestsCookbook
   :assignment_name: Lecture Prep 12
-  :deadline: 2017-02-26 17:30
+  :deadline: 2017-02-22 18:30
   :pct_required: 75
   :points: 50
 
-* **Before Sunday 3/5 at 11:59 PM:**
+* **Before Sunday 3/5 (after spring break) at 11:59 PM:**
 
   * Complete all of :ref:`Problem Set 6 <problem_set_6>` and the Demonstrate Your Understanding assignment for this week.
 
@@ -57,6 +57,8 @@ Activities through 3/5 (through Spring Break)
 
 Problem Set
 -----------
+
+**NOTE: THIS PROBLEM SET IS CURRENTLY BEING EDITED TO ALIGN WITH OUR COURSE. IT WILL BE COMPLETE AND READY FOR WORK BY approx. SATURDAY 1/18, and this message will be removed at that time.** 
 
 Go `HERE to see the Problem Set 6 assignment <https://umich.instructure.com/courses/150918/assignments/231794>`_, where you can find where to edit and submit files for this assignment.
 
