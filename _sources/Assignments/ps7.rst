@@ -47,7 +47,7 @@ Much like the last couple weeks, you'll see abbreviated instructions and provide
 
 	Reminder: we do not debug code when grading, so we cannot grade code that does not run! Make sure your code runs before submitting it -- you should comment out any code that does not.
 
-**PROBLEM SET CONTENT TBA**
+**PROBLEM SET CONTENT TBA.  THIS PROBLEM SET IS CURRENTLY BEING EDITED TO ALIGN WITH OUR COURSE. This message will be removed when it is completed.****
 
 
 .. external:: ps7_dyu
