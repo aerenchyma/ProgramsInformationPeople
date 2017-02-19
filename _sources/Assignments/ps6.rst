@@ -43,15 +43,10 @@ Activities through 3/5 (through Spring Break)
   :pct_required: 75
   :points: 50
 
-* **Before Sunday 3/5 (after spring break) at 11:59 PM:**
+* **Before Sunday 2/26 at 11:59 PM:**
 
   * Complete all of :ref:`Problem Set 6 <problem_set_6>` and the Demonstrate Your Understanding assignment for this week.
-
-.. note::
-
-  Your Problem Set 6 is due after spring break. However, we *strongly* suggest you try to finish it beforehand, by this Sunday 2/26! We will not be holding office hours over spring break.
-
-  You may also want to take a look at Problem Set 7 over spring break, since you'll need to read to prepare for the Monday afterward.
+  * (If we need to reassess this deadline, we will do so.)
 
 .. _problem_set_6:
 
