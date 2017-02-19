@@ -45,10 +45,10 @@
 .. assignment::
   :name: PS06
   :assignment_type: problem_set
+  :questions: ps_6_01 50
   :points: 1000
   :autograde: unittest
-  
-.. TBD more
+.. more for ps6 later
 
 .. ps7 TODO
 
