@@ -58,8 +58,6 @@ Activities through 3/5 (through Spring Break)
 Problem Set
 -----------
 
-**NOTE: THIS PROBLEM SET IS CURRENTLY BEING EDITED TO ALIGN WITH OUR COURSE. IT WILL BE COMPLETE AND READY FOR WORK BY approx. SATURDAY 1/18, and this message will be removed at that time.** 
-
 Go `HERE to see the Problem Set 6 assignment <https://umich.instructure.com/courses/150918/assignments/231794>`_, where you can find where to edit and submit files for this assignment.
 
 Note especially for this problem set, since you're getting real live data, we cannot test everything. You'll have to both look at our tests and instructions and examine your output to ensure that you have reasonable results. We will look at your results and output when we grade the problem set. **As always, we do not grade problem sets that do not run.** Make sure you have no syntax errors!
@@ -76,11 +74,11 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
 .. external:: ps_6_01
 
-    1. Problem 1 deals with opening JSON files and using file operations and ``json`` module functions.
+    1. **PROBLEM 1** deals with opening JSON files and using file operations and ``json`` module functions.
 
 .. external:: ps_6_02
 
-    2. Problem 2 also addresses ``json`` module functions and Python file operations -- but this time writing files!
+    2. **PROBLEM 2** also addresses ``json`` module functions and Python file operations -- but this time writing files!
 
 .. external:: ps_6_03
 
@@ -94,7 +92,7 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
 .. external:: ps_6_04
 
-    **PROBLEM 3:** Encoding query parameters in a URL, making a request, and dealing with a response object
+    **PROBLEM 3:** *Encoding query parameters in a URL, making a request, and dealing with a response object*
 
     See detailed instructions in your file!
 
@@ -102,14 +100,14 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
 .. external:: ps_6_05
 
-    **PROBLEM 4:** Grabbing data off the web and making it usable in a Python program, beginning work with a complex dictionary data structure
+    **PROBLEM 4:** *Grabbing data off the web and making it usable in a Python program, beginning work with a complex dictionary data structure*
 
     See detailed instructions in your file!
     
     
 .. external:: ps_6_06
 
-    **PROBLEM 5: Extracting relevant information from a dictionary**
+    **PROBLEM 5:** *Extracting relevant information from a dictionary*
 
     Now you should have a JSON-formatted Python dictionary with a bunch of data from the FAA about the airport with code **DTW**.  
 
@@ -129,7 +127,7 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
 .. external:: ps_6_07
 
-    **PROBLEM 6: Generalizing your code**
+    **PROBLEM 6:** *Generalizing your code*
 
     At this point, you'll consider the code you've written so far in your file, and make it generalizable. Which means... FUNCTIONS.
 
@@ -137,7 +135,7 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
 .. external:: ps_6_08
 
-    **PROBLEM 7: More code generalization**
+    **PROBLEM 7:** *More code generalization*
 
     Now, write another function called ``extract_airport_data()`` that accepts an airport code string as input, like ``"LAX"``, and returns a tuple: of the airport name, status reason, current temp, and recent update. This function should call the ``get_airport()`` function.
 
@@ -145,14 +143,14 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
 .. external:: ps_6_09
 
-    **PROBLEM 8:** Examples of using your newly defined functions
+    **PROBLEM 8:** *Examples of using your newly defined functions*
 
     In this problem, you'r using the code you just wrote in earlier problems! See detailed instructions in your file. 
 
 
 .. external:: ps_6_10
 
-    **PROBLEM 9:** Dealing with real live data and error handling
+    **PROBLEM 9:** *Dealing with real live data and error handling*
 
     We've provided a list of airport codes in the variable ``possible_airports``, in the problem set code file. But not all of them are valid airport codes! So you'll need to use a ``try/except`` block.
 
@@ -160,7 +158,7 @@ The FAA (Federal Aviation Administration) has put out a REST API for accessing c
 
 .. external:: ps_6_11
 
-    **PROBLEM 10:** Using real live data to write a CSV file
+    **PROBLEM 10:** *Writing data to a CSV file*
 
     See detailed instructions in your file!
 
