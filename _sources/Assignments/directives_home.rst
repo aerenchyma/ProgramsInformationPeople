@@ -45,9 +45,10 @@
 .. assignment::
   :name: PS06
   :assignment_type: problem_set
-  :questions: ps_6_1 50, ps_6_2 100, ps_6_3 100, ps_6_4 100, ps_6_5 100, ps_6_6 150, ps_6_7 100, ps_6_8 100, ps_6_9 100, ps_6_10 100
   :points: 1000
   :autograde: unittest
+  
+.. TBD more
 
 .. ps7 TODO
 
