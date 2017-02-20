@@ -238,7 +238,7 @@ Extra Exercises
 
    myTests().main()  
 
-5. The list of tuples, ``order``, contains information about pizza orders. It contains information on whether or not the order is a pickup or delivery, how many pizzas were ordered, the kind of pizzas, and in how many minutes they need to be ready. Create a list called ``response`` that gives a response to each order. For a delivery, if the order input is ("delivery", 1, "cheese", 10), the response should be "Your 1 cheese pizza will be delivered in 10 minutes". If the order is a pickup, the response should be "Come pick up your 1 cheese pizza in 10 minutes". 
+5. The list of tuples, ``order``, contains information about pizza orders. It contains information on whether or not the order is a pickup or delivery, how many pizzas were ordered, the kind of pizzas, and in how many minutes they need to be ready. Create a list called ``response`` that gives a response to each order. For a delivery, if the order input is ("delivery", 1, "cheese", 10), the response should be "Your 1 cheese pizzas will be delivered in 10 minutes". If the order is a pickup, the response should be "Come pick up your 1 cheese pizzas in 10 minutes". (The word "pizza" should always be plural in the responses for this problem, but for an extra challenge that will not pass the test available here: how would you write code so that if the number is 1, the sentence has "pizza", and if it is more than 1, the sentence has "pizzas"?)
 
 .. activecode:: ee_interpolation_05
    :tags: StringFormatting/Interpolation.rst
@@ -252,7 +252,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testFive(self):
-         self.assertEqual(response, ['Your 3 pepperoni pizzas will be delivered in 20 minutes', 'Come pick up your 4 cheese pizzas in 10 minutes', 'Come pick up your 2 combo pizzas in 5 minutes', 'Your 10 cheese pizzas will be delievered in 15 minutes', 'Your 1 supreme pizzas will be delievered in 60 minutes'], "Testing if response is assigned to correct values")
+         self.assertEqual(response, ['Your 3 pepperoni pizzas will be delivered in 20 minutes', 'Come pick up your 4 cheese pizzas in 10 minutes', 'Come pick up your 2 combo pizzas in 5 minutes', 'Your 10 cheese pizzas will be delivered in 15 minutes', 'Your 1 supreme pizzas will be delivered in 60 minutes'], "Testing if response is assigned to correct values")
 
    myTests().main()
 
