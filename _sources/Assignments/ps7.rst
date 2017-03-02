@@ -13,21 +13,17 @@ Activities through 3/12
 
 * **Before class Monday 3/6:**
 
-  * Review the :ref:`Flickr API<flickr_api_chap>` and :ref:`Caching Responses<caching_responses>` from last week.
-  * We are posting a file on Canvas in Files > Code Samples that shows code to access the Flickr API which is commented thoroughly. You should download this, look at it, and try it out!
+  * Review the :ref:`Flickr API<flickr_api_chap>` and `this document about APIs and Caching <https://paper.dropbox.com/doc/Rest-APIs-and-Caching-506W17-draft-GUSnNpkwXNWBaXIQs451y>`_ from last week. (**NOTE** that the flickr code chapter has a section about caching that we are *not* using in this class. It is more important to focus on the caching document and understanding caching data; we will discuss this more in class this week!)
+  * You do not see a Lecture Prep assignment worth points for today because we cannot check whether or not you've read the document again, etc (we trust that you will).
 
-.. usageassignment::
-  :subchapters: UsingRESTAPIs/cachingResponses, UsingRESTAPIs/flickr
-  :assignment_name: Lecture Prep 13
-  :deadline: 2017-03-06 17:30
-  :pct_required: 65
-  :points: 50 
 
 * **Before class Wednesday 3/8:**
 
-  * Check out the Flickr API documentation linked in the textbook. Consider:
-  	* How would you use it to compose an API request that searches for photos tagged "mountains"?
-  	* How would you use it to compose an API request to get a bunch of data about one particular photo? What information do you need to have about that photo to do so?
+  * Check out the `Flickr Photos Search API documentation <https://www.flickr.com/services/api/flickr.photos.search.html>`_ and the `Flickr Photo API documentation <https://www.flickr.com/services/api/flickr.photos.getInfo.html>`_. Consider:
+  	* How would you compose an API request that searches for photos tagged "mountains"?
+  	* How would you compose an API request to get a bunch of information about one particular photo? What information do you need to have about that photo to do so?
+  * Both of these links can be found here, `at the description of ALL of the Flickr API endpoints, or services <https://www.flickr.com/services/api/>`_. Glance over this link, click around... what questions do you have? What is most confusing about this? What makes sense? What does the documentation at each of these links mean to you? (Each represents one *endpoint* -- like what you need to know to use one base url to get a certain set of data from Flickr.)
+
 
 
 * **Before Sunday 3/12 at 11:59 PM:**
