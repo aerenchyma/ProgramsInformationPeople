@@ -11,8 +11,20 @@
 Activities through 3/26
 =======================
 
-TBA
+* **Before class Monday 3/20:**
+
+  * Read about the :ref:`Facebook API <fb_api_exercises>`.
+  * Read the `Facebook Graph API overview <https://developers.facebook.com/docs/graph-api/overview>`_
+  * Try out the `Facebook Graph API Explorer <https://developers.facebook.com/tools/explorer/>`_. You should try at least a couple different requests in the explorer and explore the resulting data (try copying it into jsoneditoronline.org!).
+  * Read about `Paging with the Facebook API <https://developers.facebook.com/docs/graph-api/using-graph-api#paging>`_, focusing on **Offset-based pagination**, which we will focus on in lecture / will discuss further on Wednesday.
+
+.. usageassignment::
+  :subchapters: FacebookAPI/FBAPI
+  :assignment_name: Lecture Prep 16
+  :deadline: 2017-03-20 17:30
+  :pct_required: 50
+  :points: 50
 
 .. external:: ps9_dyu
 
-    Complete this week's `Demonstrate Your Understanding <https://umich.instructure.com/courses/150918/assignments/231784>`_ assignment on Canvas.
+    Complete this week's `Demonstrate Your Understanding <>`_ assignment on Canvas, link TBA.
