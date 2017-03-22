@@ -30,7 +30,7 @@ You have the following graded activities:
 .. usageassignment::
     :subchapters: Selection/ConditionalExecutionBinarySelection, Selection/OmittingtheelseClauseUnarySelection, Selection/Nestedconditionals, Selection/Chainedconditionals, Files/intro-WorkingwithDataFiles, Files/FindingaFileonyourDisk, Files/ReadingaFile, Files/AlternativeFileReadingMethods, Files/Iteratingoverlinesinafile, Files/FilesRecipe, Files/WritingTextFiles, Dictionaries/intro-Dictionaries, Dictionaries/Dictionaryoperations, Dictionaries/Dictionarymethods, Dictionaries/Aliasingandcopying, BuildingAProgram/UnderstandingCode
     :assignment_name: Lecture Prep 03
-    :deadline: 2017-01-31 17:10
+    :deadline: 2017-02-01 17:10
     :pct_required: 75
     :points: 50
 
