@@ -60,7 +60,9 @@ For example, the code snippet below, illustrates a set of tests for string metho
             s = 'hello world'
             self.assertEqual(s.split(), ['hello', 'world'])
 
-    # invoke the main() function from the unittest module, which runs all the tests
+    # (Note this following line of code is what you need to do when you write test code -- but in the textbook here, to get tests to show up nicely, there is a slightly different syntax! the ideas behind the tests and the other formatting are essentialy the same)
+
+    # Invoke the main() function from the unittest module, which runs all the tests
     unittest.main(verbosity=2)
 
 
@@ -89,7 +91,7 @@ in the Hangman problem set. Note that the tests will fail until you fill in a co
             self.assertEqual(blanked('ground', 'rn'), '_r__n_', "testing blanking of ground when r and n have been guessed.")
             self.assertEqual(blanked('almost', 'vrnalmqpost'), 'almost', "testing blanking of almost when all the letters have been guessed.")
 
-    myTests().main()
+    myTests.main() # This works in the textbook, but it's different in your native to your computer Python code
 
 **Check your understanding**
 
