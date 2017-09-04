@@ -19,8 +19,8 @@ Activities: Week 1
 
 * **As soon as you can / after class 9/5:**
 
-  * Read `the course syllabus <TBALINK.com>`_ 
-  * Fill out `this google form assignment <TBALINK.com>`_
+  * Read `the course syllabus <https://docs.google.com/a/umich.edu/document/d/12et1AjP_on8yDwWKivSUD0SU9wAx1tvSC7y26HxcuiM/edit?usp=sharing>`_ 
+  * Fill out `this google form assignment <https://umich.instructure.com/courses/172984/assignments/329370>`_
   * Check out our Piazza forums on the Canvas site.
   * Read `this piece, called Coding Magic <http://marieflanagan.com/coding-magic/>`_ by Marie LeBlanc Flanagan
   * Watch `this introductory video <https://www.youtube.com/watch?v=rPAg44k6LxA>`_. You'll notice it says "SI 106", which is an undergraduate course similar to this one. That's okay -- pretend it says "506" instead of "106". (We'll provide more from this video series as the semester goes on, for which the same goes -- pretend 106 is 506, unless of course it's a number we're doing math on!)
@@ -54,7 +54,7 @@ Activities: Week 1
 Problem Set
 -----------
 
-**Instructions:** Write the code you want to save in the provided boxes, and click **Save & Run** for each one. That will  *run* your code, so you can see the output, if any, and the result of the tests, if there are any. It will also *save* your code. You should run your code each time you want to save it. You can then load the history of the code you have run and saved. The *last* code you have saved for each problem by the deadline is what will be graded.
+**Instructions:** Write the code you want to save in the provided boxes, and click **Save & Run** for each one. That will  *run* your code, so you can see the output, if any, and the result of the tests, if there are any. It will also *save* your code. You should run your code each time you want to save it. Even if you only add comments, you should **always click Save & Run**. You can then load the history of the code you have run and saved. The *last* new code you have saved for each problem by the deadline is what will be graded.
 
 
 
@@ -143,7 +143,7 @@ Problem Set
     :language: python
     :autograde: unittest
 
-    **5.** There are a couple functions we're giving you in this problem set. One is a function called ``greeting``, which takes any string and adds ``"Hello, "`` in front of it. (You can see examples in the code.) Another one is a function called ``random_digit``, which returns a value of any random integer between 0 and 9 (inclusive). (You can also see examples in the code.)
+    **4.** There are a couple functions we're giving you in this problem set. One is a function called ``greeting``, which takes any string and adds ``"Hello, "`` in front of it. (You can see examples in the code.) Another one is a function called ``random_digit``, which returns a value of any random integer between 0 and 9 (inclusive). (You can also see examples in the code.)
 
     Write code that assigns to the variable ``func_var`` the **function** ``greeting`` (without executing the function). 
 
@@ -183,7 +183,7 @@ Problem Set
        :language: python
        :autograde: unittest
 
-       **6.** Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
+       **5.** Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
 
        ::
 
@@ -212,7 +212,7 @@ Problem Set
     :include: addl_functions
     :language: python
 
-    **7.** There is a function we are giving you for this problem set that takes two strings as inputs, and returns the length of both of those strings added together, called ``add_lengths``. We are also including the functions from Problem Set 1 called ``random_digit`` and ``square`` in this problem set. 
+    **6.** There is a function we are giving you for this problem set that takes two strings as inputs, and returns the length of both of those strings added together, called ``add_lengths``. We are also including the functions from Problem Set 1 called ``random_digit`` and ``square`` in this problem set. 
 
     Now, take a look at the following code and related questions, in this code window.
     ~~~~
@@ -267,7 +267,7 @@ Problem Set
     :language: python
     :autograde: unittest
 
-    **8.** Assign the value of the third element of ``num_lst`` to a variable called ``third_elem``.
+    **7.** Assign the value of the third element of ``num_lst`` to a variable called ``third_elem``.
 
     Assign the value of the sixth element of ``num_lst`` to a variable called ``elem_sixth``.
 
@@ -314,7 +314,7 @@ Problem Set
     myTests().main()
 
 
-**9.** Here's another complicated expression, using the Turtle framework we talked about. Arrange these sentences in the order they are executed in the following code, like you did in an exercise in Chapter 2 of the textbook. (It may help to think about what specifically is happening in the first four lines of code as well.)
+**8.** Here's another complicated expression, using the Turtle framework we talked about. Arrange these sentences in the order they are executed in the following code, like you did in an exercise in Chapter 2 of the textbook. (It may help to think about what specifically is happening in the first four lines of code as well.)
 
 .. sourcecode:: python
 
@@ -354,7 +354,7 @@ Problem Set
 .. activecode:: ps_1_10
     :language: python
 
-    **10.** Write a program that uses the turtle module to draw something. It doesn't have to be complicated, but draw something different than we did in the textbook or in class. (Optional but encouraged: post a screenshot of the artistic outcome to Piazza, or a short video of the drawing as it is created.) (Hint: if you are drawing something complicated, it could get tedious to watch it draw over and over. Try setting ``.speed(10)`` for the turtle to draw fast, or ``.speed(0)`` for it to draw super fast with no animation.)
+    **9.** Write a program that uses the turtle module to draw something. It doesn't have to be complicated, but draw something different than we did in the textbook or in class. (Optional but encouraged: post a screenshot of the artistic outcome to Piazza, or a short video of the drawing as it is created.) (Hint: if you are drawing something complicated, it could get tedious to watch it draw over and over. Try setting ``.speed(10)`` for the turtle to draw fast, or ``.speed(0)`` for it to draw super fast with no animation.)
     ~~~~
     import turtle
 
