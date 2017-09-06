@@ -49,10 +49,37 @@ Problem Set
    (Wikipedia)
 
 
+.. activecode:: ps_2_08
+   :language: python
+   :autograde: unittest
+
+   **1.** Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
+   ~~~~
+   nums = {}
+   num_words = ["two","three","four","seventeen","eight","not_a_number"]
+   # Write your code here.
+
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+    def testOne(self):
+       self.assertEqual(nums["two"], 0, "Testing that the key 'two' has been assigned the value of 0.")
+       self.assertEqual(type(nums["seventeen"]), type(3), "Testing that the key 'seventeen' has been assigned a value whose type is an integer.")
+       self.assertEqual(sorted(nums), sorted({"two": 0, "three": 0, "four": 0, "eight": 0, "seventeen": 0, "not_a_number": 0}), "Testing that the contents of nums is accurate.")
+
+    def testOneA(self):
+       self.assertIn('for', self.getEditorText(), "Testing that there is a for inside your code (Don't worry about actual and expected values).")
+
+   myTests().main()
+
+
 .. activecode:: ps_3_01
    :language: python
 
-   **1.** Write code **that will keep printing what the user inputs over and over until the user enters the string "quit".**
+   **2.** Write code **that will keep printing what the user inputs over and over until the user enters the string "quit".**
 
    ~~~~
    # Write code here
@@ -74,7 +101,7 @@ Problem Set
 .. activecode:: ps_3_02
    :language: python
 
-   **2.** Below is a function definition. **DO NOT** change it! 
+   **3.** Below is a function definition. **DO NOT** change it! 
 
    We have also provided some invocations of that function. Run those and see what they do.
 
@@ -109,7 +136,7 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **3.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
+   **4.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
    ~~~~
    s = "Number of slams in an old screen door depends upon how loud you shut it, the count of slices in a bread depends how thin you cut it, and amount 'o good inside a day depends on how well you live 'em. All depends, all depends, all depends on what's around ya."
 
@@ -133,7 +160,7 @@ Problem Set
 .. activecode:: ps_3_04
    :language: python
 
-   **4.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
+   **5.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
    ~~~~
    def subtract_five(inp):
        print(inp - 5)
@@ -157,7 +184,7 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **5.** Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
+   **6.** Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
    ~~~~ 
    # We've started you off with the first line...
    def change_amounts(num_here):
@@ -180,7 +207,7 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **6.** Define a function ``is_prefix`` that takes two strings as inputs and returns the boolean value ``True`` if the first string is a prefix of the second string, but returns the boolean value ``False`` otherwise. You can assume the first string will always be shorter than, or the same length as, the second string.
+   **7.** Define a function ``is_prefix`` that takes two strings as inputs and returns the boolean value ``True`` if the first string is a prefix of the second string, but returns the boolean value ``False`` otherwise. You can assume the first string will always be shorter than, or the same length as, the second string.
 
    ~~~~   
    # Define your function here.

@@ -79,7 +79,7 @@ Problem Set
     :language: python
     :autograde: unittest
 
-    **4.** Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
+    **1.** Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
     ~~~~
     several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
 
@@ -99,7 +99,7 @@ Problem Set
        :language: python
        :autograde: unittest
 
-       **5.** Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
+       **2.** Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
 
        ::
 
@@ -129,7 +129,7 @@ Problem Set
     :language: python
     :autograde: unittest
   
-    **1.** Write code to count the number of characters in ``original_str`` using the accumulation pattern and assign the answer to a variable ``num_chars_sent``. Do NOT use the ``len`` function to solve the problem (if you use it while you are working on this problem, comment it out afterward!)
+    **3.** Write code to count the number of characters in ``original_str`` using the accumulation pattern and assign the answer to a variable ``num_chars_sent``. Do NOT use the ``len`` function to solve the problem (if you use it while you are working on this problem, comment it out afterward!)
     ~~~~
     original_str = "The quick brown rhino jumped over the extremely lazy fox."
      
@@ -151,7 +151,7 @@ Problem Set
    :available_files: about_programming.txt
    :autograde: unittest
 
-   **2.** Write code to open the file ``about_programming.txt`` which has been provided for you in this problem set, and assign the **number of lines** in the file to the variable ``file_lines_num``.
+   **4.** Write code to open the file ``about_programming.txt`` which has been provided for you in this problem set, and assign the **number of lines** in the file to the variable ``file_lines_num``.
    ~~~~
    # Write your code here.
 
@@ -171,7 +171,7 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **3.** The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages. 
+   **5.** The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages. 
 
    Fix the code so that it passes the test for each different value of x. So when the first line is uncommented, and when the second line, third line, and fourth line are each uncommented, you should always pass the test.
 
@@ -218,7 +218,7 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **4.** How many characters are in each element of list ``lp``? Write code to print the length (number of characters) of each element of the list, on a separate line. (Do not write 8+ lines of code to do this. Use a for loop.)
+   **6.** How many characters are in each element of list ``lp``? Write code to print the length (number of characters) of each element of the list, on a separate line. (Do not write 8+ lines of code to do this. Use a for loop.)
 
    The output you get should be:
 
@@ -255,7 +255,7 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **5.** Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. 
+   **7.** Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. 
 
    HINT 1: Use the accumulation pattern! 
 
@@ -278,7 +278,7 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **6.** Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
+   **8.** Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
    ~~~~
    diction = {"python":"you are awesome","autumn":100}
 
@@ -299,7 +299,7 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **7.** Here's another dictionary, ``nd``. 
+   **9.** Here's another dictionary, ``nd``. 
    **PART 1**
    Write code to print out each key-value pair in it, one key and its value on each line. Your output should look somewhat like this (remember, the order may be different!):
 
@@ -338,7 +338,7 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **8.** Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
+   **10.** Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
    ~~~~
    nums = {}
    num_words = ["two","three","four","seventeen","eight","not_a_number"]
