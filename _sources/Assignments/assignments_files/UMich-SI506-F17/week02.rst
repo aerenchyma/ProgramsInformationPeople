@@ -95,6 +95,35 @@ Problem Set
 
     myTests().main()
 
+.. activecode:: ps_1_06
+       :language: python
+       :autograde: unittest
+
+       **5.** Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
+
+       ::
+
+           hello
+           goodbye
+           wonderful
+           I love Python
+
+       (Hint: remember string slicing?)
+       ~~~~
+       excited_words = ["hello!", "goodbye!", "wonderful!", "I love Python?"]
+
+       # Write your code here.
+       =====
+       from unittest.gui import TestCaseGui
+
+       class myTests(TestCaseGui):
+
+           def test_output(self):
+               self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+               self.assertIn("hello\ngoodbye\nwonderful\nI love Python", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+       myTests().main()
+
 
 .. activecode:: ps_2_01
     :language: python

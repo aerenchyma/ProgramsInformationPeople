@@ -179,40 +179,12 @@ Problem Set
 
     myTests().main()
 
-.. activecode:: ps_1_06
-       :language: python
-       :autograde: unittest
-
-       **5.** Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
-
-       ::
-
-           hello
-           goodbye
-           wonderful
-           I love Python
-
-       (Hint: remember string slicing?)
-       ~~~~
-       excited_words = ["hello!", "goodbye!", "wonderful!", "I love Python?"]
-
-       # Write your code here.
-       =====
-       from unittest.gui import TestCaseGui
-
-       class myTests(TestCaseGui):
-
-           def test_output(self):
-               self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-               self.assertIn("hello\ngoodbye\nwonderful\nI love Python", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
-
-       myTests().main()
 
 .. activecode:: ps_1_07
     :include: addl_functions
     :language: python
 
-    **6.** There is a function we are giving you for this problem set that takes two strings as inputs, and returns the length of both of those strings added together, called ``add_lengths``. We are also including the functions from Problem Set 1 called ``random_digit`` and ``square`` in this problem set. 
+    **5.** There is a function we are giving you for this problem set that takes two strings as inputs, and returns the length of both of those strings added together, called ``add_lengths``. We are also including functions called ``random_digit`` and ``square`` in this problem set. 
 
     Now, take a look at the following code and related questions, in this code window.
     ~~~~
@@ -260,14 +232,14 @@ Problem Set
 
     ====
 
-    print "==========="
-    print "\n\nThere are no tests for this problem"
+    print("===========")
+    print("\n\nThere are no tests for this problem")
 
 .. activecode:: ps_1_08
     :language: python
     :autograde: unittest
 
-    **7.** Assign the value of the third element of ``num_lst`` to a variable called ``third_elem``.
+    **6.** Assign the value of the third element of ``num_lst`` to a variable called ``third_elem``.
 
     Assign the value of the sixth element of ``num_lst`` to a variable called ``elem_sixth``.
 
@@ -314,7 +286,7 @@ Problem Set
     myTests().main()
 
 
-**8.** Here's another complicated expression, using the Turtle framework we talked about. Arrange these sentences in the order they are executed in the following code, like you did in an exercise in Chapter 2 of the textbook. (It may help to think about what specifically is happening in the first four lines of code as well.)
+**7.** Here's another complicated expression, using the Turtle framework we talked about. Arrange these sentences in the order they are executed in the following code, like you did in an exercise in Chapter 2 of the textbook. (It may help to think about what specifically is happening in the first four lines of code as well.)
 
 .. sourcecode:: python
 
@@ -354,7 +326,7 @@ Problem Set
 .. activecode:: ps_1_10
     :language: python
 
-    **9.** Write a program that uses the turtle module to draw something. It doesn't have to be complicated, but draw something different than we did in the textbook or in class. (Optional but encouraged: post a screenshot of the artistic outcome to Piazza, or a short video of the drawing as it is created.) (Hint: if you are drawing something complicated, it could get tedious to watch it draw over and over. Try setting ``.speed(10)`` for the turtle to draw fast, or ``.speed(0)`` for it to draw super fast with no animation.)
+    **8.** Write a program that uses the turtle module to draw something. It doesn't have to be complicated, but draw something different than we did in the textbook or in class. (Optional but encouraged: post a screenshot of the artistic outcome to Piazza, or a short video of the drawing as it is created.) (Hint: if you are drawing something complicated, it could get tedious to watch it draw over and over. Try setting ``.speed(10)`` for the turtle to draw fast, or ``.speed(0)`` for it to draw super fast with no animation.)
     ~~~~
     import turtle
 
