@@ -334,28 +334,3 @@ Problem Set
 
    myTests().main()
 
-.. activecode:: ps_2_08
-   :language: python
-   :autograde: unittest
-
-   **10.** Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
-   ~~~~
-   nums = {}
-   num_words = ["two","three","four","seventeen","eight","not_a_number"]
-   # Write your code here.
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-    def testOne(self):
-       self.assertEqual(nums["two"], 0, "Testing that the key 'two' has been assigned the value of 0.")
-       self.assertEqual(type(nums["seventeen"]), type(3), "Testing that the key 'seventeen' has been assigned a value whose type is an integer.")
-       self.assertEqual(sorted(nums), sorted({"two": 0, "three": 0, "four": 0, "eight": 0, "seventeen": 0, "not_a_number": 0}), "Testing that the contents of nums is accurate.")
-
-    def testOneA(self):
-       self.assertIn('for', self.getEditorText(), "Testing that there is a for inside your code (Don't worry about actual and expected values).")
-
-   myTests().main()

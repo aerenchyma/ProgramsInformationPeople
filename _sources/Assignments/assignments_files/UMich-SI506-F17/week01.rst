@@ -103,7 +103,9 @@ Problem Set
 
         def testOne(self):
             self.assertEqual(type(xyz), type(3), "Checking type of xyz")
+        def testTwo(self):
             self.assertEqual(xyz, 25, "Checking if xyz is 25")
+        def testThree(self):
             self.assertIn('square', self.getEditorText(), "Testing that 'square' is in your code. (Don't worry about Actual and Expected Values.)")
 
     myTests().main()
