@@ -19,16 +19,15 @@ You have the following graded activities:
 
 * **Before class Monday:**
 
-  * Read :ref:`Building a Program <build_program_chap>`, and :ref:`Iteration<iteration_chap>`.
-  * Read :ref:`Conditionals <conditionals_chap>`
+  * Read :ref:`Building a Program <build_program_chap>`
+  * Read :ref:`Iteration<iteration_chap>`.
+  
   * And try all of the exercises in the sections!
 
 * **Before class Wednesday:**
 
+  * Read :ref:`Conditionals <conditionals_chap>`
   * Read :ref:`File Input/Output <files_chap>`
-  * Read :ref:`Dictionaries<dictionaries_chap>`
-  * Read about :ref:`Understanding Code <understand_code_chap>`
-  * Try the exercises included within each chapter section.
 
 
 * By **Sunday at 11:59PM**, save answers to the exercises in **Problem Set 2**:

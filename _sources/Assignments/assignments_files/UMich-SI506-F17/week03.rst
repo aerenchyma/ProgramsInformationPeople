@@ -20,13 +20,18 @@ You have the following graded activities:
 
 * **Before Monday's class:**
 
-  * Read :ref:`Dictionary Accumulation<dictionary_accum_chap>` and try the exercises in below listed sections
+  * Read :ref:`Dictionaries<dictionaries_chap>`
+  * Read about :ref:`Understanding Code <understand_code_chap>`
+  * Try the exercises included within each chapter section.
+
+  
   * Read :ref:`Indefinite Iteration<while_chap>` and try the exercises in below listed sections
   * Review the :ref:`Files<files_chap>` chapter.
 
 
 * **Before Wednesday's class:**
   
+  * Read :ref:`Dictionary Accumulation<dictionary_accum_chap>` and try the exercises in below listed sections
   * Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
 
 
