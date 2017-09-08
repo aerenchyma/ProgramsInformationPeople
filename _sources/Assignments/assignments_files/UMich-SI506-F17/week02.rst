@@ -310,13 +310,15 @@ Problem Set
      23 345
      well spring
 
-   **Hint:** Printing things with a comma, e.g. ``print("hello", "everyone")`` will print out those things on the same line with  a space in between them: ``hello everyone``.
-
    **PART 2**
-   Then, write code to increase the value of key ``"23"`` by 5. Your code should work no matter what the value of the key ``"23"`` is, as long as its value is an integer.
+   Then, write code to increase the value of key ``"23"`` by 5. 
 
    **PART 3**
    Finally, write code to print the value of the key ``"well"``. Your code should work no matter what the value of the key "well" is.
+
+   **HINTS:** 
+   - Printing things with a comma, e.g. ``print("hello", "everyone")`` will print out those things on the same line with  a space in between them: ``hello everyone``.
+   - Your code should work no matter what the values corresponding to the keys are!
    ~~~~
    nd = {"autumn":"spring", "well":"spring", "4":"seasons","23":345}
    =====
