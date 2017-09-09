@@ -29,7 +29,7 @@ EDIT: This is the one that really probably has to change. It needs to be half in
   * Review the :ref:`Unix<unix_chapter>` chapter, and *make sure* you have addressed any problems you have with native Python installation with an instructor.
 
 
-* **Before Sunday at 11:59 PM**, compete :ref:`Problem Set 5<problem_set_5>` and submit it to Canvas. You'll also see instructions for the problems in the file you download from Canvas, but since this the transitional problem set, we've put the instructions here as well.
+* **Before Sunday at 11:59 PM**, compete Problem Set 5 and submit it to Canvas. You'll also see instructions for the problems in the file you download from Canvas, but since this the transitional problem set, we've put the instructions here as well.
 
 .. note::
 
