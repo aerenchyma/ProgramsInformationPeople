@@ -51,11 +51,75 @@ Problem Set
    (Wikipedia)
 
 
+.. activecode:: ps_2_06
+   :language: python
+   :autograde: unittest
+
+   **1.** Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
+   ~~~~
+   diction = {"python":"you are awesome","autumn":100}
+
+   # Write your code here.
+
+   ====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def testOne(self):
+         self.assertIn('you are awesome', self.getOutput(), "Testing your code (Don't worry about actual and expected values).")
+
+   myTests().main()
+
+.. activecode:: ps_2_07
+   :language: python
+   :autograde: unittest
+
+   **2.** Here's another dictionary, ``nd``. 
+   **PART 1**
+   Write code to print out each key-value pair in it, one key and its value on each line. Your output should look somewhat like this (remember, the order may be different!):
+
+   ::
+
+     autumn spring
+     4 seasons
+     23 345
+     well spring
+
+   **PART 2**
+   Then, write code to increase the value of key ``"23"`` by 5. 
+
+   **PART 3**
+   Finally, write code to print the value of the key ``"well"``. Your code should work no matter what the value of the key "well" is.
+
+   **HINTS:** 
+   - Printing things with a comma, e.g. ``print("hello", "everyone")`` will print out those things on the same line with  a space in between them: ``hello everyone``.
+   - Your code should work no matter what the values corresponding to the keys are!
+   ~~~~
+   nd = {"autumn":"spring", "well":"spring", "4":"seasons","23":345}
+   =====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+    def testOne(self):
+       self.assertEqual(nd["23"], 350, "Testing that the value associated with the key '23' is 350")
+       self.assertIn("autumn spring", self.getOutput(), "Testing output (Don't worry about actual and expected values).") 
+       self.assertIn("well spring", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+       self.assertIn("4 seasons", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+       self.assertIn("23 345", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+   myTests().main()
+
+
+
 .. activecode:: ps_2_08
    :language: python
    :autograde: unittest
 
-   **1.** Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
+   **3.** Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
    ~~~~
    nums = {}
    num_words = ["two","three","four","seventeen","eight","not_a_number"]
@@ -81,7 +145,7 @@ Problem Set
 .. activecode:: ps_3_01
    :language: python
 
-   **2.** Write code **that will keep printing what the user inputs over and over until the user enters the string "quit".**
+   **4.** Write code **that will keep printing what the user inputs over and over until the user enters the string "quit".**
 
    ~~~~
    # Write code here
@@ -104,7 +168,7 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **4.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics and dictionary accumulation will be useful here.
+   **5.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics and dictionary accumulation will be useful here.
    ~~~~
    s = "Number of slams in an old screen door depends upon how loud you shut it, the count of slices in a bread depends how thin you cut it, and amount 'o good inside a day depends on how well you live 'em. All depends, all depends, all depends on what's around ya."
 
@@ -128,7 +192,7 @@ Problem Set
 .. activecode:: ps_3_04
    :language: python
 
-   **5.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
+   **6.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
    ~~~~
    def subtract_five(inp):
        print(inp - 5)
@@ -152,7 +216,7 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **6.** Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
+   **7.** Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
    ~~~~ 
    # We've started you off with the first line...
    def change_amounts(num_here):
