@@ -8,25 +8,21 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Activities: Week 6 (through fall break)
-=======================================
+Activities: Week 7
+==================
 
-* **Before class Monday:**
+** This week's problem set is temporarily unavailable and will be added.**
+
+* **No class Monday because of Fall Break**
+
+* **Remember that your Unix Problems are due after fall break, on 10/18 at 11:59 PM, on Canvas**. You can see the assignment: :ref:`Unix Problems<unix_problems>`
+
+* **Before class Thursday:**
   
-  * Read :ref:`Nested Data and Nested Iteration<nested_chap>` and try exercises in the section. Trying out and playing around with this code prior to lecture is especially important!
-  * Read :ref:`Try/Except <exceptions_chap>`
-
-
-* **Wednesday's class:**
-
-  * **Your midterm occurs in class today.** Additional information provided in class.
-
-
-* **Over fall break:**
-
-  * No Problem Set due until the following Sunday, but you should *definitely* get started on the reading and do as much of it as you can -- it's important to understand as clearly as you can so you can ask questions in class!
-  * **Make sure your installation and Python setup on your computer is working and feels clear to you. Contact an instructor before Fall Break if this is not the case. This is very important!**
-  * You should check out the :ref:`How to Fix Common Problems using your native machine's Python<gotchas_chap>`, which may also be helpful as we move forward.
+  * Read :ref:`Sorting and anonymous functions<sort_chap>`
+  * Try all the exercises you can and try to formulate questions about concepts you find confusing/articulate ways of solving exercises in English.
+  * Make sure your Python installation is working properly and bring any questions to your discussion section.
+  * Read just the :ref:`introduction to Unit Testing<test_cases_chap>`. (We will discuss this in lecture! You do *not* have to read the rest of this chapter beyond the introductory section; it addresses material you have NOT learned yet in this course. We will focus in more depth on that material later in the semester. But this week is the first time you will see the code for Unit Tests, so we will teach you how to understand the output you get from them when you run problem sets on your own computer.)
 
 
 

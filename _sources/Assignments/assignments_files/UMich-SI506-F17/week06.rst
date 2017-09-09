@@ -12,7 +12,137 @@
 Activities: Week 6 (through fall break)
 =======================================
 
-TBA. This week's work is temporarily unavailable.
+**Your in-class midterm occurs on Thursday of this week.**
 
-**Your midterm occurs on Thursday of this week.**
+
+* **Before Monday's class:**
+
+  * Read the :ref:`Unix<unix_chapter>` chapter and try the exercises in that chapter on your computer
+  * Also read `this tutorial on Unix pipes <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_ (you can ignore the ``who`` command in the tutorial) and `this tutorial on the Unix command grep <http://www.ee.surrey.ac.uk/Teaching/Unix/unix2.html>`_ (you can scroll down to it on that page).
+  * Read :ref:`Installing a text editor<text_editor_installation>` section for background, and make sure you have a text editor installed. (You can leave the rest of the installation chapter aside; it may contain some outdated information!) We recommend `Atom <https://atom.io/>`_, which is only available for Mac, or `Sublime Text <https://www.sublimetext.com/>`_, which is available for Windows OR Mac. **Microsoft Word or NotePad will not work for programs! You must install a Text Editor program that works for writing Python code.**
+  * Read the `Python installation instructions <https://umich.instructure.com/courses/172984/assignments/329369>`_ on Canvas.  
+
+
+* **Thursday's class:**
+
+  * **Your midterm occurs in class today.** Additional information provided in class.
+
+
+* **Over fall break:**
+
+  * :ref:`Unix problems<unix_problems>` **due October 18th**, after fall break!
+
+  * **Make sure your installation and Python setup on your computer is working and feels clear to you. Contact an instructor before Fall Break if this is not the case.**
+  * You should check out the :ref:`How to Fix Common Problems using your native machine's Python<gotchas_chap>`, which may also be helpful as we move forward.
+
+
+.. _unix_problems:
+
+Problem Set 4: Unix Exercises
+-----------------------------
+
+For each step of the Unix part of this problem set, please take a screenshot that shows us the command(s) you typed and the results. Save the screenshots as ``step1.jpg`` (or ``.png``), ``step2.jpg``, etc. Upload them all to `the Unix Exercises <https://umich.instructure.com/courses/172984/assignments/329372>`_ assignment on Canvas.
+
+Following the Unix exercises, there are a few Activecode windows and directions for Python exercises which comprise the second part of this problem set.
+
+----------
+
+.. external:: problem_set__unix_1
+
+    1. Open the text editor you installed: Sublime Text. You will be creating and saving 4 different files to your ``Desktop``. 
+
+    **In the first file,** put the following:
+
+    .. sourcecode:: python
+
+        print("hello world")
+
+    Save the file as ``prog1.py``. You've now saved a Python program on your computer.
+
+
+
+    **In the second file,** put the following:
+
+    .. sourcecode:: python
+
+        def greeting(x):
+            return "hello " + x
+
+        print(greeting("there"))
+
+    Save this file as ``prog2.py``.
+    
+
+
+    **In the third file,** put the following:
+
+    :: 
+
+        this is a file
+        it has 
+        multiple
+        lines
+
+    Save this as ``unix_test_text.txt``.
+
+
+    **In the fourth file,** put the following:
+
+    ::
+
+        here is another file
+        what a wonderful
+        story this is
+
+    Save this file as ``another_text.txt``.
+
+    No need to take a screenshot of the file saving since you need them for the rest of the exercises, but if it's not working or is confusing, let staff know right away so we can help.
+
+.. external:: problem_set_4_unix_2
+
+    2. Open your Command Prompt program -- Terminal or Git Bash. ``cd`` to your ``Desktop``, as you saw in the chapter. Then type ``ls``. You should see a list of all file names on your Desktop, including the files you just saved in step 1. If you have any directories saved in your Desktop, you'll also see those names, of course. Take a screenshot that shows this worked for you.
+
+.. external:: problem_set_4_unix_3
+
+    3. You now want to make a new directory called ``new_class_programs`` in your ``Desktop``, and copy ``prog1.py`` and ``prog2.py`` into it. (Note that files will NOT disappear from your desktop when you've completed this step. There should be a copy of each file in both places.) 
+
+    Use Unix commands to do this, and take a screenshot of the commands you use + evidence they worked. (Hint: using commands like ``cd`` and ``ls`` and ``pwd`` can help you check what you've done when you're creating directories and copying files around! It will also be useful to remind yourself of what ``mkdir`` and ``cp`` do.) 
+
+    There is more than one perfectly reasonable way to complete this exercise, but all ways use a similar set of Unix commands.
+
+.. external:: problem_set_4_unix_4
+    
+    4. Now, you want to create a new directory *inside* the ``new_class_programs`` directory, called ``text_files``, and copy both ``unix_test_text.txt`` and ``another_text.txt`` into *that* folder. Use Unix commands to do this. 
+
+    When you've completed that, change directories to be inside that folder in your command prompt, and use the ``pwd`` command to show the full path of your location. (It should look *something like* this: ``/Users/Jackie/Desktop/new_class_programs/text_files``)
+
+    Take a screenshot showing that these things worked for you. Your screenshot should show the command you typed + evidence it worked.
+
+.. external:: problem_set_4_unix_5
+
+    5. You want to see what content is inside each of your files. Use a unix command to view the content of ``prog2.py`` before you open it. Take a screenshot to show that this worked.
+
+.. external:: problem_set_4_unix_6
+
+    6. You want to concatenate the 2 text files inside the ``text_files`` folder together, and save the result in a file called ``big_story.txt``, which should also be inside that directory. Use unix commands to do this. (Hint: You'll probably need more than 1 typed in the same line.)
+
+.. external:: problem_set_4_unix_7
+
+    7. You now want to see a list of all the files and/or directories inside your ``new_class_programs`` folder whose names include ``text``. Use Unix commands to do this. (Hint: You'll need pipe (``|``) and ``grep``, and ``ls``.)
+
+.. external:: problem_set_4_unix_8
+
+    8. Now that you have a bunch of practice with the unix command prompt, it's time to run Python natively on your computer. You've saved 2 Python files that are in your ``~/Desktop/new_class_programs`` directory. Go there in your command prompt, and run ``prog2.py`` by typing ``python prog2.py`` at the prompt. Take a screenshot of what happens. 
+
+    (Feel free to also play around -- you know a lot of programming now, and you can run it all on your computer, but it will look a little bit different in the command prompt than it did in the textbook.)
+
+.. note::
+
+    You may find/know about another way to run your python program directly from Sublime Text or Atom. We have found that this will not work for everything you need to do throughout the semester. Therefore, it's very important that you learn how to run your python programs from the unix command prompt, including figuring out how to connect to the right directory with the unix ``cd`` command. You will only get credit for these unix problems if your screenshots show that you ran the programs from the unix command prompt.
+
+.. note::
+
+  **This above is very important for the rest of the semester.** Soon, ALL of your problem sets will be turned in via Canvas, and you will be writing code in a text editor and running it on your own computer. If you have any trouble running Python natively (on your computer), let an instructor know *right away.*
+
+
 

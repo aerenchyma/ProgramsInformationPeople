@@ -17,12 +17,12 @@ Activities: Week 3
 
 You have the following graded activities:
 
-* **Before class Monday:**
+* **Before class Tuesday:**
 
   * Read :ref:`Iteration<iteration_chap>`.
   * And try as many of the exercises as you can, thinking about them and noting what's confusing, what's hard
 
-* **Before class Wednesday:**
+* **Before class Thursday:**
 
   * Read :ref:`Conditionals <conditionals_chap>`
   * Read :ref:`File Input/Output <files_chap>`

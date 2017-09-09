@@ -18,7 +18,7 @@ Activities: Week 4
 
 You have the following graded activities:
 
-* **Before Monday's class:**
+* **Before Tuesday's class:**
 
   * Read :ref:`Dictionaries<dictionaries_chap>`
   * Review reading about :ref:`Understanding Code <understand_code_chap>`
@@ -26,7 +26,7 @@ You have the following graded activities:
   * Read :ref:`Indefinite Iteration<while_chap>` and try the exercises in the sections.
 
 
-* **Before Wednesday's class:**
+* **Before Thursday's class:**
   
   * Read :ref:`Dictionary Accumulation<dictionary_accum_chap>` and try the exercises 
   * Read :ref:`Defining Functions<functions_chap>`, and try the exercises in that chapter

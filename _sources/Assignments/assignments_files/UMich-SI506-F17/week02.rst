@@ -14,8 +14,8 @@
     :linenothreshold: 500
 
 
-Activities Week 2
-==================
+Activities Week 2 (Note that PS1 is found in Week 1)
+====================================================
 
 * **Before class Tuesday:**
 

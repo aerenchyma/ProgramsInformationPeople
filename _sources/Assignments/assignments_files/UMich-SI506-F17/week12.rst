@@ -8,7 +8,7 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Activities: Week 11 
+Activities: Week 12
 ===================
 
 .. note::
@@ -17,42 +17,36 @@ Activities: Week 11
 
 * **Before class Monday:**
 
-  * Read *part* of the :ref:`Advanced Accumulation <list_comp_chap>` chapter (see below listed sections). Note that the sections assigned may reference the sections you are not assigned, but don't worry too much about that -- feel free to check them out if you think they will help your understanding. We will not cover that material in much detail, but we WILL cover the material in the assigned sections!
-  * Read the entire chapter on :ref:`Testing <test_cases_chap>`.
-
+  * Read about the :ref:`Facebook API <fb_api_exercises>`.
+  * Read the `Facebook Graph API overview <https://developers.facebook.com/docs/graph-api/overview>`_
+  * Read `this article <updatelink.com>`_ about OAUth and API authentication.
+  
 
 * **Before class Wednesday:**
 
-	* Read the :ref:`Requests and OAuth <requests_oauthlib>` chapter on another, mechanical, way of accessing APIs that use the OAuth 1 protocol, and discusses paging results from API requests. 
-	* NOTE: We do not have code pertaining to this chapter on Canvas yet but will discuss this, and other code, in the next couple lectures.
-	* Check out this link to the documentation on the `Tweepy library <http://pythonhosted.org/tweepy/api.html#tweepy-api-twitter-api-wrapper>`_. Don't worry about understanding it all, we'll discuss in class.
-
-
-* **By Sunday at 11:59 PM:**
-
-	* Submit your Problem Set 10 and your DYU 10 to Canvas
-  * **NOTE:** This is the last DYU that is required! However, if you missed any DYUs along the way, you have 1 more opportunity to submit DYUs pertaining to material we cover during the remainder of the semester, and/or material you come to new confusion / new understanding of during the process of completing the final project. More on this in class & announcement!
-
-  
-
+  * Try out the `Facebook Graph API Explorer <https://developers.facebook.com/tools/explorer/>`_. You should try at least a couple different requests in the explorer and explore the resulting data (try copying it into jsoneditoronline.org!).
+  * Read about `Paging with the Facebook API <https://developers.facebook.com/docs/graph-api/using-graph-api#paging>`_, focusing on **Offset-based pagination**, which we will focus on in lecture / will discuss further on Wednesday.
+  * ``fbapi.py`` is not on Canvas -- focus at first on playing with the Graph explorer and understanding what's happening in the explained code. 
 
 .. _problem_set_10:
 
 Problem Set
 -----------
 
-* Find files to download and instructions on Canvas at Files > Problem Sets > PS10 (when published). There are 2, but the `black_box.py` file need simply be saved in the same directory as your problem set file. You do not need to look at it and should not alter it at all.
+* Note that if you do not have a Facebook account, **you will need one for this unit.** However, it does not have to be real, it does not have to use your real name, and you can delete it when this class is over! If you do use Facebook, you do not have to share any of your personal data if you use your own account for this assignment. When we run your code, we will be seeing our own data, not yours.
 
-* **You should submit** `to the Problem Set 10 assignment <updatelink.com>`_:
+* Find files to download and instructions on Canvas at Files > Problem Sets > PS10
+
+* **You should submit `to the Problem Set 10 assignment <updatelink.com>`_:**
 
   * Your edited problem set file
+  * Your ``emo_scores.csv`` file
+  * Your cache file, ``506F17_PS10_caching.json``
 
 **In this problem set, you will:**
 
-* Use list comprehensions with mapping and filtering patterns to build new lists out of extant lists
-* Use existing class definitions to create instances
-* Write unit tests for code based on descriptions we give you, and find bugs in code we've provided by writing tests!
+* Write a function to access and cache data from Facebook
+* Finish defining a class to hold/represent post data from Facebook
+* Store data from Facebook in class instances
+* Do further data manipulation and write results to a CSV file
 
-
-
-    

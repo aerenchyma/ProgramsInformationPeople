@@ -1,6 +1,6 @@
 :orphan:
 
-..  Copyright (C) Paul Resnick, Jackie Cohen.  Permission is granted to copy, distribute
+..  Copyright (C) Jackie Cohen.  Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
@@ -8,74 +8,139 @@
     the license is included in the section entitled "GNU Free Documentation
     License".
 
-Activities: Week 8
+Activities: Week 9 
 ==================
 
-* **Before class Monday:**
+**This problem set is temporarily unavailable and will be updated soon.**
 
-  * Read/review the chapter about :ref:`Flickr / complex APIs and caching data<flickr_api_chap>`.
-  * Check out the `Flickr Photos Search API documentation <https://www.flickr.com/services/api/flickr.photos.search.html>`_ and the `Flickr Photo API documentation <https://www.flickr.com/services/api/flickr.photos.getInfo.html>`_. Consider:
-    * How would you compose an API request that searches for photos tagged "mountains"?
-    * How would you compose an API request to get a bunch of information about one particular photo? What information do you need to have about that photo to do so?
-  * Both of these links can be found here, `at the description of ALL of the Flickr API endpoints, or services <https://www.flickr.com/services/api/>`_. Glance over this link, click around... what questions do you have? What is most confusing about this? What makes sense? What does the documentation at each of these links mean to you? (Each represents one *endpoint* -- like what you need to know to use one base url to get a certain set of data from Flickr.)
+* **Before class Tuesday:**
 
+  * Read 
 
-* **Before class Wednesday:**
+* **Before class Thursday:**
 
-  * TBD.  
+  * Read  
 
 
+* **Before Sunday at 11:59 PM:**
 
-* **Before Sunday 3/12 at 11:59 PM:**
+  * Complete all of :ref:`Problem Set 7 <problem_set_7>` and the Demonstrate Your Understanding assignment for this week.
 
-  * Complete all of :ref:`Problem Set 7 <problem_set_7>` and submit the Demonstrate Your Understanding assignment for this week on Canvas (linked in Problem Set below).
 
 .. _problem_set_7:
 
 Problem Set
 -----------
 
-Go `HERE to see the Problem Set 7 assignment <https://umich.instructure.com/courses/150918/assignments/231795>`_, where you can find the files you need to download and edit, and where you can submit files for this assignment. (Note that there are multiple files you will need to download this week!)
+Go `HERE to see the Problem Set 7 assignment <updatelink.com>`_, where you can find where to edit and submit files for this assignment. **LINK TBA**
 
-Much like the last couple weeks, you'll see instructions and provided code for each step in the ``506W17_ps7.py`` file you download from Canvas. 
+Note especially for this problem set, since you're getting real live data, we cannot test everything. You'll have to both look at our tests and instructions and examine your output to ensure that you have reasonable results. We will look at your results and output when we grade the problem set. **As always, we do not grade problem sets that do not run.** Make sure you have no syntax errors!
+
+----
+
+The FAA (Federal Aviation Administration) has put out a REST API for accessing current information about US airports. You'll be using it in problems 3-10 of your problem set this week!
 
 .. note::
 
-	Reminder: we do not debug code when grading, and we do not grade code that does not run! Make sure your code runs completely before submitting it, so you see all the test output! You should comment out any code that does not run.
+    Almost all of the exercises in the problem set build on one another, either in terms of the skills you practice in them or the literal code you write for them! You can (and in some cases must) use code you wrote in earlier exercises in later ones. If you keep this in mind, this problem set may be even easier for you.
 
-**There are 4 files to download for this problem set:**
+    All detailed instructions for this problem set can be found in the ``506W17_ps6.py`` file you download from Canvas! Here is just a very high-level outline of all the problems.
 
-* ``506W17_ps7.py`` (Your PSet file to edit and run)
-* ``sample_diction.json`` (A JSON file you will need for the problem set. Make sure to save it in the same directory)
-* ``sample_flickr_response.json`` (Another JSON file you will need for the problem set. Make sure to save it in the same directory)
-* ``SAMPLEpset7_cached_data.json`` (A **sample** file that has the same format as the ``pset7_cached_data.json`` file which your program should generate)
+.. external:: ps_7_01
 
-**You should submit:**
+    1. **PROBLEM 1** deals with opening JSON files and using file operations and ``json`` module functions.
 
-* Your edited ``506W17_ps7.py`` file
-* Your created ``pset7_cached_data.json`` file, which your program should generate
-* *You should submit these files IN A ZIP FILE* this time
+.. external:: ps_7_02
 
-In this problem set, you'll build on the skills you practiced in Problem Set 6. **You will:**
+    2. **PROBLEM 2** also addresses ``json`` module functions and Python file operations -- but this time writing files!
 
-* Open JSON-formatted files and load the data in them into Python objects
-* Deal with nested dictionaries to extract information
-* Set up a caching pattern for your file
-* Write a function that gets data from Flickr which depends upon the function's input, and caches new data
-* Extracts information from data you get from the Flickr API
+.. external:: ps_7_03
 
-Follow the instructions in the file -- make sure to read them carefully, as they provide hints and help for what to do for each problem.
+    **Interlude:** The rest of the exercises deal with the Federal Aviation Administration API and using processes to get data from an API.
 
-**A solution to Problem Set 7 will be provided in class on Wednesday, March 15, where we will work on it further, so you cannot submit this problem set as a Late Assignment submission after that.**
+    First, point your web browser to the following URL: ``http://services.faa.gov/airport/status/DTW?format=json``
 
-There is also a challenge provided at the end of the problem set file!
+    The text that is shown in your browser is a string formatted in a JSON way that lives at that particular URL place on the internet. It can easily be converted into a python dictionary and processed with the understand, extract, repeat method for nested data. 
 
-To complete the challenge, if you wish to, you'll need to do a little bit more data processing and write one more function that caches data/gets data from a cache. 
+    The exercises below guide you through the process of writing python code that uses this RESTful API to extract information about some airports. Pointing your browser to this link is not graded. But you should do it, because it may help provide you with understanding for the remainder of the problem set!
 
-Check out the `Flickr Photo Info API documentation <https://www.flickr.com/services/api/flickr.photos.getInfo.html>`_ -- you'll need to make requests to this Flickr API endpoint to complete it! 
+.. external:: ps_7_04
 
-(Hint: if you want each of the tags from each photo,  you'll have to make a request to THIS API endpoint with, say, the id of the photo you want data about...)
+    **PROBLEM 3:** *Encoding query parameters in a URL, making a request, and dealing with a response object*
 
-We will discuss the challenge in more detail later on in class. 
+    See detailed instructions in your file!
+
+    You will save the response that will be returned when the ``request.get`` method is called properly to a variable called ``airport_response``. So, after this code is executed, ``airport_response`` should contain a *response object* from the FAA API.
+
+.. external:: ps_7_05
+
+    **PROBLEM 4:** *Grabbing data off the web and making it usable in a Python program, beginning work with a complex dictionary data structure*
+
+    See detailed instructions in your file!
+    
+    
+.. external:: ps_7_06
+
+    **PROBLEM 5:** *Extracting relevant information from a dictionary*
+
+    Now you should have a JSON-formatted Python dictionary with a bunch of data from the FAA about the airport with code **DTW**.  
+
+    Now, going back to the skills you learned in the Nested Data chapter: From the airport data dictionary, extract the airport code (e.g. ``DTW``), the ``reason`` field from within the ``status``, the current temperature, and the last time the data was updated.
+
+    To see what you saved in these variables, you may want to run code like:
+
+    .. sourcecode:: python
+
+        print(airport_code)
+        print(status_reason)
+        print(current_temp)
+        print(recent_update)
+
+    See further detailed instructions in your file!
+
+
+.. external:: ps_7_07
+
+    **PROBLEM 6:** *Generalizing your code*
+
+    At this point, you'll consider the code you've written so far in your file, and make it generalizable. Which means... FUNCTIONS.
+
+    *See further detailed instructions in your file* for writing a function called ``get_airport`` which takes an airport code as input e.g. ``DTW`` or ``PHX``, and returns a Python dictionary with data about that airport.
+
+.. external:: ps_7_08
+
+    **PROBLEM 7:** *More code generalization*
+
+    Now, write another function called ``extract_airport_data()`` that accepts an airport code string as input, like ``"LAX"``, and returns a tuple: of the airport name, status reason, current temp, and recent update. This function should call the ``get_airport()`` function.
+
+    See instructions in your file!
+
+.. external:: ps_7_09
+
+    **PROBLEM 8:** *Examples of using your newly defined functions*
+
+    In this problem, you'r using the code you just wrote in earlier problems! See detailed instructions in your file. 
+
+
+.. external:: ps_7_10
+
+    **PROBLEM 9:** *Dealing with real live data and error handling*
+
+    We've provided a list of airport codes in the variable ``possible_airports``, in the problem set code file. But not all of them are valid airport codes! So you'll need to use a ``try/except`` block.
+
+    See detailed instructions in the file.
+
+.. external:: ps_7_11
+
+    **PROBLEM 10:** *Writing data to a CSV file*
+
+    See detailed instructions in your file!
+
+    Your resulting CSV file should have at least 5 lines: 4 lines for real airport data, and 1 line for the column headers. The content of each cell should have well-formatted data: no extra parentheses, just the specific value that corresponds to that header!
+
+    **Make sure the CSV file you create is called airport_temps.csv. We will run tests on the CSV files post-submission, and we depend on the name of the file being correct.**
+
+    Open the document in Excel or in Google Drive to make sure that it is properly formatted.
+
 
 
