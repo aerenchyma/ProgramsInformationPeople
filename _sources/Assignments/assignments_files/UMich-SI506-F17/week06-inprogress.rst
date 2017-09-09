@@ -44,10 +44,9 @@ EDIT: This is the one that really probably has to change. It needs to be half in
   **Please make sure that you include the "ps#", e.g. ``ps5`` in your problem set file name when you submit it.** (Even better, don't change the file name at all!) We need that to grade it! Don't make the instructional team sad.
 
 
-.. _problem_set_5:
 
-Problem Set
------------
+Problem Set 5
+-------------
 
 To find the file for your problem set, and to submit your assignment on Canvas, go `HERE <updatelink.com>`_.
 
