@@ -26,7 +26,7 @@ Activities Week 2 (Note that PS1 is found in Week 1)
 
 * **Before class Thursday:**
 
-  * *Try* at least 3 of the exercises in the :ref:`Sequences exercises<sequences_exercises>`. Use the rest of the chapter as a reference, and review all of the :ref:`Sequences<sequences_chap>` chapter.
+  * *Try* at least 3 of the exercises in the :ref:`Sequences exercises <seq_exercises>`. Use the rest of the chapter as a reference, and review all of the :ref:`Sequences<sequences_chap>` chapter.
   * When you come to a confusion OR a sudden realization, please post on Piazza! You do NOT need to get these correct -- this is just experience and practice, but you should share how you think about it on Piazza.
 
   * There are also some video resources for a bunch of these topics. If you find these helpful, I strongly suggest watching them. Each is a few minutes long. Especially, 

@@ -16,7 +16,7 @@ Activities: Week 8
 * **Before class Tuesday:**
 
   * Read :ref:`Nested Data and Nested Iteration<nested_chap>` and try exercises in the section. Trying out and playing around with this code prior to lecture is especially important!
-  * Read :ref:`Try/Except <exceptions_chap>`
+  * Read :ref:`Exceptions, Try/Except <exceptions_chap>`
 
 * **Before class Thursday:**
 
@@ -31,5 +31,6 @@ Activities: Week 8
 
   * Complete all of :ref:`Problem Set 6 <problem_set_6>` and the Demonstrate Your Understanding assignment for this week.
 
+.. _problem_set_6:
 
-TBA Problem Set 6
+TBA 

@@ -15,11 +15,12 @@ Activities: Week 9
 
 * **Before class Tuesday:**
 
-  * Read 
+  * Read the :ref:`REST APIs<rest_apis_chap>` chapter carefully and try out code on your computer.
+  * This chapter will address file formats and structured / nested data as well as REST APIs, which we'll discuss even more in class.
 
 * **Before class Thursday:**
 
-  * Read  
+  * Read the chapter on :ref:`Complex APIs and Caching Data<flickr_api_chap>`
 
 
 * **Before Sunday at 11:59 PM:**

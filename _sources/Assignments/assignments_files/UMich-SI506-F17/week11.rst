@@ -22,9 +22,9 @@ Activities: Week 11
 
 * **Before Sunday at 11:59 PM:**
 
-  * Complete and submit your :ref:`Problem Set 8 <problem_set_8>`, and save an answer to your Demonstrate Understanding for this week (linked below).
+  * Complete and submit your :ref:`Problem Set 9 <problem_set_9>`, and save an answer to your Demonstrate Understanding for this week (linked below).
 
-.. _problem_set_8:
+.. _problem_set_9:
 
 Problem Set
 -----------
