@@ -1,6 +1,6 @@
 :orphan:
 
-..  Copyright (C) Jackie Cohen, Paul Resnick.  Permission is granted to copy, distribute
+..  Copyright (C) Jackie Cohen.  Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
@@ -12,56 +12,144 @@
 .. highlight:: python
     :linenothreshold: 500
 
-
 Activities: Week 3
 ==================
 
 You have the following graded activities:
 
-* **Before Monday's class:**
+* **Before class Monday:**
 
-  * Read :ref:`Dictionaries<dictionaries_chap>`
-  * Read about :ref:`Understanding Code <understand_code_chap>`
-  * Try the exercises included within each chapter section.
+  * Read :ref:`Iteration<iteration_chap>`.
+  * And try as many of the exercises as you can, thinking about them and noting what's confusing, what's hard
 
-  
-  * Read :ref:`Indefinite Iteration<while_chap>` and try the exercises in below listed sections
-  * Review the :ref:`Files<files_chap>` chapter.
+* **Before class Wednesday:**
 
-
-* **Before Wednesday's class:**
-  
-  * Read :ref:`Dictionary Accumulation<dictionary_accum_chap>` and try the exercises in below listed sections
-  * Read :ref:`Defining Functions<functions_chap>`, and do the exercises in that chapter
+  * Read :ref:`Conditionals <conditionals_chap>`
+  * Read :ref:`File Input/Output <files_chap>`
 
 
-* **Before Sunday at 11:59 PM:**
+* By **Sunday at 11:59PM**, save answers to the exercises in **Problem Set 2**:
 
-  * Save answers to each of the exercises in :ref:`Problem Set 3 <problem_set_3>` and submit your **Demonstrate Your Understanding** assignment to Canvas.
+  * Complete each of the problem set problems.
+  * Submit your Demonstrate Your Understanding assignment.
 
+.. _problem_set_2:
 
 Problem Set
 -----------
 
-.. _problem_set_3:
+**Instructions:** Write the code you want to save in the provided boxes, and click **save & run** for each one. The last code you have saved for each one by the deadline is what will be graded.
 
-.. datafile:: timely_file.txt
+.. datafile::  about_programming.txt
    :hide:
 
-   Autumn is interchangeably known as fall in the US and Canada, and is one of the four temperate seasons. Autumn marks the transition from summer into winter.
-   Some cultures regard the autumn equinox as mid autumn while others, with a longer temperature lag, treat it as the start of autumn then. 
-   In North America, autumn starts with the September equinox, while it ends with the winter solstice. 
-   (Wikipedia)
+   Computer programming (often shortened to programming) is a process that leads from an
+   original formulation of a computing problem to executable programs. It involves
+   activities such as analysis, understanding, and generically solving such problems
+   resulting in an algorithm, verification of requirements of the algorithm including its
+   correctness and its resource consumption, implementation (or coding) of the algorithm in
+   a target programming language, testing, debugging, and maintaining the source code,
+   implementation of the build system and management of derived artefacts such as machine
+   code of computer programs. The algorithm is often only represented in human-parseable
+   form and reasoned about using logic. Source code is written in one or more programming
+   languages (such as C++, C#, Java, Python, Smalltalk, JavaScript, etc.). The purpose of
+   programming is to find a sequence of instructions that will automate performing a
+   specific task or solve a given problem. The process of programming thus often requires
+   expertise in many different subjects, including knowledge of the application domain,
+   specialized algorithms and formal logic.
+   Within software engineering, programming (the implementation) is regarded as one phase in a software development process. There is an on-going debate on the extent to which
+   the writing of programs is an art form, a craft, or an engineering discipline. In
+   general, good programming is considered to be the measured application of all three,
+   with the goal of producing an efficient and evolvable software solution (the criteria
+   for "efficient" and "evolvable" vary considerably). The discipline differs from many
+   other technical professions in that programmers, in general, do not need to be licensed
+   or pass any standardized (or governmentally regulated) certification tests in order to
+   call themselves "programmers" or even "software engineers." Because the discipline
+   covers many areas, which may or may not include critical applications, it is debatable
+   whether licensing is required for the profession as a whole. In most cases, the
+   discipline is self-governed by the entities which require the programming, and sometimes
+   very strict environments are defined (e.g. United States Air Force use of AdaCore and
+   security clearance). However, representing oneself as a "professional software engineer"
+   without a license from an accredited institution is illegal in many parts of the world.
+
+.. activecode:: ps_1_04
+    :language: python
+    :autograde: unittest
+
+    **1.** Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
+    ~~~~
+    several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+      def test_output(self):
+          self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+          self.assertIn("<class 'str'>\n<class 'int'>\n<class 'int'>\n<class 'float'>\n<class 'float'>\n<class 'int'>\n<class 'str'>\n<class 'str'>\n<class 'int'>", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+    myTests().main()
+
+.. activecode:: ps_1_06
+       :language: python
+       :autograde: unittest
+
+       **2.** Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
+
+       ::
+
+           hello
+           goodbye
+           wonderful
+           I love Python
+
+       (Hint: remember string slicing?)
+       ~~~~
+       excited_words = ["hello!", "goodbye!", "wonderful!", "I love Python?"]
+
+       # Write your code here.
+       =====
+       from unittest.gui import TestCaseGui
+
+       class myTests(TestCaseGui):
+
+           def test_output(self):
+               self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+               self.assertIn("hello\ngoodbye\nwonderful\nI love Python", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+       myTests().main()
 
 
-.. activecode:: ps_2_08
+.. activecode:: ps_2_01
+    :language: python
+    :autograde: unittest
+  
+    **3.** Write code to count the number of characters in ``original_str`` using the accumulation pattern and assign the answer to a variable ``num_chars_sent``. Do NOT use the ``len`` function to solve the problem (if you use it while you are working on this problem, comment it out afterward!)
+    ~~~~
+    original_str = "The quick brown rhino jumped over the extremely lazy fox."
+     
+     
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+        def testOne(self):
+           self.assertEqual(num_chars_sent, len(original_str), "Testing whether num_chars_sent has the correct value")
+           self.assertNotIn('len', self.getEditorText(), "Testing that you are not including the len function in your code. (Don't worry about Actual and Expected Values.)")
+
+    myTests().main()
+
+.. activecode:: ps_2_02
    :language: python
+   :available_files: about_programming.txt
    :autograde: unittest
 
-   **1.** Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
+   **4.** Write code to open the file ``about_programming.txt`` which has been provided for you in this problem set, and assign the **number of lines** in the file to the variable ``file_lines_num``.
    ~~~~
-   nums = {}
-   num_words = ["two","three","four","seventeen","eight","not_a_number"]
    # Write your code here.
 
    =====
@@ -71,129 +159,36 @@ Problem Set
    class myTests(TestCaseGui):
 
     def testOne(self):
-       self.assertEqual(nums["two"], 0, "Testing that the key 'two' has been assigned the value of 0.")
-       self.assertEqual(type(nums["seventeen"]), type(3), "Testing that the key 'seventeen' has been assigned a value whose type is an integer.")
-       self.assertEqual(sorted(nums), sorted({"two": 0, "three": 0, "four": 0, "eight": 0, "seventeen": 0, "not_a_number": 0}), "Testing that the contents of nums is accurate.")
-
-    def testOneA(self):
-       self.assertIn('for', self.getEditorText(), "Testing that there is a for inside your code (Don't worry about actual and expected values).")
+       self.assertIn('open', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+       self.assertEqual(file_lines_num,len(open("about_programming.txt","r").readlines()), "Testing to see that file_lines_num has been set to the number of lines in the file.")
 
    myTests().main()
 
-
-.. activecode:: ps_3_01
-   :language: python
-
-   **2.** Write code **that will keep printing what the user inputs over and over until the user enters the string "quit".**
-
-   ~~~~
-   # Write code here
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testCode(self):
-         self.assertIn("print", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
-         self.assertIn("while", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
-         self.assertIn("raw_input", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
-
-   myTests().main()
-
-
-.. activecode:: ps_3_02
-   :language: python
-
-   **3.** Below is a function definition. **DO NOT** change it! 
-
-   We have also provided some invocations of that function. Run those and see what they do.
-
-   Below the comment provided in the code window, write a few calls to this function yourself, with whatever appropriate input you want.
-
-   Finally, write a few sentences in comments in the code window that explain what's happening in this function called list_end_with_string. You should explain what happens if a list like ``l`` gets input into this function AND what happens if a list like ``b`` gets input into it. 
-
-   Don't forget to run it and save!
-
-   ~~~~
-   # Function definition
-   def list_end_with_string(new_list):
-       if type(new_list[-1]) == type("hello"):
-           return new_list
-       new_list.append("the last element is a string no matter what now!")
-       return new_list
-
-   # Some function calls and lines that print out the results
-   l = [3,46,6]
-   b = [4,"hi",10,"12",12,123,"whoa!"]
-   print(list_end_with_string([1,2]))
-   print(list_end_with_string(l))
-   print(list_end_with_string(b))
-
-   # Now write a couple invocations of this function yourself below this line.
-
-
-   # Write your comments here.
-
-
-.. activecode:: ps_3_03
+.. activecode:: ps_2_03
    :language: python
    :autograde: unittest
 
-   **4.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics will be useful here.
-   ~~~~
-   s = "Number of slams in an old screen door depends upon how loud you shut it, the count of slices in a bread depends how thin you cut it, and amount 'o good inside a day depends on how well you live 'em. All depends, all depends, all depends on what's around ya."
+   **5.** The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages. 
 
-   # Write your code here.
+   Fix the code so that it passes the test for each different value of x. So when the first line is uncommented, and when the second line, third line, and fourth line are each uncommented, you should always pass the test.
 
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-    def testOne(self):
-       self.assertEqual(abc, 'depends', "testing whether abc is set correctly")
-
-    def testOneA(self):
-       self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
-
-   myTests().main()
-
-
-.. activecode:: ps_3_04
-   :language: python
-
-   **5.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
-   ~~~~
-   def subtract_five(inp):
-       print(inp - 5)
-       return None
-
-   y = subtract_five(9) - 6
-
-   =====
-
-   from unittest.gui import TestCaseGui
-
-   class myTests(TestCaseGui):
-
-      def testOne(self):
-         self.assertEqual(y, -2, "Testing if y is -2")
-
-   myTests().main()
-
-
-.. activecode:: ps_3_05
-   :language: python
-   :autograde: unittest
-
-   **6.** Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
+   (HINT: you don't have to make a big change!)
    ~~~~ 
-   # We've started you off with the first line...
-   def change_amounts(num_here):
-       pass # delete this line and put in your own code for the body of the function.
+   #x = 25
+   #x = 15
+   #x = 5
+   #x = -10
+
+   if x > 20:
+     y = "yes"
+   if x > 10:
+     y = "no"
+   if x < 0:
+     y = "maybe"
+   else:
+     y = "unknown"
+
+   print("y is " + str(y))
 
    =====
 
@@ -201,53 +196,78 @@ Problem Set
 
    class myTests(TestCaseGui):
 
-      def testOne(self):
-         self.assertEqual(change_amounts(9), 11, "Testing if change_amounts(9) equals 11")
-         self.assertEqual(change_amounts(12), 17, "Testing if change_amounts(12) equals 17")
+     def testOne(self):
+         print("No tests for the comment, of course -- we can only test stored values!\n")
+         if x == 25:
+             self.assertEqual(y, "yes", "test when x is 25: y should be 'yes'")
+         elif x == 15:
+             self.assertEqual(y, 'no', "test when x is 15: y should be 'no'")
+         elif x == 5:
+             self.assertEqual(y, 'unknown', "test when x is 5: y should be 'unknown'")
+         elif x == -10:
+             self.assertEqual(y, 'maybe', "test when x is -10: y should be 'maybe'")
+         else:
+             print("No tests when value of x is %s" % (x))
 
    myTests().main()
 
-
-.. activecode:: ps_3_06
+.. activecode:: ps_2_04
    :language: python
    :autograde: unittest
 
-   **7.** Define a function ``is_prefix`` that takes two strings as inputs and returns the boolean value ``True`` if the first string is a prefix of the second string, but returns the boolean value ``False`` otherwise. You can assume the first string will always be shorter than, or the same length as, the second string.
+   **6.** How many characters are in each element of list ``lp``? Write code to print the length (number of characters) of each element of the list, on a separate line. (Do not write 8+ lines of code to do this. Use a for loop.)
 
-   ~~~~   
-   # Define your function here.
+   The output you get should be:
 
+   :: 
 
-   # Here's a couple example function calls, printing the return value
-   # to show you what it is.
-   print(is_prefix("He","Hello")) # should print True
-   print(is_prefix("Hello","He")) # should print False
-   print(is_prefix("Hi","Hello")) # should print False
-   print(is_prefix("lo","Hello")) # should print False
-   print(is_prefix("Hel","Hello")) # should print True
-   print(is_prefix("Hello","Hello")) # should print True
-   # Remember, these won't work at all until you have defined a function called is_prefix
+     5
+     13
+     11
+     12
+     3
+     12
+     11
+     6 
 
+   Then, write code to print out each element of list ``lp`` *only if* the length of the element is an even number. Use iteration (a for loop).
+   ~~~~
+   lp = ["hello","arachnophobia","lamplighter","inspirations","ice","amalgamation","programming","Python"]
+   ====
+
+   from unittest.gui import TestCaseGui
+
+   class myTests(TestCaseGui):
+
+     def test_output(self):
+         self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+     def test_outputA(self):
+         self.assertIn("5\n13\n11\n12\n3\n12\n11\n6", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+     def test_outputB(self):
+         self.assertIn("inspirations\namalgamation\nPython", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
+
+   myTests().main()
+
+.. activecode:: ps_2_05
+   :language: python
+   :autograde: unittest
+
+   **7.** Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. 
+
+   HINT 1: Use the accumulation pattern! 
+
+   HINT 2: the ``in`` operator checks whether a substring is present in a string.
+   ~~~~
+   items = ["whirring", "calendar", "wry", "glass", "", "llama","tumultuous","owing"]
    =====
 
    from unittest.gui import TestCaseGui
 
    class myTests(TestCaseGui):
 
-      def testOne(self):
-         self.assertEqual(is_prefix("Big", "Bigger"), True, "Testing whether 'Big' is a prefix of 'Bigger'")
-      def testTwo(self):
-         self.assertEqual(is_prefix("Bigger", "Big"), False, "Testing whether 'Bigger' is a prefix of 'Big'")
-      def testThree(self):
-         self.assertEqual(is_prefix('ge', 'Bigger'), False, "Testing whether 'ge' is a prefix of 'Bigger'")
-      def testFour(self):
-         self.assertEqual(is_prefix('Bigge', "Bigger"), True, "Testing whether 'Bigge' is a prefix of 'Bigger'")
-      def testFive(self):
-         self.assertEqual(is_prefix("Bigger","Bigger"),True,"Testing whether 'Bigger' counts as a prefix of 'Bigger'")
-      def testSix(self):
-         self.assertEqual(is_prefix("big","Bigger"),False,"Testing whether 'big' is a prefix of 'Bigger'")
-      def testSeven(self):
-         self.assertEqual(is_prefix("Biggerxyz","Bigger"),False,"Testing whether 'Biggerxyz' is a prefix of 'Bigger'")
+     def testOne(self):
+         self.assertIn(' in ', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
+         self.assertEqual(acc_num, 3, "Testing that acc_num has been set to the number of strings that have 'w' in them.")
 
    myTests().main()
 

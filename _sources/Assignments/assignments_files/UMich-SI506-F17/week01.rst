@@ -1,6 +1,6 @@
 :orphan:
 
-..  Copyright (C) Jackie Cohen, Paul Resnick.  Permission is granted to copy, distribute
+..  Copyright (C) Jackie Cohen.  Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
     Foundation; with Invariant Sections being Forward, Prefaces, and
@@ -47,7 +47,11 @@ Activities: Week 1
 
 * **By Sunday 9/10 at 11:59 PM:** 
 
-  * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`, including doing the first `Demonstrate Your Understanding <https://umich.instructure.com/courses/172984/assignments/329347>`_ that goes with the readings.
+  * Complete the first `Demonstrate Your Understanding <https://umich.instructure.com/courses/172984/assignments/329347>`_ that goes with the readings.
+
+* **By Sunday 9/17 at 11:59 PM:**
+
+  * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`.
 
 .. _problem_set_1:
 
