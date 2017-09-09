@@ -12,7 +12,7 @@
 Understanding Code
 ==================
 
-Whether you’re trying to understand a code snippet that someone else wrote or trying to understand your own code that isn’t doing exactly what you wanted, you can avoid a lot of frustration if you slow down and spend the time to fully understand that code. It will reduce your anxiety level as well and make programming more fun!
+Whether you’re trying to understand a code snippet that someone else wrote or trying to understand your own code that isn’t doing exactly what you wanted, you can avoid a lot of frustration if you slow down and spend the time to fully understand that code. It will reduce your anxiety level as well and make programming more fun.
 
 The basic strategy for understanding code is the "explain; predict; check" loop.
 
