@@ -230,7 +230,7 @@ Problem Set
      11
      6 
 
-   Then, write code to print out each element of list ``lp`` *only if* the length of the element is an even number. Use iteration (a for loop).
+   Use iteration (a for loop).
    ~~~~
    lp = ["hello","arachnophobia","lamplighter","inspirations","ice","amalgamation","programming","Python"]
    ====
@@ -243,8 +243,6 @@ Problem Set
          self.assertIn('for', self.getEditorText(), "Testing your code (Don't worry about actual and expected values).")
      def test_outputA(self):
          self.assertIn("5\n13\n11\n12\n3\n12\n11\n6", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
-     def test_outputB(self):
-         self.assertIn("inspirations\namalgamation\nPython", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
 
    myTests().main()
 
