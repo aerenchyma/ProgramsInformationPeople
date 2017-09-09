@@ -17,7 +17,7 @@ Class Assignments
    Assignments/assignments_files/UMich-SI506-F17/week10.rst
    Assignments/assignments_files/UMich-SI506-F17/week11.rst
    Assignments/assignments_files/UMich-SI506-F17/week12.rst
-   Assignments/assignments_files/UMich-SI506-F17/week13.rst
+
 
 
 
