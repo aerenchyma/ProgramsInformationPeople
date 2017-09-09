@@ -33,7 +33,8 @@ Activities: Week 11
 	* Submit your Problem Set 11 and your DYU 10 to Canvas
   * **NOTE:** This is the last DYU that is required! However, if you missed any DYUs along the way, you have 1 more opportunity to submit DYUs pertaining to material we cover during the remainder of the semester, and/or material you come to new confusion / new understanding of during the process of completing the final project. More on this in class & announcement!
 
-  
+ 
+
 
 
 .. _problem_set_11:
@@ -52,6 +53,8 @@ Problem Set
 * Use list comprehensions with mapping and filtering patterns to build new lists out of extant lists
 * Use existing class definitions to create instances
 * Write unit tests for code based on descriptions we give you, and find bugs in code we've provided by writing tests!
+
+
 
 
 
