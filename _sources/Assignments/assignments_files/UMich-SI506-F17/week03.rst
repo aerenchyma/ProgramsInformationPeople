@@ -15,7 +15,7 @@
 Activities: Week 3
 ==================
 
-You have the following graded activities:
+You have the following activities to complete:
 
 * **Before class Tuesday:**
 
