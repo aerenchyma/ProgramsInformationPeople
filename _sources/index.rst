@@ -23,6 +23,14 @@ Assignments
 
    assignments.rst
 
+Workspace
+:::::::::
+
+.. toctree::
+   :maxdepth: 1
+
+   Assignments/blank_code_windows.rst
+
 General Introduction
 ::::::::::::::::::::
 
