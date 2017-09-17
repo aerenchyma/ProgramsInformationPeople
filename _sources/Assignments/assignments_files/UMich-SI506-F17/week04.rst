@@ -159,7 +159,7 @@ Problem Set
       def testCode(self):
          self.assertIn("print", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
          self.assertIn("while", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
-         self.assertIn("raw_input", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
+         self.assertIn("input", self.getEditorText(), "Testing code. (Don't worry about actual and expected values)")
 
    myTests().main()
 

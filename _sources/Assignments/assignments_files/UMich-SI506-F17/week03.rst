@@ -76,7 +76,7 @@ Problem Set
     :language: python
     :autograde: unittest
 
-    **1.** Write code that uses iteration to print out each element of the list ``several_things``. Then, write code to print out the TYPE of each element of the list called ``several_things``.
+    **1.** Write one for loop to print out each element of the list ``several_things``. Then, write *another* for loop to print out the TYPE of each element of the list called ``several_things``. To complete this problem you should have written two different for loops, each of which iterates over the list ``several_things``, but each of those 2 for loops should have a different result.
     ~~~~
     several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
 
@@ -180,13 +180,13 @@ Problem Set
    #x = -10
 
    if x > 20:
-     y = "yes"
+     y = "oranges" 
    if x > 10:
-     y = "no"
+     y = "strawberries" 
    if x < 0:
-     y = "maybe"
+     y = "blueberries" 
    else:
-     y = "unknown"
+     y = "mulberries" 
 
    print("y is " + str(y))
 
@@ -199,13 +199,13 @@ Problem Set
      def testOne(self):
          print("No tests for the comment, of course -- we can only test stored values!\n")
          if x == 25:
-             self.assertEqual(y, "yes", "test when x is 25: y should be 'yes'")
+             self.assertEqual(y, "oranges", "test when x is 25: y should be 'oranges'")
          elif x == 15:
-             self.assertEqual(y, 'no', "test when x is 15: y should be 'no'")
+             self.assertEqual(y, 'strawberries', "test when x is 15: y should be 'strawberries'")
          elif x == 5:
-             self.assertEqual(y, 'unknown', "test when x is 5: y should be 'unknown'")
+             self.assertEqual(y, 'mulberries', "test when x is 5: y should be 'unknown'")
          elif x == -10:
-             self.assertEqual(y, 'maybe', "test when x is -10: y should be 'maybe'")
+             self.assertEqual(y, 'maybe', "test when x is -10: y should be 'blueberries'")
          else:
              print("No tests when value of x is %s" % (x))
 
