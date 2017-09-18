@@ -26,12 +26,22 @@ You have the following activities to complete:
 
   * Read :ref:`Conditionals <conditionals_chap>`
   * Read :ref:`File Input/Output <files_chap>`
+  * Additionally, here are some more introductory videos about concepts we are looking at this week. You may find them very useful; I recommend you watch/listen to them:
+
+    * `Split and Join string methods <https://www.youtube.com/watch?v=3GsNQkIskaY>`_
+    * `Code blocks <https://www.youtube.com/watch?v=HVoutOx3hMM>`_
+    * `For loops and iteration <https://www.youtube.com/watch?v=gIlOfoy4iZk>`_
+    * `The accumulation pattern <https://www.youtube.com/watch?v=nT7q2JTNHog>`_
+    * `Booleans <https://www.youtube.com/watch?v=YUAUWU9Pank>`_
+    * `Conditionals <https://www.youtube.com/watch?v=V3K44gSruoY>`_
+
 
 
 * By **Sunday at 11:59PM**, save answers to the exercises in **Problem Set 2**:
 
   * Complete each of the problem set problems.
-  * Submit your Demonstrate Your Understanding assignment.
+  * Submit your Demonstrate Your Understanding 3 assignment.
+  * Resubmit your last DYU (DYU 2) if you did not get full credit on it.
 
 .. _problem_set_2:
 
