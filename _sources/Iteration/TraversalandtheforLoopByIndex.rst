@@ -26,14 +26,7 @@ characters in the string.
    # after you run this, try changing the order of items in the list [0, 1, 2, 3, 4] and see what happens.
    # What happens if you put the number 6 into the list, or the word "hello"?       
 
-Conveniently, we can use the ``range`` function to automatically generate the indices of the characters. 
-
-.. activecode:: ch08_7a1
-
-   x = range(5)
-   print(type(x))
-   print(x)
-   
+Conveniently, we can use the ``range`` function to automatically generate the indices of the characters. ``range`` returns a special type (called an **iterator**, which the book will go into more detail about in another chapter) that allows you to *iterate* over numbers in sequence.
 
 Consider the following codelens example.
 
@@ -45,8 +38,10 @@ Consider the following codelens example.
         currentChar = fruit[idx]
         print(currentChar)
 
-The index positions in "apple" are 0,1,2,3 and 4.  This is exactly the same sequence of integers returned by ``range(5)``.  The first time through the for loop, ``idx`` will be 0 and the "a" will be printed.  Then, ``idx`` will be reassigned to 1 and "p" will be displayed.  This will repeat for all the range values up to but not including 5.  Since "e" has index 4, this will be exactly right to show all 
+The index positions in "apple" are 0,1,2,3 and 4.  This is exactly the same sequence of integers you'll get with ``range(5)``.  The first time through the for loop, ``idx`` will be 0 and the "a" will be printed.  Then, ``idx`` will be reassigned to 1 and "p" will be displayed.  This will repeat for all the range values up to but not including 5.  Since "e" has index 4, this will be exactly right to show all 
 of the characters.
+
+Note that because ``range`` does not return a list (even though, in the textbook, it *looks* like it does), you should never write code like ``range(4)[2]`` in Python 3, because it won't work. (It WILL work in this textbook, because of an oddity about how it works, but it will NOT work in normal Python 3.) However, using ``range`` for iteration, like in the example above, is just fine.
 
 In order to make the iteration more general, we can use the ``len`` function to provide the bound for ``range``.  This is a very common pattern for traversing any sequence by position.  Make sure you understand why the range function behaves
 correctly when using ``len`` of the string as its parameter value.
@@ -62,6 +57,8 @@ correctly when using ``len`` of the string as its parameter value.
 
 You may also note that iteration by position allows the programmer to control the direction of the
 traversal by changing the sequence of index values.
+
+This example, which uses a specific list, rather than a result from the ``range`` function, works in a similar way:
 
 .. codelens:: ch08_8
 
