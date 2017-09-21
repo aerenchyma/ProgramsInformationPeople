@@ -213,9 +213,9 @@ Problem Set
          elif x == 15:
              self.assertEqual(y, 'strawberries', "test when x is 15: y should be 'strawberries'")
          elif x == 5:
-             self.assertEqual(y, 'mulberries', "test when x is 5: y should be 'unknown'")
+             self.assertEqual(y, 'mulberries', "test when x is 5: y should be 'mulberries'")
          elif x == -10:
-             self.assertEqual(y, 'maybe', "test when x is -10: y should be 'blueberries'")
+             self.assertEqual(y, 'blueberries', "test when x is -10: y should be 'blueberries'")
          else:
              print("No tests when value of x is %s" % (x))
 
