@@ -213,7 +213,7 @@ Problem Set
          elif x == 15:
              self.assertEqual(y, 'strawberries', "test when x is 15: y should be 'strawberries'")
          elif x == 5:
-             self.assertEqual(y, 'mulberries', "test when x is 5: y should be 'mulberries'")
+             self.assertTrue(y=='mulberries' or y=="unknown", "test when x is 5: y should be 'mulberries' (but if you passed this test at any point, even when we had an error in the PSet, it will still pass)")
          elif x == -10:
              self.assertEqual(y, 'blueberries', "test when x is -10: y should be 'blueberries'")
          else:
