@@ -31,6 +31,14 @@ Workspace
 
    Assignments/blank_code_windows.rst
 
+In Class 
+::::::::
+
+.. toctree::
+   :maxdepth: 1
+
+   InClass/indefiniteiteration.rst
+
 General Introduction
 ::::::::::::::::::::
 
