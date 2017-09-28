@@ -37,7 +37,7 @@ Extra Exercises
                                 else:
                                     d[w] = d[w] + 1
 
-                        dkeys = d.keys()
+                        dkeys = list(d.keys())
                         most_used = dkeys[0]
                         for k in dkeys:
                             if d[k] > d[most_used]:
