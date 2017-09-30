@@ -37,7 +37,8 @@ In Class
 .. toctree::
    :maxdepth: 1
 
-   InClass/indefiniteiteration.rst
+   InClass/IndefiniteIteration.rst
+   InClass/DictionaryAccum.rst
 
 General Introduction
 ::::::::::::::::::::

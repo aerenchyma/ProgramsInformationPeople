@@ -14,15 +14,15 @@ Activities: Week 5
 
 * **Before Tuesday's class:**
 
-  * Review :ref:`Functions<functions_chap>` (recommended)
+  * *Review* :ref:`Functions<functions_chap>` (recommended)
   * Read :ref:`Optional and Keyword Parameters<optional_params_chap>`
 
 
 * **Before Thursday's class:**
 
   * Read :ref:`Tuples<tuples_chap>`
-  * Review :ref:`Dictionary Accumulation<dictionary_accum_chap>`
   * Read :ref:`Sorting in Python<sort_chap>`
+  * You may also want to review :ref:`Dictionary Accumulation<dictionary_accum_chap>`, or previous Dictionary Accumulation exercises
 
 
 * **Before Sunday at 11:59 PM:**
@@ -46,7 +46,7 @@ Problem Set
 .. activecode:: ps_3_02
    :language: python
 
-   **3.** Below is a function definition. **DO NOT** change it! 
+   **1.** Below is a function definition. **DO NOT** change it! 
 
    We have also provided some invocations of that function. Run those and see what they do.
 
@@ -82,7 +82,7 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **1.** We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Save the string that is most common word in the file in the variable ``abc``. (Hint: you had a problem quite similar to this one in PS3!)
+   **2.** We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Save the string that is most common word in the file in the variable ``abc``. (Hint: you had a problem quite similar to this one in PS3!) You may write a function to help do this, AND invoke the function, if you do so -- but you do not have to.
 
    ~~~~
    # Write code here!
@@ -106,7 +106,7 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **7.** Define a function ``is_prefix`` that takes two strings as inputs and returns the boolean value ``True`` if the first string is a prefix of the second string, but returns the boolean value ``False`` otherwise. You can assume the first string will always be shorter than, or the same length as, the second string.
+   **3.** Define a function ``is_prefix`` that takes two strings as inputs and returns the boolean value ``True`` if the first string is a prefix of the second string, but returns the boolean value ``False`` otherwise. You can assume the first string will always be shorter than, or the same length as, the second string.
 
    ~~~~   
    # Define your function here.
@@ -255,7 +255,7 @@ In later problems, you'll fill in a few details that aren't fully implemented in
    :language: python
    :autograde: unittest
 
-   **3.** The next task you have is to create a correct version of the ``blanked`` function. It should take 2 inputs: a word, and a string of the letters that have been guessed already. 
+   **5.** The next task you have is to create a correct version of the ``blanked`` function. It should take 2 inputs: a word, and a string of the letters that have been guessed already. 
 
    It should return a string with the same number of characters as the word, but with the UNrevealed characters replaced by an underscore (a ``_``). 
 
@@ -293,7 +293,7 @@ In later problems, you'll fill in a few details that aren't fully implemented in
 .. activecode:: ps_4_04
     :autograde: unittest
 
-    **4.** Now you have to create a good version of the ``health_prompt`` function: Define a function called ``health_prompt``. The first parameter should be the current health the player has (an integer), and the second parameter should be the maximum health a player can have (an integer). The function should return a string with ``+`` signs for the current health, and ``-`` signs for the health that has been lost so far.
+    **6.** Now you have to create a good version of the ``health_prompt`` function: Define a function called ``health_prompt``. The first parameter should be the current health the player has (an integer), and the second parameter should be the maximum health a player can have (an integer). The function should return a string with ``+`` signs for the current health, and ``-`` signs for the health that has been lost so far.
     ~~~~
     # Define your function here.
 
@@ -327,3 +327,69 @@ In later problems, you'll fill in a few details that aren't fully implemented in
 
 In class, you'll see these things all put together. Soon, you'll put these together yourself and run your completed hangman program on your own computer, instead of in the textbook.
 
+To run the whole program, with the functions you built in questions above, paste the ``health_prompt`` function and the ``blanked`` function at the very top of the code box provided below:
+
+.. activecode:: ps_4_hangman_code_complete
+
+
+  This is the base code for a Hangman game, without some of the important useful functionality -- but now, you can add it in! (If you have never played Hangman, you can go to ``https://en.wikipedia.org/wiki/Hangman_(game)`` for an explanation of what it is.)
+  ~~~~
+  # Paste your functions here..
+
+  # health_prompt:
+
+  # blanked:
+
+
+  def game_state_prompt(txt ="Nothing", h = 6, m_h = 6, word = "HELLO", guesses = ""):
+      res = "\n" + txt + "\n"
+      res = res + health_prompt(h, m_h) + "\n"
+      if guesses != "":
+          res = res + "Guesses so far: " + guesses.upper() + "\n"
+      else:
+          res = res + "No guesses so far" + "\n"
+          res = res + "Word: " + blanked(word, guesses) + "\n"
+
+      return(res)
+
+  def main():
+      max_health = 3
+      health = max_health
+      secret_word = raw_input("What's the word to guess? (Don't let the player see it!)")
+      secret_word = secret_word.upper() # everything in all capitals to avoid confusion
+      guesses_so_far = ""
+      game_over = False
+
+      feedback = "let's get started"
+
+      # Now interactively ask the user to guess
+      while not game_over:
+          prompt = game_state_prompt(feedback, health, max_health, secret_word, guesses_so_far)
+          next_guess = raw_input(prompt)
+          next_guess = next_guess.upper()
+          feedback = ""
+          if len(next_guess) != 1:
+              feedback = "I only understand single letter guesses. Please try again."
+          elif next_guess in guesses_so_far:
+              feedback = "You already guessed that"
+          else:
+              guesses_so_far = guesses_so_far + next_guess
+              if next_guess in secret_word:
+                  if blanked(secret_word, guesses_so_far) == secret_word:
+                     feedback = "Congratulations"
+                     game_over = True
+                  else:
+                      feedback = "Yes, that letter is in the word"
+              else: # next_guess is not in the word secret_word
+                  feedback = "Sorry, " + next_guess + " is not in the word."
+                  health = health - 1
+                  if health <= 0:
+                      feedback = " Waah, waah, waah. Game over."
+                      game_over = True
+
+      print(feedback)
+      print("The word was..." + secret_word)
+
+  import sys #don't worry about this line; you'll understand it next week
+  sys.setExecutionLimit(60000)     # let the game take up to a minute, 60 * 1000 milliseconds
+  main() # invoke the main() game function
