@@ -46,7 +46,11 @@ Problem Set
 .. activecode:: ps_3_02
    :language: python
 
-   **1.** Below is a function definition. **DO NOT** change it! 
+   **1.** **This problem encountered technical difficulties in our textbook, so codelens shows the correct result of invoking this function, but running the function in the textbook does not always. As a result, EVERYONE will get some free points for this problem on PS4. You do not need to worry about solving it**, but it is worth spending a little bit of time checking it out and thinking about it!
+
+   ***
+
+   Below is a function definition. **DO NOT** change it! 
 
    We have also provided some invocations of that function. Run those and see what they do.
 
