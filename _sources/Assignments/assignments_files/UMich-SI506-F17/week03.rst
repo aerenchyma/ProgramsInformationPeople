@@ -104,7 +104,6 @@ Problem Set
 
 .. activecode:: ps_1_06
        :language: python
-       :autograde: unittest
 
        **2.** Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
 

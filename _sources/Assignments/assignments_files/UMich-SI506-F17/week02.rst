@@ -41,3 +41,22 @@ Activities: Week 2 (Note that PS1 is found in Week 1)
 
   * Save answers to the exercises in :ref:`Problem Set 1 <problem_set_1>`. 
   * Submit the DYU 2 assignment on Canvas. 
+
+.. activecode:: ps_2_extra
+    :language: python
+    :autograde: unittest
+
+    This is an automatic set of points to fill in for a problem in problem set 2.
+    ~~~~
+    y = 4
+
+    =====
+
+    from unittest.gui import TestCaseGui
+
+    class myTests(TestCaseGui):
+
+      def test_output(self):
+          self.assertEqual(y,4)
+
+    myTests().main()
