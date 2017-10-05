@@ -19,7 +19,7 @@ Activities: Week 6 (through fall break)
 
   * Read the :ref:`Unix<unix_chapter>` chapter and try the exercises in that chapter on your computer
   * Also read `this tutorial on Unix pipes <http://www.ee.surrey.ac.uk/Teaching/Unix/unix3.html>`_ (you can ignore the ``who`` command in the tutorial) and `this tutorial on the Unix command grep <http://www.ee.surrey.ac.uk/Teaching/Unix/unix2.html>`_ (you can scroll down to it on that page).
-  * Read :ref:`Installing a text editor<text_editor_installation>` section for background, and make sure you have a text editor installed. (You can leave the rest of the installation chapter aside; it may contain some outdated information!) We recommend `Atom <https://atom.io/>`_, which is only available for Mac, or `Sublime Text <https://www.sublimetext.com/>`_, which is available for Windows OR Mac. **Microsoft Word or NotePad will not work for programs! You must install a Text Editor program that works for writing Python code.**
+  * Read :ref:`Installing a text editor<text_editor_installation>` section for background, and make sure you have a text editor installed. (You can leave the rest of the installation chapter aside; it may contain some outdated information!) We recommend `Atom <https://atom.io/>`_, or `Sublime Text <https://www.sublimetext.com/>`_. **Microsoft Word or NotePad will not work for programs! You must install a Text Editor program that works for writing Python code.**
   * Read the `Python installation instructions <https://umich.instructure.com/courses/172984/assignments/329369>`_ on Canvas.  
 
 
@@ -32,7 +32,7 @@ Activities: Week 6 (through fall break)
 
   * :ref:`Unix problems<unix_problems>` **due October 18th**, after fall break!
 
-  * **Make sure your installation and Python setup on your computer is working and feels clear to you. Contact an instructor before Fall Break if this is not the case.**
+  * **Make sure your installation and Python setup on your computer is working and feels clear to you. Try to contact an instructor before Fall Break if this is not the case.**
   * You should check out the :ref:`How to Fix Common Problems using your native machine's Python<gotchas_chap>`, which may also be helpful as we move forward.
 
 
@@ -41,7 +41,7 @@ Activities: Week 6 (through fall break)
 Problem Set 4: Unix Exercises
 -----------------------------
 
-For each step of the Unix part of this problem set, please take a screenshot that shows us the command(s) you typed and the results. Save the screenshots as ``step1.jpg`` (or ``.png``), ``step2.jpg``, etc. Upload them all to `the Unix Exercises <https://umich.instructure.com/courses/172984/assignments/329372>`_ assignment on Canvas.
+**For every numbered step of the Unix part of this problem set, please take a screenshot that shows us the command(s) you typed and the results.** Save the screenshots as ``step1.jpg`` (or ``.png``), ``step2.jpg``, etc. Upload them all to `the Unix Exercises <https://umich.instructure.com/courses/172984/assignments/329372>`_ assignment on Canvas.
 
 Following the Unix exercises, there are a few Activecode windows and directions for Python exercises which comprise the second part of this problem set.
 
