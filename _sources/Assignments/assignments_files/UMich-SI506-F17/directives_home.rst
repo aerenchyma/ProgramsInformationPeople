@@ -29,7 +29,7 @@
 .. assignment::
   :name: PS04
   :assignment_type: problem_set
-  :questions: ps_3_02 150, ps_3_06 200, ps_4_01 150, ps_4_02 220, ps_4_03 130, ps_4_04 150
+  :questions: ps_3_02 100, ps_3_06 150, ps_4_01 180, ps_4_02 220, ps_4_03 200, ps_4_04 150
   :deadline: 2017-10-09 05:00
   :points: 1000
   :autograde: unittest
