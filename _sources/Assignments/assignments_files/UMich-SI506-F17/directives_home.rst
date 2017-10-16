@@ -34,3 +34,11 @@
   :points: 1000
   :autograde: unittest
 
+.. assignment::
+  :name: PS05
+  :assignment_type: problem_set
+  :questions: ps_5_01 100, ps_5_02 100, ps_5_03 100, ps_5_04 100, ps_5_05 100
+  :deadline: 2017-10-23 05:00
+  :points: 1000
+  :autograde: unittest
+
