@@ -73,7 +73,7 @@ Problem Set
   class myTests(TestCaseGui):
 
     def test_sorted_sugar(self):
-       self.assertEqual(sorted_sugar, sorted(food_amounts, key=lambda x: x["sugar_grams"]), "Testing the value of sorted_sugar")
+       self.assertEqual(sorted_by_sugar, sorted(food_amounts, key=lambda x: x["sugar_grams"]), "Testing the value of sorted_by_sugar")
 
     def test_sorted_net(self):
        self.assertEqual(sorted_net_carbs, sorted(food_amounts, key=lambda x: x["carbohydrate"]-x["fiber"],reverse=True),"Testing the value of sorted_net_carbs")
@@ -143,5 +143,9 @@ Problem Set
        self.assertEqual(convert_nums(1),(60,3600), "Testing that convert_nums(1) results in 60,3600")
     def testFunc2(self):
        self.assertEqual(convert_nums(15),(900,54000), "Testing that convert_nums(15) reqults in 900,54000")
+    def test_two_hours_mins(self):
+       self.assertEqual(two_hours_mins, 120, "Testing value of two_hours_mins")
+    def test_two_hours_seconds(self):
+       self.assertEqual(two_hours_seconds, 7200, "Testing value of two_hours_seconds (remember we cannot test that you did this in one line, a human will grade that)")
 
   myTests().main()
