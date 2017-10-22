@@ -21,10 +21,10 @@ Activities: Week 8
 * **Before class Thursday:**
 
   * Read :ref:`String Formatting<formatting_chap>`
-  * You may find it helpful to read this `External Tutorial on Reading CSV Files <https://thenewcircle.com/s/post/1572/python_for_beginners_reading_and_manipulating_csv_files>`_
-  * Read :ref:`Writing files<write_text_file_chap>` (also note :ref:`Writing CSV files<csv_chap>`)
-  * Read :ref:`Python modules <modules_chap>`
-  * Make sure to read :ref:`pip module installer <pip_chap>` (and install the ``pip`` module by downloading the `get-pip.py` program and running it with admin permissions -- see Canvas instructions for help with this if you have any problems!) 
+  * Read the :ref:`Requests for Internet Data<requests_chap>` chapter
+  * You may find it helpful to read this `External Tutorial on Reading CSV Files <https://thenewcircle.com/s/post/1572/python_for_beginners_reading_and_manipulating_csv_files>`_ and  :ref:`Writing files<write_text_file_chap>` (also note :ref:`Writing CSV files<csv_chap>`)
+  * Read the short section on :ref:`Python modules <modules_chap>`
+  * Make sure to read :ref:`pip module installer <pip_chap>` (and install the ``pip`` module by downloading the `get-pip.py` program and running it with admin permissions -- see Piazza for help with this if you have any problems!) 
 
 
 * **Before Sunday at 11:59 PM:**
@@ -33,4 +33,4 @@ Activities: Week 8
 
 .. _problem_set_6:
 
-TBA 
+See Canvas: `Problem Set 6 Assignment <https://umich.instructure.com/courses/172984/assignments/329365>`_
