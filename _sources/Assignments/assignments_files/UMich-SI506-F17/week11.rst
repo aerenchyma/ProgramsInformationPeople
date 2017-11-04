@@ -13,12 +13,12 @@ Activities: Week 11
 
 * **Before class Tuesday:**
 
-  * Read the :ref:`Classes <chap_constructor>` chapter, and try the exercises in those sections.
+  * Carefully review the section from the Classes chapter about planning class definitions and :ref:`classes representing data <thinking_about_classes>`.
 
 
 * **Before class Thursday:**
 
-  * Carefully review the section from the Classes chapter about planning class definitions and :ref:`classes representing data <thinking_about_classes>`.
+  * TBD
 
 * **Before Sunday at 11:59 PM:**
 
@@ -29,9 +29,8 @@ Activities: Week 11
 Problem Set
 -----------
 
-Go `HERE to see the Problem Set 9 assignment <updatelink.com>`_, where you can find the file you need to download and edit, and where you can submit the completed file for this assignment. 
+Go `HERE to see the Problem Set 9 assignment <updatelink.com>`_, where you can find the file you need to download and edit, and where you can submit the completed file for this assignment.
 
-Much like the last couple weeks, you'll see instructions and provided code for each step in the ``506F17_ps9.py`` file you download from Canvas. 
+Much like the last couple weeks, you'll see instructions and provided code for each step in the ``506F17_ps9.py`` file you download from Canvas.
 
 Remember that we do not grade files which do not run, so make sure that your file runs and shows test output before submitting it. Comment out any code that causes an error!
-
