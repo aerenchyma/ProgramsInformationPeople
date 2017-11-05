@@ -11,7 +11,7 @@
 Activities: Week 11 
 ===================
 
-.. note::
+.. notes::
 
   These Assignments May Change As the Semester Progresses
 
