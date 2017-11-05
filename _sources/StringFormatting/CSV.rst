@@ -14,7 +14,7 @@ For example, we will make a file with the following contents. If you save it as 
    Jamal, 98, A+
    Eloise, 87, B+
    Madeline, 99, A+
-   
+
 As long as none of your data contains commas, you can do this by hand using output formatting. You previously learned about :ref:`writing output to a text file <write_text_file_chap>`.
 
 The typical pattern for writing data to a CSV file will be to write a header row, and loop through the items in a list (or dictionary), outputting one row for each. For example, you could try this in a native python interpreter (in the browser, you can't write files.) After you run it, take a look at the contents of the newly created file, grades.csv, and try importing it into Excel or a Google spreadsheet.
@@ -32,12 +32,12 @@ The typical pattern for writing data to a CSV file will be to write a header row
    for student in students:
        outfile.write("{}, {}, {}\n".format(*student))
    outfile.close()
-   
+
 There are a couple of things worth noting in the code above. First, unlike the print statement, the .write() method on a file object does not automatically insert a newline. Instead, we had to explicitly add the character ``\n`` at the end of each line.
 
 Second, we used string interpolation on the second to last line. That makes it clear that we're taking the contents of the tuple student, unpacking it into separate arguments, using the ``*``, and putting the component values into the three spots in the string. We could have written that line with a bunch of strings and variables combined with + signs, but that code would be much harder for humans to read and understand.
 
-Also fine, and possibly clearer, would be to write it like this: ``outfile.write("{}, {}, {}\n".format(student[0],student[1],student[2]))``. 
+Also fine, and possibly clearer, would be to write it like this: ``outfile.write("{}, {}, {}\n".format(student[0],student[1],student[2]))``.
 
 (Note that just putting ``student``, the tuple, with no ``*``, as the argument to ``.format`` will cause an error -- in that case Python sees only one argument, but three spaces to put component values in, which does not work!)
 
@@ -48,13 +48,13 @@ If one or more columns contain text, and that text could contain commas, we need
    students = [("Jones, Jamal J", 98, "A+"),
                ("Ensted, Eloise E", 87, "B+"),
                ("Morton, Madeline", 99, "A+")]
-   
+
    outfile = open("grades.csv","w")
    # output the header row
    outfile.write('"Name", "score", "grade"\n')
    # output each of the rows:
    for student in students:
-       outfile.write('"{}", "{}", "{}"\n'.format(student))
+       outfile.write('"{}", "{}", "{}"\n'.format(*student))
    outfile.close()
 
 Python also includes a .csv module, which provides a cleaner, more abstract way to handle writing .csv files. It can generate slightly different CSV formats, and handles a few other aspects of more complicated outputs in a nice way. You are welcome to explore the `documentation for the csv module <https://docs.python.org/2/library/csv.html>`_ if you'd like to learn how to use it.
