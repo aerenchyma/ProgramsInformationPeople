@@ -22,7 +22,7 @@ Activities: Week 10
 
 * **Before class Wednesday:**
 
-  *
+  * Read the :ref:`Classes <chap_constructor>` chapter, and try the exercises in those sections.
 
 
 
