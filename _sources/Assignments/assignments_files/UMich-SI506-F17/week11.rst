@@ -13,24 +13,23 @@ Activities: Week 11
 
 * **Before class Tuesday:**
 
-  * Carefully review the section from the Classes chapter about planning class definitions and :ref:`classes representing data <thinking_about_classes>`.
-
+  * Carefully review the section from the Classes chapter about planning class definitions and :ref:`classes representing data <thinking_about_classes>`. Try all the exercises in the chapter.
 
 * **Before class Thursday:**
 
-  * TBD
+  * Try out the `Facebook Graph API Explorer <https://developers.facebook.com/tools/explorer/>`_. You should try at least a couple different requests in the explorer and explore the resulting data (try copying it into jsoneditoronline.org!).
+  * Read (TBD link) about API authentication, review API caching.
+  * Consider how you interpret the problem sets we write for you. Why are the steps separated the way they are? How do you explain the problems to yourself when you go to solve them?
 
 * **Before Sunday at 11:59 PM:**
 
-  * Complete and submit your :ref:`Problem Set 9 <problem_set_9>`, and save an answer to your Demonstrate Understanding for this week (linked below).
+  * Complete and submit your Problem Set 8 on Canvas, and save an answer to your Demonstrate Understanding for this week.
 
-.. _problem_set_9:
+.. _problem_set_8:
 
 Problem Set
 -----------
 
-Go `HERE to see the Problem Set 9 assignment <updatelink.com>`_, where you can find the file you need to download and edit, and where you can submit the completed file for this assignment.
-
-Much like the last couple weeks, you'll see instructions and provided code for each step in the ``506F17_ps9.py`` file you download from Canvas.
+Download files on Canvas, edit per instructions in file, and submit edited problem set file to the Canvas assignment.
 
 Remember that we do not grade files which do not run, so make sure that your file runs and shows test output before submitting it. Comment out any code that causes an error!
