@@ -16,6 +16,7 @@ Activities: Week 12
   * Read the `Facebook Graph API overview <https://developers.facebook.com/docs/graph-api/overview>`_
   * Read `this article <https://paper.dropbox.com/doc/oAuth-Services-and-API-Authentication-7cfoHpHLel6Vv1uM9tW2F>`_ about OAUth and API authentication.
   * Try running the sample code at the end of that article. **See note at the bottom of this page re: a Facebook account.**
+  * Note that the short section on the Facebook API in the textbook is currently outdated slightly. Many things about it are still true, but in this course we will focus on the way of accessing FB data described in the link above.
 
 
 * **Before class Thursday:**
