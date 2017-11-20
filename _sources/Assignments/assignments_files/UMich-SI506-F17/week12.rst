@@ -19,10 +19,7 @@ Activities: Week 12
   * Note that the short section on the Facebook API in the textbook is currently outdated slightly. Many things about it are still true, but in this course we will focus on the way of accessing FB data described in the link above.
 
 
-* **Before class Thursday:**
-
-  * Read about `Paging with the Facebook API <https://developers.facebook.com/docs/graph-api/using-graph-api#paging>`_, focusing on **Offset-based pagination**, and gather any questions you have since Tuesday about the Facebook API. We will discuss further options with APIs like the Facebook API in lecture.
-  * Check out the `Tweepy` documentation, at http://www.tweepy.org/
+* **No class for Thanksgiving recess** 
 
 
 .. _problem_set_9:
