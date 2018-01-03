@@ -344,6 +344,8 @@ That's the end of the problem set. In the hidden code below, you will find the d
     :nopre:
     :hidecode:
 
+    **This is not a problem in the problem set. It is code that provides functions you're using in this problem set. They're hidden because you don't yet need to understand how function definitions work.**
+    ~~~~
     def square(num):
         return num**2
 
