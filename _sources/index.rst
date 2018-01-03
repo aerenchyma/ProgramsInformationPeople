@@ -25,6 +25,16 @@ Workspace
    Assignments/blank_code_windows.rst
 
 
+Your Assignments
+::::::::::::::::
+
+.. raw:: html
+
+   <ul>
+   <li><a href="../../assignments/chooseAssignment.html">Assignments</a></li>
+   </ul>
+
+
 General Introduction
 ::::::::::::::::::::
 
