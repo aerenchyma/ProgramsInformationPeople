@@ -16,3 +16,4 @@ Class Assignments
    Assignments/week09.rst
    Assignments/week10.rst
    Assignments/week11.rst
+   Assignments/extra_problems.rst
