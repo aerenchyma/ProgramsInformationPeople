@@ -292,20 +292,22 @@ Problem Set
     myTests().main()
 
 
-**7.** Here's another complicated expression, using the Turtle framework we talked about. Arrange these sentences in the order they are executed in the following code, like you did in an exercise in Chapter 2 of the textbook. (It may help to think about what specifically is happening in the first four lines of code as well.)
-
-.. sourcecode:: python
-
-     import turtle
-
-     ella = turtle.Turtle()
-     x = "hello class".find("o") - 1
-     ella.speed = 3
-
-
-     ella.move(square(x*ella.speed))
+**7.**
 
 .. parsonsprob:: ps_1_09
+
+    Here's another complicated expression, using the Turtle framework we talked about. Arrange these sentences in the order they are executed in the following code, like you did in an exercise in Chapter 2 of the textbook. (It may help to think about what specifically is happening in the first four lines of code as well.)
+
+    .. sourcecode:: python
+
+         import turtle
+
+         ella = turtle.Turtle()
+         x = "hello class".find("o") - 1
+         ella.speed = 3
+
+
+         ella.move(square(x*ella.speed))
 
    Order the code fragments in the order in which the Python interpreter would evaluate them, when evaluating that last line of code.
 

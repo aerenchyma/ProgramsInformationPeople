@@ -27,8 +27,8 @@ You have the following graded activities:
 
 
 * **Before Thursday's class:**
-  
-  * Read :ref:`Dictionary Accumulation<dictionary_accum_chap>` and try the exercises 
+
+  * Read :ref:`Dictionary Accumulation<dictionary_accum_chap>` and try the exercises
   * Read :ref:`Defining Functions<functions_chap>`, and try the exercises in that chapter
 
 
@@ -46,8 +46,8 @@ Problem Set
    :hide:
 
    Autumn is interchangeably known as fall in the US and Canada, and is one of the four temperate seasons. Autumn marks the transition from summer into winter.
-   Some cultures regard the autumn equinox as mid autumn while others, with a longer temperature lag, treat it as the start of autumn then. 
-   In North America, autumn starts with the September equinox, while it ends with the winter solstice. 
+   Some cultures regard the autumn equinox as mid autumn while others, with a longer temperature lag, treat it as the start of autumn then.
+   In North America, autumn starts with the September equinox, while it ends with the winter solstice.
    (Wikipedia)
 
 
@@ -55,7 +55,7 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **1.** Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
+   Below is a dictionary ``diction`` with two key-value pairs inside it. The string ``"python"`` is one of its keys. Using dictionary mechanics, print out the value of the key ``"python"``.
    ~~~~
    diction = {"python":"you are awesome","autumn":100}
 
@@ -76,7 +76,7 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **2.** Here's another dictionary, ``nd``. 
+   Here's another dictionary, ``nd``.
    **PART 1**
    Write code to print out each key-value pair in it, one key and its value on each line. Your output should look somewhat like this (remember, the order may be different!):
 
@@ -88,12 +88,12 @@ Problem Set
      well spring
 
    **PART 2**
-   Then, write code to increase the value of key ``"23"`` by 5. 
+   Then, write code to increase the value of key ``"23"`` by 5.
 
    **PART 3**
    Finally, write code to print the value of the key ``"well"``. Your code should work no matter what the value of the key "well" is.
 
-   **HINTS:** 
+   **HINTS:**
    - Printing things with a comma, e.g. ``print("hello", "everyone")`` will print out those things on the same line with  a space in between them: ``hello everyone``.
    - Your code should work no matter what the values corresponding to the keys are!
    ~~~~
@@ -106,7 +106,7 @@ Problem Set
 
     def testOne(self):
        self.assertEqual(nd["23"], 350, "Testing that the value associated with the key '23' is 350")
-       self.assertIn("autumn spring", self.getOutput(), "Testing output (Don't worry about actual and expected values).") 
+       self.assertIn("autumn spring", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
        self.assertIn("well spring", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
        self.assertIn("4 seasons", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
        self.assertIn("23 345", self.getOutput(), "Testing output (Don't worry about actual and expected values).")
@@ -119,7 +119,7 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **3.** Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
+   Below is an empty dictionary saved in the variable ``nums``, and a list saved in the variable ``num_words``. Use iteration and dictionary mechanics to add each element of ``num_words`` as a key in the dictionary ``nums``. Each key should have the value ``0``. The dictionary should end up looking something like this when you print it out (remember, you can't be sure of the order): ``{"two":0,"three":0,"four":0,"eight":0,"seventeen":0,"not_a_number":0}``
    ~~~~
    nums = {}
    num_words = ["two","three","four","seventeen","eight","not_a_number"]
@@ -145,7 +145,7 @@ Problem Set
 .. activecode:: ps_3_01
    :language: python
 
-   **4.** Write code **that will keep printing what the user inputs over and over until the user enters the string "quit".**
+   Write code **that will keep printing what the user inputs over and over until the user enters the string "quit".**
 
    ~~~~
    # Write code here
@@ -168,7 +168,7 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **5.** Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics and dictionary accumulation will be useful here.
+   Given the string ``s`` in the code below, write code to figure out what the most common word in the string is and assign that to the variable ``abc``. (Do not hard-code the right answer.) Hint: dictionary mechanics and dictionary accumulation will be useful here.
    ~~~~
    s = "Number of slams in an old screen door depends upon how loud you shut it, the count of slices in a bread depends how thin you cut it, and amount 'o good inside a day depends on how well you live 'em. All depends, all depends, all depends on what's around ya."
 
@@ -192,7 +192,7 @@ Problem Set
 .. activecode:: ps_3_04
    :language: python
 
-   **6.** Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
+   Take a look at the code below. The function ``subtract_five`` is supposed to take one integer as input and return that integer minus 5. You'll get an error if you run it as is. Change the function so it works and passes the test!
    ~~~~
    def subtract_five(inp):
        print(inp - 5)
@@ -216,8 +216,8 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **7.** Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
-   ~~~~ 
+   Define a function called ``change_amounts`` that takes one integer as input. If the input is larger than 10, it should return the input + 5. If the input is smaller than or equal to 10, it should return the input + 2.
+   ~~~~
    # We've started you off with the first line...
    def change_amounts(num_here):
        pass # delete this line and put in your own code for the body of the function.
@@ -233,5 +233,3 @@ Problem Set
          self.assertEqual(change_amounts(12), 17, "Testing if change_amounts(12) equals 17")
 
    myTests().main()
-
-

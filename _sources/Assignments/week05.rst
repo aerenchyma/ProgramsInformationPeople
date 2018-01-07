@@ -34,8 +34,8 @@ Activities: Week 5
    :hide:
 
    Autumn is interchangeably known as fall in the US and Canada, and is one of the four temperate seasons. Autumn marks the transition from summer into winter.
-   Some cultures regard the autumn equinox as mid autumn while others, with a longer temperature lag, treat it as the start of autumn then. 
-   In North America, autumn starts with the September equinox, while it ends with the winter solstice. 
+   Some cultures regard the autumn equinox as mid autumn while others, with a longer temperature lag, treat it as the start of autumn then.
+   In North America, autumn starts with the September equinox, while it ends with the winter solstice.
    (Wikipedia)
 
 
@@ -46,17 +46,17 @@ Problem Set
 .. activecode:: ps_3_02
    :language: python
 
-   **1.** **This problem encountered technical difficulties in our textbook, so codelens shows the correct result of invoking this function, but running the function in the textbook does not always. As a result, EVERYONE will get some free points for this problem on PS4. You do not need to worry about solving it**, but it is worth spending a little bit of time checking it out and thinking about it!
+   **This problem encountered technical difficulties in our textbook, so codelens shows the correct result of invoking this function, but running the function in the textbook does not always. As a result, EVERYONE will get some free points for this problem. You do not need to worry about solving it**, but it is worth spending a little bit of time checking it out and thinking about it!
 
    ---
 
-   Below is a function definition. **DO NOT** change it! 
+   Below is a function definition. **DO NOT** change it!
 
    We have also provided some invocations of that function. Run those and see what they do.
 
    Below the comment provided in the code window, write a few calls to this function yourself, with whatever appropriate input you want.
 
-   Finally, write a few sentences in comments in the code window that explain what's happening in this function called list_end_with_string. You should explain what happens if a list like ``l`` gets input into this function AND what happens if a list like ``b`` gets input into it. 
+   Finally, write a few sentences in comments in the code window that explain what's happening in this function called list_end_with_string. You should explain what happens if a list like ``l`` gets input into this function AND what happens if a list like ``b`` gets input into it.
 
    Don't forget to run it and save!
 
@@ -86,11 +86,11 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **2.** We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Save the string that is most common word in the file in the variable ``abc``. (Hint: you had a problem quite similar to this one in PS3!) You may write a function to help do this, AND invoke the function, if you do so -- but you do not have to.
+   We've given you another data file in this problem. It's called ``timely_file.txt``. Write code to figure out which is the most common word in the file. Save the string that is most common word in the file in the variable ``abc``. (Hint: you had a problem quite similar to this one in PS3!) You may write a function to help do this, AND invoke the function, if you do so -- but you do not have to.
 
    ~~~~
    # Write code here!
-        
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -110,9 +110,9 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **3.** Define a function ``is_prefix`` that takes two strings as inputs and returns the boolean value ``True`` if the first string is a prefix of the second string, but returns the boolean value ``False`` otherwise. You can assume the first string will always be shorter than, or the same length as, the second string.
+   Define a function ``is_prefix`` that takes two strings as inputs and returns the boolean value ``True`` if the first string is a prefix of the second string, but returns the boolean value ``False`` otherwise. You can assume the first string will always be shorter than, or the same length as, the second string.
 
-   ~~~~   
+   ~~~~
    # Define your function here.
 
 
@@ -156,7 +156,7 @@ Below is an image from the middle of a game...
 
 .. image:: Figures/HangmanSample.JPG
 
-Your first task is just to understand the logic of the program, by matching up elements of the flow chart above with elements of the code below. In later problems, you'll fill in a few details that aren't fully implemented here.  
+Your first task is just to understand the logic of the program, by matching up elements of the flow chart above with elements of the code below. In later problems, you'll fill in a few details that aren't fully implemented here.
 
 You may find it helpful to run this program in order to understand it. It will tell you feedback about your last guess, but won't tell you where the correct letters were or how much health you have in the game, and it won't stop if you guess all the letters, so you can't *really* play with this version of the code here. (It can also go on for a very long time, until you exceed the time limit in the code window, unless you cancel it yourself.) Allowing the game to do those things (manage health, show you the word you've guessed so far) comes from code you will write in later problems!
 
@@ -227,17 +227,17 @@ You may find it helpful to run this program in order to understand it. It will t
 See the flow chart below for a better understanding of what's happening in the code for the Hangman game overall. Your first task is just to understand the logic of the program, by matching up elements of the flow chart above with single numeric lines of the code below (which line of code corresponds to the box?). Answer in comments, below. **Each answer should be no more than 2 numbers that represent lines of code. Each question can be answered with 1 or 2 line numbers!**
 
 In later problems, you'll fill in a few details that aren't fully implemented in the code above.
- 
+
 .. image:: Figures/HangmanFlowchart.jpg
 
 .. activecode:: ps_4_02
 
-   # What line(s) of code in the above code window do what's mentioned in the flowchart's Box 1? 
+   # What line(s) of code in the above code window do what's mentioned in the flowchart's Box 1?
 
    # What line(s) of code do what's mentioned in Box 2?
 
    #What line(s) of code do what's mentioned in Box 3?
- 
+
    # What line(s) of code do what's mentioned in Box 4?
 
    # What line(s) of code do what's mentioned in Box 5?
@@ -259,13 +259,13 @@ In later problems, you'll fill in a few details that aren't fully implemented in
    :language: python
    :autograde: unittest
 
-   **5.** The next task you have is to create a correct version of the ``blanked`` function. It should take 2 inputs: a word, and a string of the letters that have been guessed already. 
+   The next task you have is to create a correct version of the ``blanked`` function. It should take 2 inputs: a word, and a string of the letters that have been guessed already.
 
-   It should return a string with the same number of characters as the word, but with the UNrevealed characters replaced by an underscore (a ``_``). 
+   It should return a string with the same number of characters as the word, but with the UNrevealed characters replaced by an underscore (a ``_``).
 
    **HINT:** Iterate through the letters in the word, accumulating characters as you go. If you try to iterate through the guesses, it's harder.
 
-   ~~~~   
+   ~~~~
    # Define your function here.
 
 
@@ -274,7 +274,7 @@ In later problems, you'll fill in a few details that aren't fully implemented in
    print(blanked("hello", "elj"))
    #should output _ell_
    print(blanked("almost","amsvr"))
-   # should output a_m_s_ 
+   # should output a_m_s_
 
 
    =====
@@ -297,7 +297,7 @@ In later problems, you'll fill in a few details that aren't fully implemented in
 .. activecode:: ps_4_04
     :autograde: unittest
 
-    **6.** Now you have to create a good version of the ``health_prompt`` function: Define a function called ``health_prompt``. The first parameter should be the current health the player has (an integer), and the second parameter should be the maximum health a player can have (an integer). The function should return a string with ``+`` signs for the current health, and ``-`` signs for the health that has been lost so far.
+    Now you have to create a good version of the ``health_prompt`` function: Define a function called ``health_prompt``. The first parameter should be the current health the player has (an integer), and the second parameter should be the maximum health a player can have (an integer). The function should return a string with ``+`` signs for the current health, and ``-`` signs for the health that has been lost so far.
     ~~~~
     # Define your function here.
 

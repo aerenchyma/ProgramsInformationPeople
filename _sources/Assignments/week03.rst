@@ -86,7 +86,7 @@ Problem Set
     :language: python
     :autograde: unittest
 
-    **1.** Write one for loop to print out each element of the list ``several_things``. Then, write *another* for loop to print out the TYPE of each element of the list called ``several_things``. To complete this problem you should have written two different for loops, each of which iterates over the list ``several_things``, but each of those 2 for loops should have a different result.
+    Write one for loop to print out each element of the list ``several_things``. Then, write *another* for loop to print out the TYPE of each element of the list called ``several_things``. To complete this problem you should have written two different for loops, each of which iterates over the list ``several_things``, but each of those 2 for loops should have a different result.
     ~~~~
     several_things = ["hello", 2, 4, 6.0, 7.5, 234352354, "the end", "", 99]
 
@@ -105,7 +105,7 @@ Problem Set
 .. activecode:: ps_1_06
        :language: python
 
-       **2.** Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
+       Write code that uses iteration to print out each element of the list stored in ``excited_words``, BUT print out each element **without** its ending punctuation. You should see:
 
        ::
 
@@ -134,12 +134,12 @@ Problem Set
 .. activecode:: ps_2_01
     :language: python
     :autograde: unittest
-  
-    **3.** Write code to count the number of characters in ``original_str`` using the accumulation pattern and assign the answer to a variable ``num_chars_sent``. Do NOT use the ``len`` function to solve the problem (if you use it while you are working on this problem, comment it out afterward!)
+
+    Write code to count the number of characters in ``original_str`` using the accumulation pattern and assign the answer to a variable ``num_chars_sent``. Do NOT use the ``len`` function to solve the problem (if you use it while you are working on this problem, comment it out afterward!)
     ~~~~
     original_str = "The quick brown rhino jumped over the extremely lazy fox."
-     
-     
+
+
     =====
 
     from unittest.gui import TestCaseGui
@@ -157,7 +157,7 @@ Problem Set
    :available_files: about_programming.txt
    :autograde: unittest
 
-   **4.** Write code to open the file ``about_programming.txt`` which has been provided for you in this problem set, and assign the **number of lines** in the file to the variable ``file_lines_num``.
+   Write code to open the file ``about_programming.txt`` which has been provided for you in this problem set, and assign the **number of lines** in the file to the variable ``file_lines_num``.
    ~~~~
    # Write your code here.
 
@@ -177,25 +177,25 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **5.** The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages. 
+   The program below doesn't always work as intended. Try uncommenting different lines setting the initial value of x. Tests will run at the end of your code, and you will get diagnostic error messages.
 
    Fix the code so that it passes the test for each different value of x. So when the first line is uncommented, and when the second line, third line, and fourth line are each uncommented, you should always pass the test.
 
    (HINT: you don't have to make a big change!)
-   ~~~~ 
+   ~~~~
    #x = 25
    #x = 15
    #x = 5
    #x = -10
 
    if x > 20:
-     y = "oranges" 
+     y = "oranges"
    if x > 10:
-     y = "strawberries" 
+     y = "strawberries"
    if x < 0:
-     y = "blueberries" 
+     y = "blueberries"
    else:
-     y = "mulberries" 
+     y = "mulberries"
 
    print("y is " + str(y))
 
@@ -224,11 +224,11 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **6.** How many characters are in each element of list ``lp``? Write code to print the length (number of characters) of each element of the list, on a separate line. (Do not write 8+ lines of code to do this. Use a for loop.)
+   How many characters are in each element of list ``lp``? Write code to print the length (number of characters) of each element of the list, on a separate line. (Do not write 8+ lines of code to do this. Use a for loop.)
 
    The output you get should be:
 
-   :: 
+   ::
 
      5
      13
@@ -237,7 +237,7 @@ Problem Set
      3
      12
      11
-     6 
+     6
 
    Use iteration (a for loop).
    ~~~~
@@ -259,9 +259,9 @@ Problem Set
    :language: python
    :autograde: unittest
 
-   **7.** Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``. 
+   Write code to count the number of strings in list ``items`` that have the character ``w`` in it. Assign that number to the variable ``acc_num``.
 
-   HINT 1: Use the accumulation pattern! 
+   HINT 1: Use the accumulation pattern!
 
    HINT 2: the ``in`` operator checks whether a substring is present in a string.
    ~~~~
@@ -277,4 +277,3 @@ Problem Set
          self.assertEqual(acc_num, 3, "Testing that acc_num has been set to the number of strings that have 'w' in them.")
 
    myTests().main()
-

@@ -16,7 +16,7 @@ Activities: Week 7 (this is the week that includes the Mon-Tues of Fall Break)
 * **Remember that your Unix Problems are due immediately after fall break, on 10/18 at 11:59 PM, on Canvas**. You can see the assignment: :ref:`Unix Problems<unix_problems>`
 
 * **Before class Thursday:**
-  
+
   * Read :ref:`Sorting and anonymous functions<sort_chap>`
   * Try all the exercises you can and try to formulate questions about concepts you find confusing/articulate ways of solving exercises in English.
   * Make sure your Python installation is working properly.
@@ -38,7 +38,7 @@ Problem Set
 .. activecode:: ps_5_01
   :language: python
 
-  **1.** Write code to sort ``fall_list`` alphabetically and save the result in the variable ``sorted_fall_list``.
+  Write code to sort ``fall_list`` alphabetically and save the result in the variable ``sorted_fall_list``.
 
   ~~~~
   fall_list = ["leaves","apples","autumn","bicycles","pumpkin","squash","excellent"]
@@ -57,9 +57,9 @@ Problem Set
 .. activecode:: ps_5_02
   :language: python
 
-  **2.** Write code to do two things: **(a)** sort the list ``food_amounts`` by the value of each dictionary's key ``"sugar_grams"``, and save the result in a variable ``sorted_by_sugar``. 
+  Write code to do two things: **(a)** sort the list ``food_amounts`` by the value of each dictionary's key ``"sugar_grams"``, and save the result in a variable ``sorted_by_sugar``.
 
-  **(b)** Net carbohydrates for each dictionary data structure can be found by subtracting the value associated with the key ``"fiber"`` *from* the value associated with the key ``"carbohydrate"``. Sort this list of dictionaries by the value of each's *net carbohydrates*, **in order from the most to the least**, largest -> smallest, and save the result, the properly sorted list, in a variable called ``sorted_net_carbs``. 
+  **(b)** Net carbohydrates for each dictionary data structure can be found by subtracting the value associated with the key ``"fiber"`` *from* the value associated with the key ``"carbohydrate"``. Sort this list of dictionaries by the value of each's *net carbohydrates*, **in order from the most to the least**, largest -> smallest, and save the result, the properly sorted list, in a variable called ``sorted_net_carbs``.
 
   **HINT:** You'll at least need to pass a function to the ``key`` parameter of the ``sorted`` function to solve **(a)** AND to solve **(b)** -- but for each part, you *could* solve it in a single line of code.
 
@@ -84,7 +84,7 @@ Problem Set
 .. activecode:: ps_5_03
   :language: python
 
-  **3.** Use a for loop to print the second element of each tuple in the list ``new_tuple_list``.
+  Use a for loop to print the second element of each tuple in the list ``new_tuple_list``.
 
   ~~~~
   new_tuple_list = [(1,2),(4, "umbrella"),("chair","hello"),("soda",56.2)]
@@ -104,7 +104,7 @@ Problem Set
 .. activecode:: ps_5_04
   :language: python
 
-  **4.** We have provided a nested list in the variable ``nl``. Write code to accumulate a list containing the second (as humans count) element of each sub-list and save it in a variable ``second_elems``.
+  We have provided a nested list in the variable ``nl``. Write code to accumulate a list containing the second (as humans count) element of each sub-list and save it in a variable ``second_elems``.
 
   ~~~~
   nl = [["nested","data","is"],["really","fun"],[11,["hooray","hooray"],"yay"]]
@@ -125,7 +125,7 @@ Problem Set
 .. activecode:: ps_5_05
   :language: python
 
-  **5.** Define a function ``convert_nums``. The function should accept an integer as input, representing a number of hours. It should return a tuple of that number converted to minutes (* 60), and then that number converted to seconds (* 3600). For example, if 1 were input into the function, the return value of that invocation should be the tuple ``60, 3600``.
+  Define a function ``convert_nums``. The function should accept an integer as input, representing a number of hours. It should return a tuple of that number converted to minutes (* 60), and then that number converted to seconds (* 3600). For example, if 1 were input into the function, the return value of that invocation should be the tuple ``60, 3600``.
 
   **Then,** write an invocation to ``convert_nums`` so that, **in one line of code**, you assign the value ``120`` to the variable ``two_hours_mins``, and the value ``7200`` to the variable ``two_hours_seconds``. (**HINT:** 7200 is equal to 3600 * 2)
 
