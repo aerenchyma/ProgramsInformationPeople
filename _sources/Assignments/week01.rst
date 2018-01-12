@@ -66,7 +66,7 @@ Problem Set
     :language: python
     :autograde: unittest
 
-    **1.** Write code to assign the number of characters in the string ``rv`` to a variable ``num_chars``. Then write code to assign the number of words in the string ``rv`` to the variable ``num_words``. (Hint: remember how to split strings?)
+    Write code to assign the number of characters in the string ``rv`` to a variable ``num_chars``. Then write code to assign the number of words in the string ``rv`` to the variable ``num_words``. (Hint: remember how to split strings?)
     ~~~~
     rv = """Once upon a midnight dreary, while I pondered, weak and weary,
         Over many a quaint and curious volume of forgotten lore,
@@ -95,7 +95,7 @@ Problem Set
     :language: python
     :autograde: unittest
 
-    **2.** There is a function we are providing in for you in this problem set called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable called ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
+    There is a function we are providing in for you in this problem set called ``square``. It takes one integer and returns the square of that integer value. Write code to assign a variable called ``xyz`` the value ``5*5`` (five squared). Use the square function, rather than just multiplying with ``*``.
     ~~~~
     xyz = ""
 
@@ -120,7 +120,7 @@ Problem Set
     :language: python
     :autograde: unittest
 
-    **3.** Write in a comment next to each line of code, what each line of this code does. (You should be very specific! This exercise will train your brain for when you write more complicated code.)
+    Write in a comment next to each line of code, what each line of this code does. (You should be very specific! This exercise will train your brain for when you write more complicated code.)
     ~~~~
     # Here's an example.
     xyz = 12 # The variable xyz is being assigned the value 12, which is an integer
@@ -149,7 +149,7 @@ Problem Set
     :language: python
     :autograde: unittest
 
-    **4.** There are a couple functions we're giving you in this problem set. One is a function called ``greeting``, which takes any string and adds ``"Hello, "`` in front of it. (You can see examples in the code.) Another one is a function called ``random_digit``, which returns a value of any random integer between 0 and 9 (inclusive). (You can also see examples in the code.)
+    There are a couple functions we're giving you in this problem set. One is a function called ``greeting``, which takes any string and adds ``"Hello, "`` in front of it. (You can see examples in the code.) Another one is a function called ``random_digit``, which returns a value of any random integer between 0 and 9 (inclusive). (You can also see examples in the code.)
 
     Write code that assigns to the variable ``func_var`` the **function** ``greeting`` (without executing the function).
 
@@ -190,7 +190,7 @@ Problem Set
     :include: addl_functions
     :language: python
 
-    **5.** There is a function we are giving you for this problem set that takes two strings as inputs, and returns the length of both of those strings added together, called ``add_lengths``. We are also including functions called ``random_digit`` and ``square`` in this problem set.
+    There is a function we are giving you for this problem set that takes two strings as inputs, and returns the length of both of those strings added together, called ``add_lengths``. We are also including functions called ``random_digit`` and ``square`` in this problem set.
 
     Now, take a look at the following code and related questions, in this code window.
     ~~~~
@@ -245,7 +245,7 @@ Problem Set
     :language: python
     :autograde: unittest
 
-    **6.** Assign the value of the third element of ``num_lst`` to a variable called ``third_elem``.
+    Assign the value of the third element of ``num_lst`` to a variable called ``third_elem``.
 
     Assign the value of the sixth element of ``num_lst`` to a variable called ``elem_sixth``.
 
@@ -292,7 +292,7 @@ Problem Set
     myTests().main()
 
 
-**7.**
+
 
 .. parsonsprob:: ps_1_09
 
@@ -334,7 +334,7 @@ Problem Set
 .. activecode:: ps_1_10
     :language: python
 
-    **8.** Write a program that uses the turtle module to draw something. It doesn't have to be complicated, but draw something different than we did in the textbook or in class. (Optional but encouraged: post a screenshot of the artistic outcome to Piazza, or a short video of the drawing as it is created.) (Hint: if you are drawing something complicated, it could get tedious to watch it draw over and over. Try setting ``.speed(10)`` for the turtle to draw fast, or ``.speed(0)`` for it to draw super fast with no animation.)
+    Write a program that uses the turtle module to draw something. It doesn't have to be complicated, but draw something different than we did in the textbook or in class. (Optional but encouraged: post a screenshot of the artistic outcome to Piazza, or a short video of the drawing as it is created.) (Hint: if you are drawing something complicated, it could get tedious to watch it draw over and over. Try setting ``.speed(10)`` for the turtle to draw fast, or ``.speed(0)`` for it to draw super fast with no animation.)
     ~~~~
     import turtle
 
