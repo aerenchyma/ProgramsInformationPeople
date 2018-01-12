@@ -52,7 +52,7 @@ Exercises
    :tags:Selection/OmittingtheelseClauseUnarySelection.rst
 
    a = 20
-      
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -93,7 +93,7 @@ Exercises
    :tags:Selection/Chainedconditionals.rst
 
    str1 = "Today you are you! That is truer than true! There is no one alive who is you-er than you!"
-      
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -105,12 +105,14 @@ Exercises
 
    myTests().main()
 
-3.1 Create one conditional so that if "Friendly" is in ``w``, then "Friendly is here!" should be assigned to the variable ``wrd``. If it's not, check if "Friend" is in w. If so, the string "Friend is here!" should be assigned to the variable ``wrd``, otherwise "No variation of friend is in here." should be assigned to the variable wrd. (Also consider: does the order of your conditional statements matter for this problem? Why?)
+3.1
 
 .. activecode:: ee_ch11_031
    :tags: Selection/Chainedconditionals.rst
 
-   w = "Friendship is a wonderful human experience!"
+   Create a conditional structure in this code box below the assignment of ``w``, so that if the string ``"Friendly"`` is in ``w``, then ``"Friendly is here!"`` should be assigned to the variable ``wrd``. If that's not the case, your code should check if the string ``"Friend"`` is in ``w``. If it is, the string ``"Friend is here!"`` should be assigned to the variable ``wrd``. Otherwise, assuming neither of those things are true, the string ``"No variation of friend is in here."`` should be assigned to the variable ``wrd``. *(Also consider: does the order of your conditional statements matter for this problem? Why?)*
+   ~~~~
+   w = "Friendship is a human experience"
 
    =====
 
@@ -120,6 +122,8 @@ Exercises
 
       def testOne(self):
          self.assertEqual(wrd, "Friend is here!", "Testing the value of wrd")
+      def testTwo(self):
+         self.assertIn("elif", self.getEditorText(), "Testing whether or not you're using the right conditional structure (at least partially). Don't worry about expected/differences")
 
    myTests().main()
 
@@ -147,7 +151,7 @@ Exercises
 
 .. activecode:: ee_ch11_05
    :tags:Selection/ConditionalExecutionBinarySelection.rst
-      
+
    words = ["water", "chair", "pen", "basket", "hi", "car"]
 
    =====
@@ -184,14 +188,14 @@ Exercises
 .. activecode:: ee_ch11_06
    :tags:Selection/Chainedconditionals.rst
 
-   x = 
+   x =
    output = []
 
    if x > 63:
        output.append(True)
    elif x > 55:
        output.append(False)
-   else: 
+   else:
        output.append("Neither")
 
    if x > 67:
@@ -249,7 +253,7 @@ Exercises
 
 .. activecode:: ee_ch11_08
    :tags: Selection/Nestedconditionals.rst
-      
+
    classes = ["MATH 150", "PSYCH 111", "PSYCH 313", "PSYCH 412", "MATH 300", "MATH 404", "MATH 206", "ENG 100", "ENG 103", "ENG 201", "PSYCH 508", "ENG 220", "ENG 125", "ENG 124"]
 
    =====
@@ -271,7 +275,7 @@ Exercises
 .. activecode:: ee_ch11_09
 
    words = ["adopt", "bake", "beam", "confide", "grill", "plant", "time", "wave", "wish"]
-      
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -282,5 +286,3 @@ Exercises
          self.assertEqual(past_tense, ['adopted', 'baked', 'beamed', 'confided', 'grilled', 'planted', 'timed', 'waved', 'wished'], "Testing that the past_tense list is correct.")
 
    myTests().main()
-
-
