@@ -34,6 +34,14 @@ Your Assignments
    <li><a href="../../assignments/chooseAssignment.html">Assignments</a></li>
    </ul>
 
+In Class
+::::::::
+
+.. toctree::
+   :maxdepth: 2
+
+   InClass/LabExerciseDictionariesAndConditionals.rst
+
 
 General Introduction
 ::::::::::::::::::::
