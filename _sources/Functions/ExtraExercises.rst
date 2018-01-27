@@ -1,4 +1,4 @@
-..  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
+  Copyright (C)  Brad Miller, David Ranum, Jeffrey Elkner, Peter Wentworth, Allen B. Downey, Chris
     Meyers, and Dario Mitchell.  Permission is granted to copy, distribute
     and/or modify this document under the terms of the GNU Free Documentation
     License, Version 1.3 or any later version published by the Free Software
@@ -26,12 +26,12 @@ Extra Exercises
 
    myTests().main()
 
-1.1 Write a function named ``same`` that takes a string as input, and simply returns that string. 
+1.1 Write a function named ``same`` that takes a string as input, and simply returns that string.
 
 .. activecode:: ee_functions_011
    :tags: Functions/Returningavaluefromafunction.rst, Functions/FunctionDefinitions.rst
 
-   
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -61,11 +61,11 @@ Extra Exercises
    myTests().main()
 
 
-2. Write a function called ``add`` that takes any number as its input and returns that sum with 2 added. 
+2. Write a function called ``add`` that takes any number as its input and returns that sum with 2 added.
 
 .. activecode:: ee_Function_02
    :tags: Functions/Returningavaluefromafunction.rst
-   
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -80,13 +80,13 @@ Extra Exercises
    myTests().main()
 
 
-2.1 Write a function called ``subtract_three`` that takes an integer or any number as input, and returns that number minus three. 
+2.1 Write a function called ``subtract_three`` that takes an integer or any number as input, and returns that number minus three.
 
 .. activecode:: ee_functions_021
    :tags: Functions/Returningavaluefromafunction.rst
 
-   
-   ===== 
+
+   =====
 
    from unittest.gui import TestCaseGui
 
@@ -120,7 +120,7 @@ Extra Exercises
 .. activecode:: ee_Function_03
    :tags: Functions/Returningavaluefromafunction.rst
 
-   
+
    =====
 
    from unittest.gui import TestCaseGui
@@ -128,7 +128,7 @@ Extra Exercises
    class myTests(TestCaseGui):
 
       def testThree(self):
-         self.assertEqual(change("I'm Bob. "), "I'm Bob. Nice to meet you!", "Tests that change('I'm Bob. '') returns 'I'm Bob. Nice to meet you!'")   
+         self.assertEqual(change("I'm Bob. "), "I'm Bob. Nice to meet you!", "Tests that change('I'm Bob. '') returns 'I'm Bob. Nice to meet you!'")
          self.assertEqual(change(""), "Nice to meet you!", "Tests that change() returns 'Nice to meet you!'")
 
    myTests().main()
@@ -185,12 +185,13 @@ Extra Exercises
 
    myTests().main()
 
-4.1 Write a function named ``total`` that takes a list of integers as input, and returns the total value of all those integers added together. 
 
 .. activecode:: ee_functions_041
    :tags: Functions/Returningavaluefromafunction.rst, Functions/Afunctionthataccumulates.rst
 
-
+   Write a function named ``total`` that takes a list of integers as input, and returns the total value of all those integers added together.
+   ~~~~
+   # Write code here...
 
    =====
 
@@ -200,16 +201,19 @@ Extra Exercises
 
       def testOne(self):
          self.assertEqual(total([1, 2, 3, 4, 5]), 15, "Testing the total function on input [1, 2, 3, 4, 5].")
+      def testTwo(self):
          self.assertEqual(total([0, 0, 0, 0]), 0, "Testing the total function on input [0, 0, 0, 0].")
+      def testThree(self):
          self.assertEqual(total([]), 0, "Testing the total function on input [].")
+      def testFour(self):
          self.assertEqual(total([2]), 2, "Testing the total function on input [2].")
 
-   myTests().main() 
+   myTests().main()
 
 4.2 Write a function called ``count`` that takes a list of numbers as input and returns all of the elements added togther.
 
 .. activecode:: ee_functions_042
-   :tags: Functions/Returningavaluefromafunction.rst, Functions/Afunctionthataccumulates.rst 
+   :tags: Functions/Returningavaluefromafunction.rst, Functions/Afunctionthataccumulates.rst
 
    =====
 
@@ -246,7 +250,7 @@ Extra Exercises
 
 5.1 Write a function named ``num_test`` that takes a number as input. If the number is greater than 10, the function should return "Greater than 10." If the number is less than 10, the function should return "Less than 10." If the number is equal to 10, the function should return "Equal to 10."
 
-.. activecode:: ee_functions_051 
+.. activecode:: ee_functions_051
    :tags: Functions/Returningavaluefromafunction.rst
 
    =====
@@ -261,7 +265,7 @@ Extra Exercises
          self.assertEqual(num_test(12.99), "Greater than 10.", "Testing the num_test function on input 12.99.")
          self.assertEqual(num_test(10.00), "Equal to 10.", "Testing the num_test function on input 10.00.")
 
-   myTests().main() 
+   myTests().main()
 
 5.2 Write a function called ``decision`` that takes a string as input, and then checks the number of characters. If it has over 17 characters, return "This is a long string", if it is shorter or has 17 characters, return "This is a short string".
 
@@ -326,4 +330,3 @@ Extra Exercises
          self.assertEqual(addit(0), 5, "Testing the function addit with input 0 (should be 5)")
 
    myTests().main()
-
