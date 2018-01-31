@@ -163,19 +163,20 @@ You may find it helpful to run this program in order to understand it. It will t
 .. activecode:: ps_4_hangman_code
   :hidecode:
 
-  This is the base code for a Hangman game, without some of the important useful functionality. (If you have never played Hangman, you can go to ``https://en.wikipedia.org/wiki/Hangman_(game)`` for an explanation of what it is.)
+  **The next few questions are based on this code/set of ideas.** This is the base code for a Hangman game, without some of the important useful functionality, as you'll be building it! (If you have never played Hangman, you can go to ``https://en.wikipedia.org/wiki/Hangman_(game)`` for an explanation of what it is.) There is (or will be) a flow chart image of the process of this code also available, which may be helpful to refer to as you try to understand the code.
   ~~~~
   def blanked(word, guesses):
-      return "blanked word"
+      return "blanked word" # Placeholder
 
   def health_prompt(x, y):
-      return "health prompt"
+      return "health prompt" # Placeholder
 
   def game_state_prompt(txt ="Nothing", h = 6, m_h = 6, word = "HELLO", guesses = ""):
       res = "\n" + txt + "\n"
       res = res + health_prompt(h, m_h) + "\n"
       if guesses != "":
           res = res + "Guesses so far: " + guesses.upper() + "\n"
+          res = res + "Word: " + blanked(word, guesses) + "\n"
       else:
           res = res + "No guesses so far" + "\n"
           res = res + "Word: " + blanked(word, guesses) + "\n"
@@ -185,7 +186,7 @@ You may find it helpful to run this program in order to understand it. It will t
   def main():
       max_health = 3
       health = max_health
-      secret_word = raw_input("What's the word to guess? (Don't let the player see it!)")
+      secret_word = input("What's the word to guess? (Don't let the player see it!)")
       secret_word = secret_word.upper() # everything in all capitals to avoid confusion
       guesses_so_far = ""
       game_over = False
@@ -195,7 +196,7 @@ You may find it helpful to run this program in order to understand it. It will t
       # Now interactively ask the user to guess
       while not game_over:
           prompt = game_state_prompt(feedback, health, max_health, secret_word, guesses_so_far)
-          next_guess = raw_input(prompt)
+          next_guess = input(prompt)
           next_guess = next_guess.upper()
           feedback = ""
           if len(next_guess) != 1:
@@ -336,7 +337,7 @@ To run the whole program, with the functions you built in questions above, paste
 .. activecode:: ps_4_hangman_code_complete
 
 
-  This is the base code for a Hangman game, without some of the important useful functionality -- but now, you can add it in! (If you have never played Hangman, you can go to ``https://en.wikipedia.org/wiki/Hangman_(game)`` for an explanation of what it is.)
+  This is the base code for a Hangman game, without some of the important useful functionality -- but now, you can add it in! (If you have never played Hangman, you can go to ``https://en.wikipedia.org/wiki/Hangman_(game)`` for an explanation of what it is.) You should paste or retype your functions in where indicated at the top, and try running this, for points on this problem.
   ~~~~
   # Paste your functions here..
 
@@ -350,16 +351,17 @@ To run the whole program, with the functions you built in questions above, paste
       res = res + health_prompt(h, m_h) + "\n"
       if guesses != "":
           res = res + "Guesses so far: " + guesses.upper() + "\n"
+          res = res + "Word: " + blanked(word, guesses) + "\n"
       else:
           res = res + "No guesses so far" + "\n"
           res = res + "Word: " + blanked(word, guesses) + "\n"
 
-      return(res)
+       return res
 
   def main():
       max_health = 3
       health = max_health
-      secret_word = raw_input("What's the word to guess? (Don't let the player see it!)")
+      secret_word = input("What's the word to guess? (Don't let the player see it!)")
       secret_word = secret_word.upper() # everything in all capitals to avoid confusion
       guesses_so_far = ""
       game_over = False
@@ -369,19 +371,19 @@ To run the whole program, with the functions you built in questions above, paste
       # Now interactively ask the user to guess
       while not game_over:
           prompt = game_state_prompt(feedback, health, max_health, secret_word, guesses_so_far)
-          next_guess = raw_input(prompt)
+          next_guess = input(prompt)
           next_guess = next_guess.upper()
           feedback = ""
           if len(next_guess) != 1:
               feedback = "I only understand single letter guesses. Please try again."
           elif next_guess in guesses_so_far:
-              feedback = "You already guessed that"
+            feedback = "You already guessed that"
           else:
               guesses_so_far = guesses_so_far + next_guess
               if next_guess in secret_word:
                   if blanked(secret_word, guesses_so_far) == secret_word:
-                     feedback = "Congratulations"
-                     game_over = True
+                      feedback = "Congratulations"
+                      game_over = True
                   else:
                       feedback = "Yes, that letter is in the word"
               else: # next_guess is not in the word secret_word
@@ -394,6 +396,6 @@ To run the whole program, with the functions you built in questions above, paste
       print(feedback)
       print("The word was..." + secret_word)
 
-  import sys #don't worry about this line; you'll understand it next week
-  sys.setExecutionLimit(60000)     # let the game take up to a minute, 60 * 1000 milliseconds
+  import sys # don't worry about this line... for now
+  sys.setExecutionLimit(60000)     # let the game take up to a minute, 60 * 1000 milliseconds -- only necessary in-textbook
   main() # invoke the main() game function

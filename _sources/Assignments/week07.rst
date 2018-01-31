@@ -124,6 +124,7 @@ Problem Set
 
 .. activecode:: ps_5_05
   :language: python
+  :present:
 
   Define a function ``convert_nums``. The function should accept an integer as input, representing a number of hours. It should return a tuple of that number converted to minutes (* 60), and then that number converted to seconds (* 3600). For example, if 1 were input into the function, the return value of that invocation should be the tuple ``60, 3600``.
 
