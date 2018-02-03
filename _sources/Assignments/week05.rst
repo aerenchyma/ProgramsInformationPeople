@@ -356,7 +356,7 @@ To run the whole program, with the functions you built in questions above, paste
           res = res + "No guesses so far" + "\n"
           res = res + "Word: " + blanked(word, guesses) + "\n"
 
-       return res
+      return res
 
   def main():
       max_health = 3
