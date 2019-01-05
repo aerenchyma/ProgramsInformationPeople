@@ -337,33 +337,13 @@ Python Modules
    PythonModules/ExtraExercises.rst
 
 
-Requests
-::::::::
+Internet APIs
+:::::::::::::
 
 .. toctree::
    :maxdepth: 2
 
-   Requests/intro.rst
-   Requests/fetching_a_page.rst
-   Requests/how_the_Internet_works.rst
-   Requests/urls.rst
-   Requests/http.rst
-   Requests/requests_details.rst
-
-
-REST APIs
-:::::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   RESTAPIs/intro.rst
-   RESTAPIs/RequestURLs.rst
-   RESTAPIs/DebugURLs.rst
-   RESTAPIs/jsonlib.rst
-   RESTAPIs/unicode.rst
-   RESTAPIs/functionswithrestapis.rst
-   RESTAPIs/requestsCookbook.rst
+   InternetAPIs/how_the_Internet_works.rst
 
 
 Exceptions
@@ -375,17 +355,6 @@ Exceptions
    Exceptions/intro-exceptions.rst
    Exceptions/using-exceptions.rst
    Exceptions/ExtraExercises.rst
-
-
-Using RESTAPIs
-::::::::::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   UsingRESTAPIs/flickr.rst
-   UsingRESTAPIs/cachingResponses.rst
-   UsingRESTAPIs/cachingPattern.rst
 
 
 String Formatting
@@ -446,57 +415,6 @@ Inheritance
    Inheritance/TamagotchiRevisited.rst
    Inheritance/Exercises.rst
    Inheritance/ExtraExercises.rst
-
-
-More on Accumulation: Map, Filter, Reduce, List Comprehensions, and Zip
-:::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   AdvancedAccumulation/intro.rst
-   AdvancedAccumulation/map.rst
-   AdvancedAccumulation/filter.rst
-   AdvancedAccumulation/listcomp.rst
-   AdvancedAccumulation/reduce.rst
-   AdvancedAccumulation/zip.rst
-   AdvancedAccumulation/exercises.rst
-   AdvancedAccumulation/ExtraExercises.rst
-
-The FaceBook Graph API
-::::::::::::::::::::::
-
-.. toctree::
-    :maxdepth: 2
-
-    FacebookAPI/FBAPI.rst
-
-
-APIs Using OAuth
-::::::::::::::::
-
-.. toctree::
-   :maxdepth: 2
-
-   APIsWithOAuth/RequestsOAuthLib.rst
-   APIsWithOAuth/TwitterAPI.rst
-   APIsWithOAuth/Paging.rst
-
-
-Pyglet
-::::::
-
-.. toctree::
-    :maxdepth: 2
-
-    Pyglet/Pyglet.rst
-    Pyglet/pygletWindow.rst
-    Pyglet/eventListener.rst
-    Pyglet/windowContents.rst
-    Pyglet/sounds.rst
-    Pyglet/jinglingSquare.rst
-    Pyglet/schedulingEvents.rst
-    Pyglet/Pong.rst
 
 
 Test Cases
