@@ -9,10 +9,13 @@ project_name = "pip2"
 ###############################
 
 master_url = 'http://127.0.0.1:8000'
+# Build for local testing. Then run on github server. TODO cleanup.
+
 # master_url = 'https://www.programsinformationpeople.org'
 # master_url = 'https://506w18.learningpython.today'
 master_app = 'runestone'
-serving_dir = "./build/" + project_name
+#serving_dir = "./build/" + project_name
+serving_dir = "../" + project_name # pip2, here, which is specific - TODO cleanup.
 dest = "../../static"
 
 options(
