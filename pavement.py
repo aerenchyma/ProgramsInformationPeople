@@ -15,16 +15,16 @@ master_url = 'http://127.0.0.1:8000'
 # master_url = 'https://506w18.learningpython.today'
 master_app = 'runestone'
 #serving_dir = "./build/" + project_name
-serving_dir = "../" + project_name # pip2, here, which is specific - TODO cleanup.
-dest = "../../static"
+serving_dir = "../../" + project_name # pip2, here, which is specific - TODO cleanup.
+dest = "static"
 
 options(
     sphinx = Bunch(docroot=".",),
 
     build = Bunch(
-        builddir="./build/"+project_name,
+        builddir=serving_dir,#"./build/"+project_name, # changed for tmp - site
         sourcedir="./_sources/",
-        outdir="./build/"+project_name,
+        outdir=serving_dir,#"./build/"+project_name,
         confdir=".",
         project_name = project_name,
         template_args = {
@@ -33,7 +33,7 @@ options(
             'appname':master_app,
             'loglevel':10,
             'course_url':master_url,
-            'use_services': 'true',
+            'use_services': 'false',
             'python3': 'true',
             'basecourse':'pip2'
         }
