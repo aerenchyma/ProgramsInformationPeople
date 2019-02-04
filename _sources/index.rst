@@ -344,27 +344,20 @@ Internet APIs
    :maxdepth: 2
 
    InternetAPIs/how_the_Internet_works.rst
-   Internet APIs
-   :::::::::::::
-
-   .. toctree::
-      :maxdepth: 2
-
-      InternetAPIs/how_the_Internet_works.rst
-      InternetAPIs/URLintro.rst
-      InternetAPIs/urls.rst
-      InternetAPIs/http.rst
-      InternetAPIs/fetching_a_page.rst
-      InternetAPIs/requests_details.rst
-      InternetAPIs/RESTintro.rst
-      InternetAPIs/RequestURLs.rst
-      InternetAPIs/DebugURLs.rst
-      InternetAPIs/functionswithrestapis.rst
-      InternetAPIs/requestsCookbook.rst
-      InternetAPIs/iTunes.rst
-      InternetAPIs/flickr.rst
-      InternetAPIs/unicode.rst
-      InternetAPIs/cachingPattern.rst
+   InternetAPIs/URLintro.rst
+   InternetAPIs/urls.rst
+   InternetAPIs/http.rst
+   InternetAPIs/fetching_a_page.rst
+   InternetAPIs/requests_details.rst
+   InternetAPIs/RESTintro.rs
+   InternetAPIs/RequestURLs.rst
+   InternetAPIs/DebugURLs.rst
+   InternetAPIs/functionswithrestapis.rst
+   InternetAPIs/requestsCookbook.rst
+   InternetAPIs/iTunes.rst
+   InternetAPIs/flickr.rst
+   InternetAPIs/unicode.rst
+   InternetAPIs/cachingPattern.rst
 
 
 
